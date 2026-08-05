@@ -18,11 +18,11 @@ export function BrandLogo({
   return (
     <Link href={href} className={cn("inline-flex items-center", className)}>
       <Image
-        src="/nuevo_logo.png"
+        src="/logo.png"
         alt="BUYU"
-        width={160}
-        height={48}
-        className={cn("h-9 w-auto object-contain md:h-10", imageClassName)}
+        width={140}
+        height={40}
+        className={cn("h-8 w-auto object-contain md:h-9", imageClassName)}
         priority={priority}
       />
     </Link>

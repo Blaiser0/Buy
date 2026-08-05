@@ -26,7 +26,7 @@ export function SiteHeader({ onSearch }: SiteHeaderProps) {
 
   return (
     <header className="sticky top-0 z-50 border-b border-[#F8F6F0] bg-white/95 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center gap-6 px-4 py-4 md:px-6">
+      <div className="mx-auto flex max-w-6xl items-center gap-6 px-4 py-3 md:px-6">
         <BrandLogo priority className="shrink-0" />
 
         <nav className="hidden flex-1 items-center justify-center gap-8 md:flex">

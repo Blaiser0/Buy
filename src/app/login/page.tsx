@@ -12,7 +12,7 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
     <div className="flex min-h-screen items-center justify-center bg-white px-4">
       <div className="w-full max-w-md space-y-6 rounded-xl bg-[#F8F6F0] p-8">
         <div className="space-y-2 text-center">
-          <BrandLogo className="justify-center" imageClassName="h-12 md:h-14" />
+          <BrandLogo className="justify-center" imageClassName="h-10 md:h-12" />
           <h1 className="text-xl font-medium text-[#2C2C2C]">
             Iniciar sesión
           </h1>

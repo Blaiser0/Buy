@@ -17,8 +17,12 @@ export const metadata: Metadata = {
   description:
     "Fórmulas auténticas de skincare coreano para una piel radiante y natural.",
   icons: {
-    icon: [{ url: "/favicon.png", type: "image/png" }],
-    apple: [{ url: "/favicon.png", type: "image/png" }],
+    icon: [
+      { url: "/favicon.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon.png", type: "image/png", sizes: "48x48" },
+      { url: "/favicon.png", type: "image/png", sizes: "192x192" },
+    ],
+    apple: [{ url: "/favicon.png", type: "image/png", sizes: "180x180" }],
   },
 };
 

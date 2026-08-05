@@ -22,7 +22,10 @@ export function BrandLogo({
         alt="BUYU"
         width={140}
         height={40}
-        className={cn("h-8 w-auto object-contain md:h-9", imageClassName)}
+        className={cn(
+          "h-8 w-auto max-w-[160px] object-contain object-left md:h-9 md:max-w-none",
+          imageClassName,
+        )}
         priority={priority}
       />
     </Link>

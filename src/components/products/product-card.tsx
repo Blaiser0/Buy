@@ -27,22 +27,22 @@ export function ProductCard({ product }: ProductCardProps) {
             alt={product.name}
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-105"
-            sizes="(max-width: 768px) 50vw, 25vw"
+            sizes="(max-width: 640px) 50vw, (max-width: 1280px) 33vw, 25vw"
           />
         ) : (
-          <div className="flex h-full items-center justify-center text-sm text-[#2C2C2C]/40">
+          <div className="flex h-full items-center justify-center px-2 text-center text-xs text-[#2C2C2C]/40 sm:text-sm">
             Sin imagen
           </div>
         )}
-        <div className="absolute left-3 top-3">
+        <div className="absolute left-2 top-2 sm:left-3 sm:top-3">
           <StockBadge stockQuantity={product.stock_quantity} />
         </div>
       </div>
-      <div className="space-y-1 p-4">
-        <h3 className="line-clamp-2 text-base font-medium text-[#2C2C2C]">
+      <div className="space-y-1 p-3 sm:p-4">
+        <h3 className="line-clamp-2 text-sm font-medium text-[#2C2C2C] sm:text-base">
           {product.name}
         </h3>
-        <p className="text-sm font-semibold text-[#E50914]">
+        <p className="text-sm font-semibold text-[#E50914] sm:text-base">
           {formatPrice(product.price)}
         </p>
       </div>

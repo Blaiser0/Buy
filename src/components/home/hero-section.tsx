@@ -9,29 +9,31 @@ export function HeroSection() {
         aria-label="Ver colección BUYU"
         className="block w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#E50914] focus-visible:ring-offset-2"
       >
-        {/* Banner móvil */}
-        <div className="relative w-full md:hidden">
+        {/* Celular y tablet */}
+        <div className="w-full lg:hidden">
           <Image
             src="/banner-celular.png"
             alt="BUYU K-Beauty — Tu piel, tu mejor versión"
             width={1080}
             height={1920}
             priority
-            className="h-auto w-full object-cover object-top"
+            className="block h-auto w-full max-w-full"
             sizes="100vw"
+            style={{ width: "100%", height: "auto" }}
           />
         </div>
 
-        {/* Banner laptop / desktop */}
-        <div className="relative hidden w-full md:block">
+        {/* Laptop / escritorio */}
+        <div className="hidden w-full lg:block">
           <Image
             src="/banner-laptop.png"
             alt="BUYU K-Beauty — Tu piel, tu mejor versión"
             width={1920}
             height={1080}
             priority
-            className="h-auto w-full object-cover object-center"
+            className="block h-auto w-full max-w-full"
             sizes="100vw"
+            style={{ width: "100%", height: "auto" }}
           />
         </div>
       </Link>

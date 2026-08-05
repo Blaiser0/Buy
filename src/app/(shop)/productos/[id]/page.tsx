@@ -29,8 +29,8 @@ export default async function ProductDetailPage({
   if (!product) notFound();
 
   return (
-    <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 md:grid-cols-2 md:px-6">
-      <div className="relative aspect-square overflow-hidden rounded-xl bg-[#F8F6F0]">
+    <div className="mx-auto grid w-full max-w-6xl gap-6 px-4 py-8 sm:gap-8 sm:py-10 md:grid-cols-2 md:gap-10 md:px-6 md:py-12">
+      <div className="relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-xl bg-[#F8F6F0] md:max-w-none">
         {product.image_url ? (
           <Image
             src={product.image_url}
@@ -47,17 +47,17 @@ export default async function ProductDetailPage({
         )}
       </div>
 
-      <div className="space-y-6">
+      <div className="flex flex-col space-y-4 sm:space-y-6">
         <StockBadge stockQuantity={product.stock_quantity} />
-        <div className="space-y-3">
-          <h1 className="text-3xl font-semibold text-[#2C2C2C] md:text-4xl">
+        <div className="space-y-2 sm:space-y-3">
+          <h1 className="text-2xl font-semibold text-[#2C2C2C] sm:text-3xl md:text-4xl">
             {product.name}
           </h1>
-          <p className="text-2xl font-semibold text-[#E50914]">
+          <p className="text-xl font-semibold text-[#E50914] sm:text-2xl">
             {formatPrice(product.price)}
           </p>
         </div>
-        <p className="leading-relaxed text-[#2C2C2C]/80">
+        <p className="text-sm leading-relaxed text-[#2C2C2C]/80 sm:text-base">
           {product.description || "Sin descripción disponible."}
         </p>
         <p className="text-sm text-[#2C2C2C]/60">
@@ -67,7 +67,7 @@ export default async function ProductDetailPage({
           href="/productos"
           className={cn(
             buttonVariants({ variant: "outline" }),
-            "border-[#E50914] text-[#E50914] hover:bg-[#F8F6F0]",
+            "w-full border-[#E50914] text-[#E50914] hover:bg-[#F8F6F0] sm:w-auto",
           )}
         >
           Volver a la colección

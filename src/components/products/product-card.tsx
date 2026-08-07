@@ -2,17 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Product } from "@/lib/db/types";
 import { StockBadge } from "@/components/products/stock-badge";
+import { formatPenPrice } from "@/lib/products/detail-content";
 
 type ProductCardProps = {
   product: Product;
 };
-
-function formatPrice(price: number) {
-  return new Intl.NumberFormat("es-MX", {
-    style: "currency",
-    currency: "MXN",
-  }).format(price);
-}
 
 export function ProductCard({ product }: ProductCardProps) {
   return (
@@ -43,7 +37,7 @@ export function ProductCard({ product }: ProductCardProps) {
           {product.name}
         </h3>
         <p className="text-sm font-semibold text-[#E50914] sm:text-base">
-          {formatPrice(product.price)}
+          {formatPenPrice(product.price)}
         </p>
       </div>
     </Link>

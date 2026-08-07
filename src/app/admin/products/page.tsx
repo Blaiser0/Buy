@@ -16,10 +16,7 @@ import { cn } from "@/lib/utils";
 export const dynamic = "force-dynamic";
 
 function formatPrice(price: number) {
-  return new Intl.NumberFormat("es-MX", {
-    style: "currency",
-    currency: "MXN",
-  }).format(price);
+  return `S/ ${price.toFixed(2)}`;
 }
 
 export default async function AdminProductsPage() {

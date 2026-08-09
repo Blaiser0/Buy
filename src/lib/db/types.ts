@@ -1,3 +1,7 @@
+import type { ProductCategory } from "@/lib/products/categories";
+
+export type { ProductCategory };
+
 export type Product = {
   id: string;
   name: string;
@@ -5,6 +9,7 @@ export type Product = {
   price: number;
   stock_quantity: number;
   image_url: string | null;
+  category: ProductCategory;
   created_at: string;
 };
 
@@ -20,6 +25,7 @@ export type CreateProductInput = {
   price: number;
   stock_quantity: number;
   image_url?: string | null;
+  category: ProductCategory;
 };
 
 export type UpdateProductInput = Partial<CreateProductInput>;

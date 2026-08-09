@@ -1,15 +1,12 @@
 import { z } from "zod";
+import { PRODUCT_CATEGORIES } from "@/lib/products/categories";
 
 export const productFormSchema = z.object({
   name: z
     .string()
     .trim()
     .min(3, "El nombre debe tener al menos 3 caracteres"),
-  description: z
-    .string()
-    .trim()
-    .optional()
-    .or(z.literal("")),
+  description: z.string().trim().optional().or(z.literal("")),
   price: z.coerce
     .number({ message: "El precio es obligatorio" })
     .positive("El precio debe ser mayor a 0"),
@@ -17,6 +14,9 @@ export const productFormSchema = z.object({
     .number({ message: "El stock es obligatorio" })
     .int("El stock debe ser un número entero")
     .min(0, "El stock no puede ser negativo"),
+  category: z.enum(PRODUCT_CATEGORIES, {
+    message: "Selecciona una categoría válida",
+  }),
 });
 
 export type ProductFormValues = z.infer<typeof productFormSchema>;

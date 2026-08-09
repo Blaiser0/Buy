@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Product } from "@/lib/db/types";
+import { CategoryBadge } from "@/components/products/category-badge";
 import { StockBadge } from "@/components/products/stock-badge";
 import { formatPenPrice } from "@/lib/products/detail-content";
 
@@ -28,7 +29,8 @@ export function ProductCard({ product }: ProductCardProps) {
             Sin imagen
           </div>
         )}
-        <div className="absolute left-2 top-2 sm:left-3 sm:top-3">
+        <div className="absolute left-2 top-2 flex flex-col gap-1.5 sm:left-3 sm:top-3">
+          <CategoryBadge category={product.category} />
           <StockBadge stockQuantity={product.stock_quantity} />
         </div>
       </div>

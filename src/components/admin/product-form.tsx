@@ -11,6 +11,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Alert, AlertDescription } from "@/components/ui/alert";
+import { PRODUCT_CATEGORIES } from "@/lib/products/categories";
 import { cn } from "@/lib/utils";
 
 type ProductFormProps = {
@@ -61,6 +62,28 @@ export function ProductForm({ product, action }: ProductFormProps) {
       </div>
 
       <div className="space-y-2">
+        <Label htmlFor="category">Categoría</Label>
+        <select
+          id="category"
+          name="category"
+          required
+          defaultValue={product?.category ?? "Hidratantes"}
+          className="h-10 w-full rounded-lg border border-input bg-transparent px-3 text-sm text-[#2C2C2C] outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
+        >
+          {PRODUCT_CATEGORIES.map((category) => (
+            <option key={category} value={category}>
+              {category}
+            </option>
+          ))}
+        </select>
+        {state.fieldErrors?.category?.[0] && (
+          <p className="text-sm text-destructive">
+            {state.fieldErrors.category[0]}
+          </p>
+        )}
+      </div>
+
+      <div className="space-y-2">
         <Label htmlFor="description">Descripción</Label>
         <Textarea
           id="description"
@@ -73,7 +96,7 @@ export function ProductForm({ product, action }: ProductFormProps) {
 
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="space-y-2">
-          <Label htmlFor="price">Precio</Label>
+          <Label htmlFor="price">Precio (S/)</Label>
           <Input
             id="price"
             name="price"

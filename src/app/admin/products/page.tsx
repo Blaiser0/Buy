@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Plus } from "lucide-react";
 import { DeleteProductButton } from "@/components/admin/delete-product-button";
+import { CategoryBadge } from "@/components/products/category-badge";
 import { StockBadge } from "@/components/products/stock-badge";
 import { buttonVariants } from "@/components/ui/button";
 import {
@@ -63,6 +64,7 @@ export default async function AdminProductsPage() {
                     <h2 className="font-medium text-[#2C2C2C]">
                       {product.name}
                     </h2>
+                    <CategoryBadge category={product.category} />
                     <StockBadge stockQuantity={product.stock_quantity} />
                   </div>
                   <p className="text-sm text-[#2C2C2C]/70">

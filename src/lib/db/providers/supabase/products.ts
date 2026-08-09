@@ -1,5 +1,5 @@
 import type { ProductRepository } from "../../repository";
-import type { CreateProductInput, Product, UpdateProductInput } from "../../types";
+import type { CreateProductInput, Product, ProductCategory, UpdateProductInput } from "../../types";
 import { createClient } from "@/lib/supabase/server";
 
 function mapProduct(row: Record<string, unknown>): Product {
@@ -10,6 +10,7 @@ function mapProduct(row: Record<string, unknown>): Product {
     price: Number(row.price),
     stock_quantity: Number(row.stock_quantity),
     image_url: (row.image_url as string | null) ?? null,
+    category: (row.category as ProductCategory) ?? "Hidratantes",
     created_at: String(row.created_at),
   };
 }
@@ -48,6 +49,7 @@ export const supabaseProductRepository: ProductRepository = {
         price: input.price,
         stock_quantity: input.stock_quantity,
         image_url: input.image_url ?? null,
+        category: input.category,
       })
       .select("*")
       .single();
@@ -72,6 +74,7 @@ export const supabaseProductRepository: ProductRepository = {
         ...(input.image_url !== undefined
           ? { image_url: input.image_url }
           : {}),
+        ...(input.category !== undefined ? { category: input.category } : {}),
       })
       .eq("id", id)
       .select("*")

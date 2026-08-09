@@ -9,6 +9,7 @@ import {
   Sun,
 } from "lucide-react";
 import type { ProductDetailContent } from "@/lib/products/detail-content";
+import { cn } from "@/lib/utils";
 
 type ProductDetailSectionsProps = {
   description: string;
@@ -23,11 +24,33 @@ function SectionTitle({
   children: ReactNode;
 }) {
   return (
-    <div className="mb-2.5 flex items-center gap-1.5">
+    <div className="mb-2.5 flex items-center justify-center gap-1.5">
       <span className="text-[#D68C96]">{icon}</span>
       <h2 className="text-[10px] font-semibold tracking-[0.14em] text-[#2C2C2C] uppercase">
         {children}
       </h2>
+    </div>
+  );
+}
+
+function Column({
+  children,
+  showDivider = false,
+  className = "",
+}: {
+  children: ReactNode;
+  showDivider?: boolean;
+  className?: string;
+}) {
+  return (
+    <div className={cn("relative min-w-0 text-center", className)}>
+      {children}
+      {showDivider ? (
+        <span
+          aria-hidden
+          className="absolute top-1/2 right-[-12px] hidden h-[72%] min-h-16 w-[1.5px] -translate-y-1/2 bg-[#D68C96]/70 lg:block"
+        />
+      ) : null}
     </div>
   );
 }
@@ -55,8 +78,7 @@ function shortIngredient(item: string) {
 function compactStep(text: string | undefined, fallback: string) {
   const clean = text?.replace(/\s+/g, " ").trim();
   if (!clean) return fallback;
-  const sentence =
-    clean.match(/^[^.!?]+[.!]?/)?.[0]?.trim() ?? clean;
+  const sentence = clean.match(/^[^.!?]+[.!]?/)?.[0]?.trim() ?? clean;
   const words = sentence.replace(/[.!]+$/, "").split(/\s+/);
   if (words.length <= 9) {
     return `${words.join(" ")}.`;
@@ -68,7 +90,7 @@ export function ProductDetailSections({
   description,
   details,
 }: ProductDetailSectionsProps) {
-  const shortDescription = summarizeText(description, 110);
+  const shortDescription = summarizeText(description, 220);
 
   const benefits = details.benefits.slice(0, 4).map(shortBenefit);
 
@@ -90,7 +112,7 @@ export function ProductDetailSections({
     <section className="shrink-0">
       <div className="rounded-xl bg-[#F8F4F2] px-5 py-5 sm:px-6 sm:py-5 lg:rounded-2xl lg:px-5 lg:py-4 xl:px-6">
         <div className="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3 lg:grid-cols-5 lg:gap-x-6 lg:gap-y-0">
-          <div className="min-w-0">
+          <Column showDivider>
             <SectionTitle
               icon={<FileText className="size-3.5" strokeWidth={1.75} />}
             >
@@ -99,9 +121,9 @@ export function ProductDetailSections({
             <p className="text-[11px] leading-[1.55] text-[#2C2C2C]/68">
               {shortDescription}
             </p>
-          </div>
+          </Column>
 
-          <div className="min-w-0">
+          <Column showDivider>
             <SectionTitle
               icon={<Heart className="size-3.5" strokeWidth={1.75} />}
             >
@@ -111,16 +133,16 @@ export function ProductDetailSections({
               {benefits.map((item) => (
                 <li
                   key={item}
-                  className="flex gap-1.5 text-[11px] leading-[1.45] text-[#2C2C2C]/68"
+                  className="flex items-start justify-center gap-1.5 text-[11px] leading-[1.45] text-[#2C2C2C]/68"
                 >
                   <Check className="mt-0.5 size-3 shrink-0 text-[#D68C96]" />
-                  <span>{item}</span>
+                  <span className="text-center">{item}</span>
                 </li>
               ))}
             </ul>
-          </div>
+          </Column>
 
-          <div className="min-w-0">
+          <Column showDivider>
             <SectionTitle
               icon={<Droplets className="size-3.5" strokeWidth={1.75} />}
             >
@@ -129,41 +151,39 @@ export function ProductDetailSections({
             <p className="text-[11px] leading-[1.55] text-[#2C2C2C]/68">
               {ingredients}.
             </p>
-          </div>
+          </Column>
 
-          <div className="min-w-0">
+          <Column showDivider>
             <SectionTitle
               icon={<Sun className="size-3.5" strokeWidth={1.75} />}
             >
               Modo de uso
             </SectionTitle>
             <div className="space-y-3">
-              <div className="flex gap-2">
-                <Sun className="mt-0.5 size-3.5 shrink-0 text-[#D68C96]" />
-                <div className="min-w-0">
-                  <p className="mb-0.5 text-[10px] font-semibold text-[#2C2C2C]">
-                    Día
-                  </p>
-                  <p className="text-[11px] leading-[1.45] text-[#2C2C2C]/68">
-                    {dayUse}
-                  </p>
+              <div className="flex flex-col items-center gap-1">
+                <div className="flex items-center gap-1.5">
+                  <Sun className="size-3.5 text-[#D68C96]" />
+                  <p className="text-[10px] font-semibold text-[#2C2C2C]">Día</p>
                 </div>
+                <p className="text-[11px] leading-[1.45] text-[#2C2C2C]/68">
+                  {dayUse}
+                </p>
               </div>
-              <div className="flex gap-2">
-                <Moon className="mt-0.5 size-3.5 shrink-0 text-[#D68C96]" />
-                <div className="min-w-0">
-                  <p className="mb-0.5 text-[10px] font-semibold text-[#2C2C2C]">
+              <div className="flex flex-col items-center gap-1">
+                <div className="flex items-center gap-1.5">
+                  <Moon className="size-3.5 text-[#D68C96]" />
+                  <p className="text-[10px] font-semibold text-[#2C2C2C]">
                     Noche
                   </p>
-                  <p className="text-[11px] leading-[1.45] text-[#2C2C2C]/68">
-                    {nightUse}
-                  </p>
                 </div>
+                <p className="text-[11px] leading-[1.45] text-[#2C2C2C]/68">
+                  {nightUse}
+                </p>
               </div>
             </div>
-          </div>
+          </Column>
 
-          <div className="flex min-w-0 flex-col">
+          <Column className="flex flex-col items-center">
             <SectionTitle
               icon={<Star className="size-3.5" strokeWidth={1.75} />}
             >
@@ -172,7 +192,7 @@ export function ProductDetailSections({
             <p className="font-[family-name:var(--font-product-serif)] text-[1.7rem] leading-none font-medium text-[#2C2C2C]">
               4.8
             </p>
-            <div className="mt-1.5 flex items-center gap-0.5 text-[#D68C96]">
+            <div className="mt-1.5 flex items-center justify-center gap-0.5 text-[#D68C96]">
               {Array.from({ length: 5 }).map((_, i) => (
                 <Star key={i} className="size-3 fill-current" />
               ))}
@@ -180,13 +200,7 @@ export function ProductDetailSections({
             <p className="mt-1.5 text-[10px] leading-normal text-[#2C2C2C]/55">
               Basado en reseñas de internet
             </p>
-            <button
-              type="button"
-              className="mt-2.5 inline-flex h-7 w-fit items-center justify-center rounded-full border border-[#D68C96] px-3 text-[9px] font-semibold tracking-[0.12em] text-[#D68C96] uppercase transition-colors hover:bg-[#D68C96] hover:text-white"
-            >
-              Ver todas
-            </button>
-          </div>
+          </Column>
         </div>
       </div>
     </section>

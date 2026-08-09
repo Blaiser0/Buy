@@ -671,7 +671,7 @@ const PRODUCT_DETAILS: Record<string, ProductDetailContent> = {
 
   "skin1004 madagascar centella hyalu-cica silky-fit sun stick": {
     editorNote:
-      "Protector solar en stick SPF50+ PA++++ de la línea Hyalu-Cica. Se desliza con acabado sedoso mate, controla el brillo con sílice y aporta confort con Centella y ácido hialurónico. Ideal para reaplicación rápida sobre piel o maquillaje, sin white cast.",
+      "Protector solar en stick SPF50+ PA++++ con Centella de Madagascar y ácido hialurónico. Se desliza fácil, hidrata la piel y deja un acabado sedoso mate sin mancha blanca. Ideal para usar y reaplicar durante el día.",
     benefits: [
       "Protege del sol con SPF50+ (rayos UVA y UVB)",
       "No deja mancha blanca ni sensación grasosa",

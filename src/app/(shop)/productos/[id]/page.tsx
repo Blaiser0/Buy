@@ -119,7 +119,7 @@ export default async function ProductDetailPage({
                   ))}
                 </div>
                 <span className="text-[12px] text-[#8A7A76] lg:text-[11px]">
-                  4.8 (128 reseñas)
+                  4.8
                 </span>
               </div>
 

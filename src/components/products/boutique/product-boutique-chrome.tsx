@@ -43,16 +43,17 @@ export function ProductBoutiqueChrome() {
   return (
     <div className={cn(uiSans.className, "relative shrink-0 bg-white")}>
       {bannerOpen ? (
-        <div className="relative z-20 bg-[#E8A4AB] px-8 py-1.5 text-[10px] font-medium tracking-[0.06em] text-white uppercase lg:py-1">
-          <div className="mx-auto flex max-w-6xl items-center justify-center gap-2 px-4 text-center sm:px-6">
-            <span className="hidden sm:inline">
-              Envío gratis en compras +S/ 150
-            </span>
-            <span className="hidden sm:inline">|</span>
-            <span>
-              10% OFF en tu primera compra con el código:{" "}
-              <strong className="font-semibold">BUYU10</strong>
-            </span>
+        <div className="relative z-20 bg-[#E8A4AB] px-8 py-2 text-white lg:py-1.5">
+          <div className="mx-auto max-w-6xl px-4 text-center sm:px-6">
+            <p
+              className={cn(
+                logoSerif.className,
+                "text-[12px] font-medium tracking-[0.02em] sm:text-[13px] lg:text-[14px]",
+              )}
+            >
+              El primer paso está en tus manos, comienza tu rutina de skincare
+              hoy.
+            </p>
           </div>
           <button
             type="button"

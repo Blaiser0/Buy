@@ -209,14 +209,14 @@ export function ShopDrawers() {
                   {formatPenPrice(cartTotal)}
                 </span>
               </div>
-              <Link
-                href="/contacto"
+              <button
+                type="button"
                 onClick={() => setCartOpen(false)}
                 className="inline-flex h-11 w-full items-center justify-center rounded-md text-[11px] font-semibold tracking-[0.14em] text-white uppercase"
                 style={{ backgroundColor: boutique.rose }}
               >
                 Continuar compra
-              </Link>
+              </button>
             </div>
           ) : null
         }

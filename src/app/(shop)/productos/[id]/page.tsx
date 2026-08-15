@@ -64,15 +64,14 @@ export default async function ProductDetailPage({
         productSerif.variable,
         productSans.variable,
         productSans.className,
-        "bg-white text-[#2C2C2C] lg:min-h-full",
+        "bg-white text-[#2C2C2C]",
       )}
     >
-      {/* First screen on laptop/PC: everything before "TE PUEDE ENCANTAR" */}
-      <div className="lg:flex lg:min-h-full lg:flex-col lg:overflow-hidden">
-        <div className="mx-auto flex w-full max-w-6xl flex-1 flex-col px-4 pt-4 pb-4 sm:px-6 lg:min-h-0 lg:pt-3 lg:pb-2.5">
+      <div>
+        <div className="mx-auto flex w-full max-w-6xl flex-col px-4 pt-4 pb-4 sm:px-6 lg:pt-5 lg:pb-4">
           <nav
             aria-label="Breadcrumb"
-            className="mb-3 shrink-0 text-[11px] text-[#8A7A76] lg:mb-2"
+            className="mb-3 shrink-0 text-[11px] text-[#8A7A76] lg:mb-4"
           >
             <ol className="flex flex-wrap items-center gap-1.5">
               <li>
@@ -97,17 +96,17 @@ export default async function ProductDetailPage({
             </ol>
           </nav>
 
-          <div className="grid min-h-0 flex-1 items-stretch gap-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-8 xl:gap-10">
-            <div className="min-h-0 lg:h-full">
+          <div className="grid items-start gap-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-8 xl:gap-10">
+            <div className="min-w-0">
               <ProductGallery name={product.name} images={galleryImages} />
             </div>
 
-            <div className="flex min-h-0 min-w-0 flex-col justify-center lg:max-w-md lg:overflow-hidden">
-              <h1 className="line-clamp-2 font-[family-name:var(--font-product-serif)] text-[1.7rem] leading-[1.15] font-medium tracking-tight text-[#2C2C2C] sm:text-[2rem] lg:text-[1.65rem] xl:text-[1.9rem]">
+            <div className="min-w-0 lg:max-w-md">
+              <h1 className="font-[family-name:var(--font-product-serif)] text-[1.7rem] leading-[1.15] font-medium tracking-tight text-[#2C2C2C] sm:text-[2rem] lg:text-[1.65rem] xl:text-[1.9rem]">
                 {product.name}
               </h1>
 
-              <p className="mt-1 line-clamp-1 text-[13px] text-[#8A7A76] lg:text-[12px]">
+              <p className="mt-1 line-clamp-2 text-[13px] text-[#8A7A76] lg:text-[12px]">
                 {subtitle}
               </p>
 
@@ -126,11 +125,11 @@ export default async function ProductDetailPage({
                 {formatPenPrice(product.price)}
               </p>
 
-              <p className="mt-2 line-clamp-3 text-[13px] leading-6 text-[#5F5552] lg:line-clamp-2 lg:text-[12px] lg:leading-5 xl:line-clamp-3">
+              <p className="mt-2 text-[13px] leading-6 text-[#5F5552] lg:text-[12px] lg:leading-5">
                 {pitch}
               </p>
 
-              <div className="mt-3 space-y-3 lg:mt-2.5 lg:space-y-2.5">
+              <div className="mt-4 space-y-3 lg:mt-3 lg:space-y-2.5">
                 <ProductPurchasePanel
                   productId={product.id}
                   productName={product.name}
@@ -144,7 +143,7 @@ export default async function ProductDetailPage({
           </div>
         </div>
 
-        <div className="mx-auto mt-5 w-full max-w-6xl shrink-0 px-4 pb-3 sm:mt-6 sm:px-6 lg:mt-6 lg:pb-3">
+        <div className="mx-auto mt-5 w-full max-w-6xl px-4 pb-3 sm:mt-6 sm:px-6 lg:mt-8 lg:pb-4">
           <ProductDetailSections description={description} details={details} />
         </div>
       </div>

@@ -210,11 +210,11 @@ export function ProductDetailSections({
   return (
     <section className="shrink-0">
       <div className="overflow-hidden rounded-2xl border border-[#EAD6D8]/70 bg-[#F8F4F2]">
-        <div className="grid grid-cols-1 divide-y divide-[#E8A4AB]/40 sm:grid-cols-2 sm:divide-x lg:grid-cols-5 lg:divide-y-0">
+        <div className="grid grid-cols-1 divide-y divide-[#E8A4AB]/40 sm:grid-cols-2 sm:divide-x md:grid-cols-3 lg:grid-cols-5 lg:divide-y-0">
           {columns.map((column) => (
             <div
               key={column.key}
-              className="flex h-full flex-col px-4 py-4 sm:px-5 sm:py-5"
+              className="flex h-full flex-col px-4 py-4 text-[12px] sm:px-5 sm:py-5 sm:text-[11px]"
             >
               <SectionTitle icon={column.icon}>{column.title}</SectionTitle>
               <div className="flex min-h-0 flex-1 flex-col">{column.content}</div>

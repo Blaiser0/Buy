@@ -45,15 +45,17 @@ const BADGES = [
 
 export function ProductTrustBadges() {
   return (
-    <div className="grid grid-cols-4 gap-2 border-t border-[#F0E4E5] pt-3 lg:pt-2.5">
+    <div className="grid grid-cols-2 gap-3 border-t border-[#F0E4E5] pt-3 sm:grid-cols-4 sm:gap-2 lg:pt-2.5">
       {BADGES.map(({ icon: Icon, label, sub }) => (
         <div key={label} className="flex flex-col items-center gap-1 text-center">
-          <Icon className="size-4 text-[#D68C96] lg:size-[15px]" strokeWidth={1.5} />
+          <Icon className="size-5 text-[#D68C96] sm:size-4 lg:size-[15px]" strokeWidth={1.5} />
           <div>
-            <p className="text-[9px] leading-tight font-semibold text-[#2C2C2C]/75">
+            <p className="text-[11px] leading-tight font-semibold text-[#2C2C2C]/75 sm:text-[9px]">
               {label}
             </p>
-            <p className="text-[8px] leading-tight text-[#2C2C2C]/50">{sub}</p>
+            <p className="text-[10px] leading-tight text-[#2C2C2C]/50 sm:text-[8px]">
+              {sub}
+            </p>
           </div>
         </div>
       ))}

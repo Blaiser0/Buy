@@ -14,9 +14,10 @@ export function ShopShell({ children }: { children: ReactNode }) {
   return (
     <ShopProvider>
       {isProductDetail ? (
-        <div className="flex min-h-dvh flex-col bg-white text-[#2C2C2C] lg:h-dvh lg:overflow-hidden">
+        <div className="flex min-h-dvh flex-col bg-white text-[#2C2C2C]">
           <ProductBoutiqueChrome />
-          <main className="min-h-0 w-full flex-1 overflow-y-auto">{children}</main>
+          <main className="w-full flex-1">{children}</main>
+          <BoutiqueFooter />
         </div>
       ) : (
         <div className="flex min-h-screen flex-col bg-white">

@@ -175,10 +175,10 @@ function ProductBoutiqueChromeInner() {
     >
       {bannerOpen ? (
         <div
-          className="relative z-20 px-8 py-2 text-white lg:py-1.5"
+          className="relative z-20 px-4 py-2.5 pr-12 text-white sm:px-8 sm:py-2 lg:py-1.5"
           style={{ backgroundColor: boutique.roseSoft }}
         >
-          <div className="mx-auto flex max-w-6xl items-center justify-center gap-3 px-4 text-center sm:px-6">
+          <div className="mx-auto flex max-w-6xl items-center justify-center gap-3 text-center">
             <button
               type="button"
               aria-label="Promo anterior"
@@ -187,7 +187,7 @@ function ProductBoutiqueChromeInner() {
                   (current) => (current - 1 + PROMOS.length) % PROMOS.length,
                 )
               }
-              className="hidden text-white/80 hover:text-white sm:inline"
+              className="hidden min-h-8 min-w-8 items-center justify-center text-white/80 hover:text-white sm:inline-flex"
             >
               ‹
             </button>
@@ -195,7 +195,7 @@ function ProductBoutiqueChromeInner() {
               href={promo.href}
               className={cn(
                 boutiqueSerif.className,
-                "text-[12px] font-medium tracking-[0.02em] transition-opacity hover:opacity-90 sm:text-[13px] lg:text-[14px]",
+                "line-clamp-2 text-[12px] font-medium tracking-[0.02em] transition-opacity hover:opacity-90 sm:line-clamp-1 sm:text-[13px] lg:text-[14px]",
               )}
             >
               {promo.text}
@@ -206,7 +206,7 @@ function ProductBoutiqueChromeInner() {
               onClick={() =>
                 setPromoIndex((current) => (current + 1) % PROMOS.length)
               }
-              className="hidden text-white/80 hover:text-white sm:inline"
+              className="hidden min-h-8 min-w-8 items-center justify-center text-white/80 hover:text-white sm:inline-flex"
             >
               ›
             </button>
@@ -215,7 +215,7 @@ function ProductBoutiqueChromeInner() {
             type="button"
             aria-label="Cerrar aviso"
             onClick={() => setBannerOpen(false)}
-            className="absolute top-1/2 right-3 -translate-y-1/2 text-white/90 hover:text-white"
+            className="absolute top-1/2 right-1 flex size-10 -translate-y-1/2 items-center justify-center text-white/90 hover:text-white sm:right-2"
           >
             <X className="size-3.5" />
           </button>
@@ -228,7 +228,7 @@ function ProductBoutiqueChromeInner() {
           alt=""
           width={180}
           height={180}
-          className="pointer-events-none absolute -top-5 -left-6 z-0 w-[110px] select-none object-contain opacity-85 mix-blend-multiply sm:w-[140px] lg:w-[130px]"
+          className="pointer-events-none absolute -top-5 -left-6 z-0 w-[72px] select-none object-contain opacity-85 mix-blend-multiply sm:w-[140px] lg:w-[130px]"
           aria-hidden
           priority
         />
@@ -237,7 +237,7 @@ function ProductBoutiqueChromeInner() {
           alt=""
           width={180}
           height={180}
-          className="pointer-events-none absolute -top-5 -right-6 z-0 w-[110px] scale-x-[-1] select-none object-contain opacity-85 mix-blend-multiply sm:w-[140px] lg:w-[130px]"
+          className="pointer-events-none absolute -top-5 -right-6 z-0 w-[72px] scale-x-[-1] select-none object-contain opacity-85 mix-blend-multiply sm:w-[140px] lg:w-[130px]"
           aria-hidden
           priority
         />
@@ -303,10 +303,10 @@ function ProductBoutiqueChromeInner() {
         </div>
 
         <div className="relative z-10 mx-auto max-w-6xl px-4 py-3 sm:px-6 lg:hidden">
-          <div className="flex items-center justify-between gap-3">
+          <div className="flex items-center justify-between gap-2">
             <button
               type="button"
-              className="text-[#2C2C2C]"
+              className="flex size-11 shrink-0 items-center justify-center text-[#2C2C2C]"
               aria-label={mobileOpen ? "Cerrar menú" : "Abrir menú"}
               aria-expanded={mobileOpen}
               onClick={() => setMobileOpen((v) => !v)}
@@ -316,19 +316,23 @@ function ProductBoutiqueChromeInner() {
 
             <BoutiqueBrandLockup compact />
 
-            <div className="flex items-center gap-2.5 text-[#2C2C2C]">
-              <Link href="/login" aria-label="Mi cuenta">
+            <div className="flex items-center text-[#2C2C2C]">
+              <Link
+                href="/login"
+                aria-label="Mi cuenta"
+                className="flex size-11 items-center justify-center"
+              >
                 <User className="size-4" strokeWidth={1.5} />
               </Link>
               <button
                 type="button"
                 aria-label="Mis deseos"
                 onClick={() => setWishlistOpen(true)}
-                className="relative"
+                className="relative flex size-11 items-center justify-center"
               >
                 <Heart className="size-4" strokeWidth={1.5} />
                 {wishlistCount > 0 ? (
-                  <span className="absolute -top-2 -right-2 flex size-3.5 items-center justify-center rounded-full bg-[#E35D67] text-[8px] font-semibold text-white">
+                  <span className="absolute top-1.5 right-1.5 flex size-3.5 items-center justify-center rounded-full bg-[#E35D67] text-[8px] font-semibold text-white">
                     {wishlistCount}
                   </span>
                 ) : null}
@@ -337,10 +341,10 @@ function ProductBoutiqueChromeInner() {
                 type="button"
                 aria-label="Carrito"
                 onClick={() => setCartOpen(true)}
-                className="relative"
+                className="relative flex size-11 items-center justify-center"
               >
                 <ShoppingBag className="size-4" strokeWidth={1.5} />
-                <span className="absolute -top-2 -right-2 flex size-3.5 items-center justify-center rounded-full bg-[#E35D67] text-[8px] font-semibold text-white">
+                <span className="absolute top-1.5 right-1.5 flex size-3.5 items-center justify-center rounded-full bg-[#E35D67] text-[8px] font-semibold text-white">
                   {cartCount}
                 </span>
               </button>
@@ -352,13 +356,13 @@ function ProductBoutiqueChromeInner() {
               type="search"
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder="Busca tus productos favoritos..."
-              className="h-9 w-full rounded-full border border-[#EAD6D8] bg-white px-4 pr-10 text-[12px] text-[#2C2C2C] placeholder:text-[#2C2C2C]/35 outline-none focus:border-[#D68C96]"
+              placeholder="Busca tus productos..."
+              className="h-11 w-full rounded-full border border-[#EAD6D8] bg-white px-4 pr-11 text-[13px] text-[#2C2C2C] placeholder:text-[#2C2C2C]/35 outline-none focus:border-[#D68C96] sm:h-9 sm:text-[12px]"
             />
             <button
               type="submit"
               aria-label="Buscar"
-              className="absolute top-1/2 right-3.5 -translate-y-1/2 text-[#D68C96] transition-colors hover:text-[#C46F7A]"
+              className="absolute top-1/2 right-1.5 flex size-9 -translate-y-1/2 items-center justify-center text-[#D68C96] transition-colors hover:text-[#C46F7A]"
             >
               <Search className="size-4" strokeWidth={1.75} />
             </button>

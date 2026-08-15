@@ -55,14 +55,14 @@ export default async function BrandsPage() {
                   logoPath={brand.logoPath}
                   fallbackImage={brand.coverImage}
                 />
-                <span className="absolute top-3 right-3 rounded-full bg-white/90 px-2 py-0.5 text-[10px] font-semibold tracking-wide text-[#D68C96] ring-1 ring-[#EAD6D8]">
+                <span className="absolute top-2 right-2 max-w-[calc(100%-1rem)] truncate rounded-full bg-white/90 px-2 py-0.5 text-[9px] font-semibold tracking-wide text-[#D68C96] ring-1 ring-[#EAD6D8] sm:top-3 sm:right-3 sm:text-[10px]">
                   {brand.productCount}{" "}
-                  {brand.productCount === 1 ? "producto" : "productos"}
+                  {brand.productCount === 1 ? "prod." : "prods."}
                 </span>
               </div>
 
-              <div className="space-y-1 border-t border-[#F0E4E5] px-4 py-3.5">
-                <h2 className="text-[15px] font-semibold tracking-wide text-[#2C2C2C]">
+              <div className="space-y-1 border-t border-[#F0E4E5] px-3 py-3 sm:px-4 sm:py-3.5">
+                <h2 className="text-sm font-semibold tracking-wide text-[#2C2C2C] sm:text-[15px]">
                   {brand.name}
                 </h2>
                 <p className="text-[11px] font-medium tracking-[0.12em] text-[#D68C96] uppercase transition-colors group-hover:text-[#C46F7A]">

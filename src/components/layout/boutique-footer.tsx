@@ -52,8 +52,8 @@ export function BoutiqueFooter() {
       className={cn(boutiqueSans.className, "border-t bg-white text-[#2C2C2C]")}
       style={{ borderColor: boutique.border }}
     >
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1.2fr_repeat(3,1fr)_1.1fr] md:gap-8 md:py-14">
-        <div className="space-y-4">
+      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:grid-cols-2 sm:px-6 md:py-14 lg:grid-cols-[1.2fr_repeat(3,1fr)_1.1fr] lg:gap-8">
+        <div className="space-y-4 sm:col-span-2 lg:col-span-1">
           <Link href="/" className="inline-block">
             <span
               className={cn(
@@ -71,13 +71,13 @@ export function BoutiqueFooter() {
             Skincare coreano auténtico. Rutinas suaves, glow natural y productos
             seleccionados para tu piel.
           </p>
-          <div className="flex items-center gap-3 text-[#2C2C2C]/55">
+          <div className="flex items-center gap-1 text-[#2C2C2C]/55">
             {SOCIAL.map(({ href, label, Icon }) => (
               <a
                 key={label}
                 href={href}
                 aria-label={label}
-                className="hover:text-[#D68C96]"
+                className="flex size-10 items-center justify-center hover:text-[#D68C96]"
               >
                 <Icon className="size-4" strokeWidth={1.5} />
               </a>

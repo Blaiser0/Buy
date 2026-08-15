@@ -37,26 +37,26 @@ export function ProductPurchasePanel({
         <span className="text-[12px] text-[#2C2C2C]/65 lg:text-[11px]">
           Cantidad:
         </span>
-        <div className="inline-flex h-8 items-center overflow-hidden rounded border border-[#E0D0D2] bg-white lg:h-7">
+        <div className="inline-flex h-11 items-center overflow-hidden rounded border border-[#E0D0D2] bg-white lg:h-7">
           <button
             type="button"
             aria-label="Disminuir cantidad"
             disabled={quantity <= 1}
             onClick={() => setQuantity((q) => Math.max(1, q - 1))}
-            className="flex h-full w-8 items-center justify-center text-[#2C2C2C] hover:bg-[#FEFAF9] disabled:opacity-40"
+            className="flex h-full w-11 items-center justify-center text-[#2C2C2C] hover:bg-[#FEFAF9] disabled:opacity-40 lg:w-8"
           >
-            <Minus className="size-3" />
+            <Minus className="size-3.5 lg:size-3" />
           </button>
-          <span className="min-w-7 border-x border-[#E0D0D2] px-1 text-center text-xs font-medium tabular-nums">
+          <span className="min-w-8 border-x border-[#E0D0D2] px-1 text-center text-sm font-medium tabular-nums lg:min-w-7 lg:text-xs">
             {quantity}
           </span>
           <button
             type="button"
             aria-label="Aumentar cantidad"
             onClick={() => setQuantity((q) => q + 1)}
-            className="flex h-full w-8 items-center justify-center text-[#2C2C2C] hover:bg-[#FEFAF9]"
+            className="flex h-full w-11 items-center justify-center text-[#2C2C2C] hover:bg-[#FEFAF9] lg:w-8"
           >
-            <Plus className="size-3" />
+            <Plus className="size-3.5 lg:size-3" />
           </button>
         </div>
       </div>

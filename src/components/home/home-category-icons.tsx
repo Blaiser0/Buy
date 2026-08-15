@@ -66,21 +66,21 @@ export function HomeCategoryIcons() {
       )}
     >
       <HomeReveal>
-        <div className="mx-auto grid max-w-6xl grid-cols-4 gap-4 sm:gap-6 md:grid-cols-8">
+        <div className="mx-auto grid max-w-6xl grid-cols-4 gap-3 sm:gap-6 md:grid-cols-8">
           {CATEGORIES.map(({ href, label, Icon }, index) => (
             <Link
               key={label}
               href={href}
-              className="group flex flex-col items-center gap-2.5 text-center"
+              className="group flex flex-col items-center gap-2 text-center sm:gap-2.5"
               style={{ transitionDelay: `${index * 40}ms` }}
             >
-              <span className="flex size-14 items-center justify-center rounded-full border border-[#EAD6D8] bg-[#FEFAF9] text-[#D68C96] transition-all duration-300 ease-out group-hover:-translate-y-1 group-hover:border-[#D68C96] group-hover:bg-[#F7E8EA] group-hover:shadow-[0_8px_18px_rgba(214,140,150,0.18)] sm:size-16">
+              <span className="flex size-12 items-center justify-center rounded-full border border-[#EAD6D8] bg-[#FEFAF9] text-[#D68C96] transition-all duration-300 ease-out group-hover:-translate-y-1 group-hover:border-[#D68C96] group-hover:bg-[#F7E8EA] group-hover:shadow-[0_8px_18px_rgba(214,140,150,0.18)] sm:size-16">
                 <Icon
                   className="size-5 transition-transform duration-300 group-hover:scale-110 sm:size-6"
                   strokeWidth={1.4}
                 />
               </span>
-              <span className="text-[10px] font-medium tracking-[0.08em] text-[#2C2C2C] uppercase transition-colors duration-300 group-hover:text-[#C46F7A] sm:text-[11px]">
+              <span className="max-w-[4.8rem] text-[9px] leading-tight font-medium tracking-[0.04em] text-[#2C2C2C] uppercase transition-colors duration-300 group-hover:text-[#C46F7A] sm:max-w-none sm:text-[11px] sm:tracking-[0.08em]">
                 {label}
               </span>
             </Link>

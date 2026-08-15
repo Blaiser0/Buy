@@ -49,7 +49,7 @@ export function HomeHero() {
       )}
     >
       <div className="relative mx-auto max-w-6xl overflow-hidden rounded-2xl border border-[#F0E4E5]/80 bg-[#FCE8EC] shadow-[0_12px_40px_rgba(214,140,150,0.12)]">
-        <div className="relative aspect-[6/1] min-h-[180px] w-full sm:min-h-[220px] lg:min-h-[260px]">
+        <div className="relative grid min-h-[280px] w-full sm:min-h-[220px] sm:aspect-[6/1] lg:min-h-[260px]">
           {SLIDES.map((item, i) => (
             <div
               key={item.image}
@@ -75,29 +75,26 @@ export function HomeHero() {
 
           {slide.showCopy ? (
             <>
-              <div className="pointer-events-none absolute inset-y-0 left-0 z-[5] w-[58%] bg-gradient-to-r from-[#FCE8EC]/95 via-[#FCE8EC]/72 to-transparent" />
-              <div className="relative z-10 flex h-full max-w-[56%] items-center px-5 py-5 sm:max-w-[48%] sm:px-9 lg:px-12">
-                <div
-                  key={slide.title}
-                  className="home-hero-copy"
-                >
+              <div className="pointer-events-none absolute inset-0 z-[5] bg-gradient-to-t from-[#FCE8EC]/95 via-[#FCE8EC]/55 to-transparent sm:inset-y-0 sm:left-0 sm:w-[58%] sm:bg-gradient-to-r sm:from-[#FCE8EC]/95 sm:via-[#FCE8EC]/72 sm:to-transparent" />
+              <div className="relative z-10 flex h-full items-end px-4 py-5 sm:max-w-[48%] sm:items-center sm:px-9 sm:py-5 lg:px-12">
+                <div key={slide.title} className="home-hero-copy w-full max-w-md">
                   <h1
                     className={cn(
                       boutiqueSerif.className,
-                      "text-[1.45rem] leading-[1.12] font-semibold text-[#4A3F3F] sm:text-[2rem] lg:text-[2.35rem]",
+                      "text-[1.55rem] leading-[1.12] font-semibold text-[#4A3F3F] sm:text-[2rem] lg:text-[2.35rem]",
                     )}
                   >
                     {slide.title}
                   </h1>
-                  <p className="mt-1.5 text-[12px] font-medium text-[#6B5A5A] sm:mt-2 sm:text-[14px]">
+                  <p className="mt-1.5 text-[13px] font-medium text-[#6B5A5A] sm:mt-2 sm:text-[14px]">
                     {slide.subtitle}
                   </p>
-                  <p className="mt-1.5 max-w-[16rem] text-[11px] leading-relaxed text-[#7A6A6A] sm:max-w-xs sm:text-sm">
+                  <p className="mt-1.5 hidden max-w-xs text-sm leading-relaxed text-[#7A6A6A] sm:block">
                     {slide.description}
                   </p>
                   <Link
                     href={slide.href}
-                    className="mt-3 inline-flex h-8 items-center justify-center rounded-[4px] px-5 text-[10px] font-semibold tracking-[0.14em] text-white uppercase transition-all duration-300 hover:opacity-90 hover:shadow-[0_8px_20px_rgba(214,140,150,0.35)] sm:mt-4 sm:h-9 sm:px-6 sm:text-[11px]"
+                    className="mt-3 inline-flex h-11 min-w-[9.5rem] items-center justify-center rounded-[4px] px-5 text-[11px] font-semibold tracking-[0.14em] text-white uppercase transition-all duration-300 hover:opacity-90 hover:shadow-[0_8px_20px_rgba(214,140,150,0.35)] sm:mt-4 sm:h-9 sm:px-6"
                     style={{ backgroundColor: boutique.rose }}
                   >
                     {slide.cta}
@@ -121,31 +118,37 @@ export function HomeHero() {
                 (current) => (current - 1 + SLIDES.length) % SLIDES.length,
               )
             }
-            className="absolute top-1/2 left-2 z-20 flex size-7 -translate-y-1/2 items-center justify-center rounded-full border border-white/80 bg-white/75 text-[#6B5A5A] backdrop-blur transition-all duration-300 hover:scale-105 hover:bg-white sm:left-3 sm:size-8"
+            className="absolute top-3 left-2 z-20 flex size-10 items-center justify-center rounded-full border border-white/80 bg-white/80 text-[#6B5A5A] backdrop-blur transition-all duration-300 hover:scale-105 hover:bg-white sm:top-1/2 sm:left-3 sm:size-8 sm:-translate-y-1/2"
           >
-            <ChevronLeft className="size-3.5" />
+            <ChevronLeft className="size-4" />
           </button>
           <button
             type="button"
             aria-label="Slide siguiente"
             onClick={() => setIndex((current) => (current + 1) % SLIDES.length)}
-            className="absolute top-1/2 right-2 z-20 flex size-7 -translate-y-1/2 items-center justify-center rounded-full border border-white/80 bg-white/75 text-[#6B5A5A] backdrop-blur transition-all duration-300 hover:scale-105 hover:bg-white sm:right-3 sm:size-8"
+            className="absolute top-3 right-2 z-20 flex size-10 items-center justify-center rounded-full border border-white/80 bg-white/80 text-[#6B5A5A] backdrop-blur transition-all duration-300 hover:scale-105 hover:bg-white sm:top-1/2 sm:right-3 sm:size-8 sm:-translate-y-1/2"
           >
-            <ChevronRight className="size-3.5" />
+            <ChevronRight className="size-4" />
           </button>
 
-          <div className="absolute bottom-2.5 left-1/2 z-20 flex -translate-x-1/2 gap-1.5 sm:bottom-3.5">
+          <div className="absolute bottom-3 left-1/2 z-20 flex -translate-x-1/2 gap-2 sm:bottom-3.5 sm:gap-1.5">
             {SLIDES.map((item, i) => (
               <button
                 key={item.image}
                 type="button"
                 aria-label={`Ir al slide ${i + 1}`}
                 onClick={() => setIndex(i)}
-                className={cn(
-                  "h-1.5 rounded-full transition-all duration-500 ease-out",
-                  i === index ? "w-5 bg-[#D68C96]" : "w-1.5 bg-[#D68C96]/40 hover:bg-[#D68C96]/70",
-                )}
-              />
+                className="flex h-8 items-center justify-center px-0.5 sm:h-auto"
+              >
+                <span
+                  className={cn(
+                    "block h-2 rounded-full transition-all duration-500 ease-out sm:h-1.5",
+                    i === index
+                      ? "w-6 bg-[#D68C96] sm:w-5"
+                      : "w-2 bg-[#D68C96]/40 hover:bg-[#D68C96]/70 sm:w-1.5",
+                  )}
+                />
+              </button>
             ))}
           </div>
         </div>

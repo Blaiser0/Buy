@@ -63,16 +63,19 @@ function FilterLink({
   href,
   active,
   children,
+  onNavigate,
 }: {
   href: string;
   active: boolean;
   children: ReactNode;
+  onNavigate?: () => void;
 }) {
   return (
     <Link
       href={href}
+      onClick={onNavigate}
       className={cn(
-        "flex items-center justify-between rounded-md px-2.5 py-2 text-[13px] transition-colors",
+        "flex items-center justify-between rounded-md px-2.5 py-2.5 text-[13px] transition-colors sm:py-2",
         active
           ? "bg-[#FEFAF9] font-semibold text-[#C46F7A]"
           : "text-[#2C2C2C]/75 hover:bg-[#FEFAF9] hover:text-[#2C2C2C]",
@@ -107,6 +110,8 @@ export function ProductFilters({
     filters.categoria || filters.marca || filters.precio || filters.stock,
   );
 
+  const closeMobile = () => setMobileOpen(false);
+
   const content = (
     <div className={cn(boutiqueSans.className, "space-y-1")}>
       <div className="mb-2 flex items-start justify-between gap-3">
@@ -121,6 +126,7 @@ export function ProductFilters({
         {hasSidebarFilters ? (
           <Link
             href={clearHref}
+            onClick={closeMobile}
             className="inline-flex items-center gap-1 text-[11px] font-medium text-[#C46F7A] hover:underline"
           >
             <X className="h-3 w-3" />
@@ -133,6 +139,7 @@ export function ProductFilters({
         <FilterLink
           href={buildProductsHref({ ...filters, categoria: "" })}
           active={!filters.categoria}
+          onNavigate={closeMobile}
         >
           <span>Todas</span>
         </FilterLink>
@@ -149,6 +156,7 @@ export function ProductFilters({
                 categoria: active ? "" : category.matchKey,
               })}
               active={active}
+              onNavigate={closeMobile}
             >
               <span>{category.name}</span>
               <span className="text-[11px] text-[#2C2C2C]/40">
@@ -164,6 +172,7 @@ export function ProductFilters({
           <FilterLink
             href={buildProductsHref({ ...filters, marca: "" })}
             active={!filters.marca}
+            onNavigate={closeMobile}
           >
             <span>Todas</span>
           </FilterLink>
@@ -177,6 +186,7 @@ export function ProductFilters({
                   marca: active ? "" : brand.slug,
                 })}
                 active={active}
+                onNavigate={closeMobile}
               >
                 <span>{brand.name}</span>
               </FilterLink>
@@ -189,6 +199,7 @@ export function ProductFilters({
         <FilterLink
           href={buildProductsHref({ ...filters, precio: "" })}
           active={!filters.precio}
+          onNavigate={closeMobile}
         >
           <span>Todos</span>
         </FilterLink>
@@ -202,6 +213,7 @@ export function ProductFilters({
                 precio: active ? "" : range.id,
               })}
               active={active}
+              onNavigate={closeMobile}
             >
               <span>{range.label}</span>
             </FilterLink>
@@ -213,6 +225,7 @@ export function ProductFilters({
         <FilterLink
           href={buildProductsHref({ ...filters, stock: "" })}
           active={!filters.stock}
+          onNavigate={closeMobile}
         >
           <span>Todos</span>
         </FilterLink>
@@ -222,6 +235,7 @@ export function ProductFilters({
             stock: filters.stock === "disponible" ? "" : "disponible",
           })}
           active={filters.stock === "disponible"}
+          onNavigate={closeMobile}
         >
           <span>En stock</span>
         </FilterLink>
@@ -231,6 +245,7 @@ export function ProductFilters({
             stock: filters.stock === "agotado" ? "" : "agotado",
           })}
           active={filters.stock === "agotado"}
+          onNavigate={closeMobile}
         >
           <span>Agotados</span>
         </FilterLink>
@@ -246,7 +261,7 @@ export function ProductFilters({
           onClick={() => setMobileOpen(true)}
           className={cn(
             boutiqueSans.className,
-            "inline-flex h-10 w-full items-center justify-center gap-2 rounded-full border border-[#EAD6D8] bg-white text-sm font-medium text-[#2C2C2C]",
+            "inline-flex h-11 w-full items-center justify-center gap-2 rounded-full border border-[#EAD6D8] bg-white text-sm font-medium text-[#2C2C2C]",
           )}
         >
           <SlidersHorizontal className="h-4 w-4 text-[#D68C96]" />
@@ -279,18 +294,13 @@ export function ProductFilters({
                 <X className="h-4 w-4" />
               </button>
             </div>
-            <div
-              className="flex-1 overflow-y-auto px-4 py-2"
-              onClick={() => setMobileOpen(false)}
-            >
-              {content}
-            </div>
+            <div className="flex-1 overflow-y-auto px-4 py-2">{content}</div>
           </aside>
         </div>
       ) : null}
 
       <aside className="hidden w-56 shrink-0 lg:block xl:w-64">
-        <div className="sticky top-28 rounded-xl border border-[#F0E4E5] bg-white px-3 py-2">
+        <div className="sticky top-36 rounded-xl border border-[#F0E4E5] bg-white px-3 py-2 xl:top-40">
           {content}
         </div>
       </aside>

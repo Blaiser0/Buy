@@ -11,7 +11,7 @@ export function CategoryBadge({ category, className }: CategoryBadgeProps) {
   return (
     <Badge
       className={cn(
-        "rounded-sm border border-[#E50914]/25 bg-[#F8F6F0] px-2.5 py-1 text-xs font-medium text-[#E50914] hover:bg-[#F8F6F0]",
+        "rounded-sm border border-[#D68C96]/30 bg-[#FEFAF9] px-2.5 py-1 text-xs font-medium text-[#D68C96] hover:bg-[#FEFAF9]",
         className,
       )}
     >

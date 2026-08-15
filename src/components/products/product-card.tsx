@@ -13,7 +13,7 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <Link
       href={`/productos/${product.id}`}
-      className="group block overflow-hidden rounded-xl bg-[#F8F6F0] transition-transform duration-300 hover:-translate-y-1"
+      className="group block overflow-hidden rounded-lg bg-[#FEFAF9] transition-transform duration-300 hover:-translate-y-1"
     >
       <div className="relative aspect-square overflow-hidden bg-white">
         {product.image_url ? (
@@ -38,7 +38,7 @@ export function ProductCard({ product }: ProductCardProps) {
         <h3 className="line-clamp-2 text-sm font-medium text-[#2C2C2C] sm:text-base">
           {product.name}
         </h3>
-        <p className="text-sm font-semibold text-[#E50914] sm:text-base">
+        <p className="text-sm font-semibold text-[#D68C96] sm:text-base">
           {formatPenPrice(product.price)}
         </p>
       </div>

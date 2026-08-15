@@ -1,13 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Menu, Search, ShoppingCart, X } from "lucide-react";
-import { useState } from "react";
+import { FormEvent, Suspense, useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { BrandLogo } from "@/components/layout/brand-logo";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { productsSearchHref } from "@/lib/products/search";
 
 const navItems = [
   { href: "/", label: "Inicio" },
@@ -16,15 +17,25 @@ const navItems = [
   { href: "/contacto", label: "Contacto" },
 ];
 
-type SiteHeaderProps = {
-  onSearch?: (query: string) => void;
-};
-
-export function SiteHeader({ onSearch }: SiteHeaderProps) {
+function SiteHeaderInner() {
   const pathname = usePathname();
-  const [query, setQuery] = useState("");
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const urlQuery = searchParams.get("q") ?? "";
+  const [query, setQuery] = useState(urlQuery);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+
+  useEffect(() => {
+    setQuery(urlQuery);
+  }, [urlQuery]);
+
+  function handleSearch(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setSearchOpen(false);
+    setMobileOpen(false);
+    router.push(productsSearchHref(query));
+  }
 
   return (
     <header className="sticky top-0 z-50 border-b border-[#F8F6F0] bg-white/95 backdrop-blur">
@@ -51,14 +62,14 @@ export function SiteHeader({ onSearch }: SiteHeaderProps) {
         </nav>
 
         <div className="ml-auto flex items-center gap-1 sm:gap-2">
-          <form
-            className="relative hidden md:block"
-            onSubmit={(event) => {
-              event.preventDefault();
-              onSearch?.(query);
-            }}
-          >
-            <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#2C2C2C]/60" />
+          <form className="relative hidden md:block" onSubmit={handleSearch}>
+            <button
+              type="submit"
+              aria-label="Buscar"
+              className="absolute left-3 top-1/2 z-10 -translate-y-1/2 text-[#2C2C2C]/60 transition-colors hover:text-[#E50914]"
+            >
+              <Search className="h-4 w-4" />
+            </button>
             <Input
               value={query}
               onChange={(event) => setQuery(event.target.value)}
@@ -110,14 +121,14 @@ export function SiteHeader({ onSearch }: SiteHeaderProps) {
 
       {searchOpen && (
         <div className="border-t border-[#F8F6F0] px-4 py-3 md:hidden">
-          <form
-            className="relative"
-            onSubmit={(event) => {
-              event.preventDefault();
-              onSearch?.(query);
-            }}
-          >
-            <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#2C2C2C]/60" />
+          <form className="relative" onSubmit={handleSearch}>
+            <button
+              type="submit"
+              aria-label="Buscar"
+              className="absolute left-3 top-1/2 z-10 -translate-y-1/2 text-[#2C2C2C]/60 transition-colors hover:text-[#E50914]"
+            >
+              <Search className="h-4 w-4" />
+            </button>
             <Input
               value={query}
               onChange={(event) => setQuery(event.target.value)}
@@ -150,5 +161,13 @@ export function SiteHeader({ onSearch }: SiteHeaderProps) {
         </nav>
       )}
     </header>
+  );
+}
+
+export function SiteHeader() {
+  return (
+    <Suspense fallback={<header className="sticky top-0 z-50 h-[61px] border-b border-[#F8F6F0] bg-white/95" />}>
+      <SiteHeaderInner />
+    </Suspense>
   );
 }

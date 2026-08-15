@@ -5,6 +5,7 @@ export const PRODUCT_CATEGORIES = [
   "Hidratantes",
   "Protectores Solares",
   "Maquillaje",
+  "Sets & Regalos",
 ] as const;
 
 export type ProductCategory = (typeof PRODUCT_CATEGORIES)[number];

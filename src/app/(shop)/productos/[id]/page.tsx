@@ -11,6 +11,8 @@ import { getDb } from "@/lib/db";
 import {
   formatPenPrice,
   getProductDetailContent,
+  getProductPitch,
+  getProductTagline,
 } from "@/lib/products/detail-content";
 import { getProductGalleryImages } from "@/lib/products/gallery";
 import { cn } from "@/lib/utils";
@@ -48,12 +50,9 @@ export default async function ProductDetailPage({
     .filter((item) => item.id !== product.id)
     .slice(0, 8);
 
-  const subtitle =
-    product.description?.trim().split(/[.!?]/)[0]?.trim() ||
-    details.editorNote.split(/[.!?]/)[0]?.trim() ||
-    "Hidratación profunda y brillo natural";
-
+  const subtitle = getProductTagline(details, product.description);
   const description = product.description?.trim() || details.editorNote;
+  const pitch = getProductPitch(details, product.description);
   const galleryImages = getProductGalleryImages(
     product.name,
     product.image_url,
@@ -128,13 +127,15 @@ export default async function ProductDetailPage({
               </p>
 
               <p className="mt-2 line-clamp-3 text-[13px] leading-6 text-[#5F5552] lg:line-clamp-2 lg:text-[12px] lg:leading-5 xl:line-clamp-3">
-                {description}
+                {pitch}
               </p>
 
               <div className="mt-3 space-y-3 lg:mt-2.5 lg:space-y-2.5">
                 <ProductPurchasePanel
                   productId={product.id}
                   productName={product.name}
+                  price={product.price}
+                  imageUrl={product.image_url}
                   inStock={product.stock_quantity > 0}
                 />
                 <ProductTrustBadges />
@@ -143,7 +144,7 @@ export default async function ProductDetailPage({
           </div>
         </div>
 
-        <div className="mx-auto w-full max-w-6xl shrink-0 px-4 pb-3 sm:px-6 lg:pb-2.5">
+        <div className="mx-auto mt-5 w-full max-w-6xl shrink-0 px-4 pb-3 sm:mt-6 sm:px-6 lg:mt-6 lg:pb-3">
           <ProductDetailSections description={description} details={details} />
         </div>
       </div>

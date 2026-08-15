@@ -1,5 +1,9 @@
-import { HeroSection } from "@/components/home/hero-section";
-import { ProductGrid } from "@/components/products/product-grid";
+import { HomeBestSellers } from "@/components/home/home-best-sellers";
+import { HomeCategoryIcons } from "@/components/home/home-category-icons";
+import { HomeCommitments } from "@/components/home/home-commitments";
+import { HomeHero } from "@/components/home/home-hero";
+import { HomeNewsletter } from "@/components/home/home-newsletter";
+import { HomeRoutine } from "@/components/home/home-routine";
 import { getDb } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
@@ -10,8 +14,12 @@ export default async function HomePage() {
 
   return (
     <>
-      <HeroSection />
-      <ProductGrid products={products} title="Nuestra colección" />
+      <HomeHero />
+      <HomeCategoryIcons />
+      <HomeBestSellers products={products} />
+      <HomeCommitments />
+      <HomeRoutine />
+      <HomeNewsletter />
     </>
   );
 }

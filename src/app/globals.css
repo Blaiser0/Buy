@@ -94,6 +94,48 @@
     @apply bg-background text-foreground;
   }
   html {
-    @apply font-sans;
+    @apply font-sans scroll-smooth;
+  }
+}
+
+@layer utilities {
+  .home-reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+      opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+
+  .home-reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .home-hero-copy {
+    animation: home-hero-copy-in 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  @keyframes home-hero-copy-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .home-reveal,
+    .home-reveal-visible,
+    .home-hero-copy {
+      opacity: 1;
+      transform: none;
+      animation: none;
+      transition: none;
+    }
   }
 }

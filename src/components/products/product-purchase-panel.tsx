@@ -1,23 +1,35 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import { Heart, Minus, Plus, ShoppingBag } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useShop } from "@/components/shop/shop-provider";
 
 type ProductPurchasePanelProps = {
   productId: string;
   productName: string;
+  price: number;
+  imageUrl: string | null;
   inStock: boolean;
 };
 
 export function ProductPurchasePanel({
   productId,
   productName,
+  price,
+  imageUrl,
   inStock,
 }: ProductPurchasePanelProps) {
   const [quantity, setQuantity] = useState(1);
-  const [saved, setSaved] = useState(false);
+  const { addToCart, toggleWishlist, isInWishlist, setCartOpen } = useShop();
+  const saved = isInWishlist(productId);
+
+  const item = {
+    id: productId,
+    name: productName,
+    price,
+    imageUrl,
+  };
 
   return (
     <div className="space-y-2.5 lg:space-y-2">
@@ -49,30 +61,27 @@ export function ProductPurchasePanel({
         </div>
       </div>
 
-      <Link
-        href={
-          inStock
-            ? `/contacto?producto=${encodeURIComponent(productName)}&id=${productId}&cantidad=${quantity}`
-            : "/productos"
-        }
+      <button
+        type="button"
+        disabled={!inStock}
+        onClick={() => {
+          addToCart(item, quantity);
+          setCartOpen(true);
+        }}
         className={cn(
           "inline-flex h-11 w-full items-center justify-center gap-2 rounded-md text-[11px] font-semibold tracking-[0.14em] uppercase transition-colors lg:h-9",
           inStock
             ? "bg-[#D68C96] text-white hover:bg-[#C97A85]"
             : "cursor-not-allowed bg-[#D68C96]/45 text-white",
         )}
-        aria-disabled={!inStock}
-        onClick={(e) => {
-          if (!inStock) e.preventDefault();
-        }}
       >
         <ShoppingBag className="size-3.5" strokeWidth={1.75} />
         {inStock ? "Añadir al carrito" : "Agotado"}
-      </Link>
+      </button>
 
       <button
         type="button"
-        onClick={() => setSaved((v) => !v)}
+        onClick={() => toggleWishlist(item)}
         className={cn(
           "inline-flex h-11 w-full items-center justify-center gap-2 rounded-md border border-[#D68C96] bg-white text-[11px] font-semibold tracking-[0.14em] text-[#D68C96] uppercase transition-colors hover:bg-[#D68C96]/8 lg:h-9",
           saved && "bg-[#FEF6F7]",
@@ -82,7 +91,7 @@ export function ProductPurchasePanel({
           className={cn("size-3.5", saved && "fill-current")}
           strokeWidth={1.75}
         />
-        Guardar en deseos
+        {saved ? "En mis deseos" : "Guardar en deseos"}
       </button>
     </div>
   );

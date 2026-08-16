@@ -1,9 +1,8 @@
-import Link from "next/link";
-import { BrandLogoFrame } from "@/components/brands/brand-logo-frame";
+import { BrandShowcase } from "@/components/brands/brand-showcase";
 import { getDb } from "@/lib/db";
 import { groupProductsByBrand } from "@/lib/products/brands";
 import { cn } from "@/lib/utils";
-import { boutiqueSans, boutiqueSerif } from "@/lib/boutique-theme";
+import { boutiqueSans } from "@/lib/boutique-theme";
 
 export const dynamic = "force-dynamic";
 
@@ -16,63 +15,18 @@ export default async function BrandsPage() {
     <section
       className={cn(
         boutiqueSans.className,
-        "mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-14",
+        "relative min-h-[70vh] overflow-hidden bg-[#FBF4F5]",
       )}
     >
-      <div className="mb-8 max-w-2xl sm:mb-10">
-        <p className="text-[11px] font-semibold tracking-[0.18em] text-[#D68C96] uppercase">
-          Selección K-Beauty
-        </p>
-        <h1
-          className={cn(
-            boutiqueSerif.className,
-            "mt-2 text-3xl font-semibold text-[#2C2C2C] sm:text-4xl",
-          )}
-        >
-          Marcas
-        </h1>
-        <p className="mt-3 text-sm leading-relaxed text-[#2C2C2C]/70 sm:text-base">
-          Explora las marcas coreanas de nuestra boutique. Cada tarjeta muestra
-          el nombre y un contenedor listo para el logo de la marca.
-        </p>
+      {/* Fondo texturizado rosado + decoraciones suaves como la referencia */}
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_20%_10%,rgba(232,164,171,0.35),transparent_45%),radial-gradient(ellipse_at_90%_80%,rgba(214,140,150,0.22),transparent_40%)]" />
+      <div className="pointer-events-none absolute -top-8 -left-10 h-44 w-44 rounded-full bg-[#F0C9D1]/50 blur-2xl" />
+      <div className="pointer-events-none absolute top-24 -right-8 h-56 w-56 rounded-[2rem] bg-[#E8A4AB]/25 blur-xl" />
+      <div className="pointer-events-none absolute bottom-10 left-[18%] h-28 w-40 rotate-[-12deg] rounded-[1.5rem] bg-[#F7E8EA]/80 blur-md" />
+
+      <div className="relative mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+        <BrandShowcase brands={brands} />
       </div>
-
-      {brands.length === 0 ? (
-        <div className="rounded-xl bg-[#FEFAF9] px-4 py-14 text-center text-sm text-[#2C2C2C]/65">
-          Aún no hay marcas disponibles.
-        </div>
-      ) : (
-        <div className="grid grid-cols-2 gap-4 sm:gap-5 md:grid-cols-3 lg:grid-cols-4">
-          {brands.map((brand) => (
-            <Link
-              key={brand.id}
-              href={`/productos?marca=${encodeURIComponent(brand.slug)}`}
-              className="group overflow-hidden rounded-xl border border-[#F0E4E5] bg-white shadow-[0_1px_0_rgba(214,140,150,0.08)] transition-transform duration-300 hover:-translate-y-1 hover:border-[#EAD6D8]"
-            >
-              <div className="relative aspect-[4/3] overflow-hidden bg-[#FEFAF9]">
-                <BrandLogoFrame
-                  brandName={brand.name}
-                  logoPath={brand.logoPath}
-                  fallbackImage={brand.coverImage}
-                />
-                <span className="absolute top-2 right-2 max-w-[calc(100%-1rem)] truncate rounded-full bg-white/90 px-2 py-0.5 text-[9px] font-semibold tracking-wide text-[#D68C96] ring-1 ring-[#EAD6D8] sm:top-3 sm:right-3 sm:text-[10px]">
-                  {brand.productCount}{" "}
-                  {brand.productCount === 1 ? "prod." : "prods."}
-                </span>
-              </div>
-
-              <div className="space-y-1 border-t border-[#F0E4E5] px-3 py-3 sm:px-4 sm:py-3.5">
-                <h2 className="text-sm font-semibold tracking-wide text-[#2C2C2C] sm:text-[15px]">
-                  {brand.name}
-                </h2>
-                <p className="text-[11px] font-medium tracking-[0.12em] text-[#D68C96] uppercase transition-colors group-hover:text-[#C46F7A]">
-                  Ver colección
-                </p>
-              </div>
-            </Link>
-          ))}
-        </div>
-      )}
     </section>
   );
 }

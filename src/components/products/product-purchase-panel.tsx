@@ -4,6 +4,12 @@ import { useState } from "react";
 import { Heart, Minus, Plus, ShoppingBag } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useShop } from "@/components/shop/shop-provider";
+import { formatPenPrice } from "@/lib/products/detail-content";
+import {
+  buildWhatsAppUrl,
+  stockInquiryMessage,
+} from "@/lib/checkout";
+import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 
 type ProductPurchasePanelProps = {
   productId: string;
@@ -30,6 +36,10 @@ export function ProductPurchasePanel({
     price,
     imageUrl,
   };
+
+  const stockWhatsAppHref = buildWhatsAppUrl(
+    stockInquiryMessage(productName, formatPenPrice(price)),
+  );
 
   return (
     <div className="space-y-2.5 lg:space-y-2">
@@ -78,6 +88,16 @@ export function ProductPurchasePanel({
         <ShoppingBag className="size-3.5" strokeWidth={1.75} />
         {inStock ? "Añadir al carrito" : "Agotado"}
       </button>
+
+      <a
+        href={stockWhatsAppHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-md border border-[#25D366] bg-[#25D366]/10 text-[11px] font-semibold tracking-[0.12em] text-[#128C7E] uppercase transition-colors hover:bg-[#25D366]/18 lg:h-9"
+      >
+        <WhatsAppIcon className="size-3.5" />
+        Consultar stock por WhatsApp
+      </a>
 
       <button
         type="button"

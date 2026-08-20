@@ -2,23 +2,20 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FormEvent, Suspense, useEffect, useState } from "react";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { Suspense, useEffect, useState } from "react";
+import { usePathname, useSearchParams } from "next/navigation";
 import {
   Heart,
   Menu,
-  Search,
   ShoppingBag,
   User,
   X,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import {
-  productsCategoryHref,
-  productsSearchHref,
-} from "@/lib/products/search";
+import { productsCategoryHref } from "@/lib/products/search";
 import { boutique, boutiqueSans, boutiqueSerif } from "@/lib/boutique-theme";
 import { useShop } from "@/components/shop/shop-provider";
+import { SearchSuggestField } from "@/components/products/search-suggest-field";
 
 const NAV = [
   { href: "/productos", label: "Novedades", match: "" },
@@ -115,7 +112,6 @@ function BoutiqueBrandLockup({ compact = false }: { compact?: boolean }) {
 }
 
 function ProductBoutiqueChromeInner() {
-  const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const urlQuery = searchParams.get("q") ?? "";
@@ -144,12 +140,6 @@ function ProductBoutiqueChromeInner() {
     return () => window.clearInterval(id);
   }, []);
 
-  function handleSearch(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setMobileOpen(false);
-    router.push(productsSearchHref(query));
-  }
-
   function isNavActive(item: (typeof NAV)[number]) {
     if (item.href === "/sobre-nosotros") {
       return pathname.startsWith("/sobre-nosotros");
@@ -170,7 +160,7 @@ function ProductBoutiqueChromeInner() {
     <div
       className={cn(
         boutiqueSans.className,
-        "sticky top-0 z-50 shrink-0 border-b border-[#F0E4E5] bg-white/95 backdrop-blur-md",
+        "sticky top-0 z-[100] shrink-0 border-b border-[#F0E4E5] bg-white/95 backdrop-blur-md",
       )}
     >
       {bannerOpen ? (
@@ -222,7 +212,7 @@ function ProductBoutiqueChromeInner() {
         </div>
       ) : null}
 
-      <header className="relative z-10 overflow-hidden border-b border-[#F0E4E5] bg-white">
+      <header className="relative z-10 border-b border-[#F0E4E5] bg-white">
         <Image
           src="/boutique-roses-cluster.png"
           alt=""
@@ -247,25 +237,13 @@ function ProductBoutiqueChromeInner() {
             <BoutiqueBrandLockup />
           </div>
 
-          <form
-            className="relative mx-auto w-full max-w-[420px]"
-            onSubmit={handleSearch}
-          >
-            <input
-              type="search"
+          <div className="relative z-20 mx-auto w-full max-w-[420px] justify-self-center">
+            <SearchSuggestField
               value={query}
-              onChange={(event) => setQuery(event.target.value)}
+              onChange={setQuery}
               placeholder="Busca tus productos favoritos..."
-              className="h-9 w-full rounded-full border border-[#EAD6D8] bg-white px-4 pr-10 text-[12px] text-[#2C2C2C] placeholder:text-[#2C2C2C]/35 outline-none focus:border-[#D68C96]"
             />
-            <button
-              type="submit"
-              aria-label="Buscar"
-              className="absolute top-1/2 right-3.5 -translate-y-1/2 text-[#D68C96] transition-colors hover:text-[#C46F7A]"
-            >
-              <Search className="size-4" strokeWidth={1.75} />
-            </button>
-          </form>
+          </div>
 
           <div className="flex items-center justify-self-end gap-3 text-[#2C2C2C] xl:gap-4">
             <Link
@@ -351,22 +329,15 @@ function ProductBoutiqueChromeInner() {
             </div>
           </div>
 
-          <form className="relative mt-3" onSubmit={handleSearch}>
-            <input
-              type="search"
+          <div className="relative z-20 mt-3">
+            <SearchSuggestField
               value={query}
-              onChange={(event) => setQuery(event.target.value)}
+              onChange={setQuery}
+              onSubmitExtra={() => setMobileOpen(false)}
               placeholder="Busca tus productos..."
-              className="h-11 w-full rounded-full border border-[#EAD6D8] bg-white px-4 pr-11 text-[13px] text-[#2C2C2C] placeholder:text-[#2C2C2C]/35 outline-none focus:border-[#D68C96] sm:h-9 sm:text-[12px]"
+              compact
             />
-            <button
-              type="submit"
-              aria-label="Buscar"
-              className="absolute top-1/2 right-1.5 flex size-9 -translate-y-1/2 items-center justify-center text-[#D68C96] transition-colors hover:text-[#C46F7A]"
-            >
-              <Search className="size-4" strokeWidth={1.75} />
-            </button>
-          </form>
+          </div>
         </div>
 
         <nav className="relative z-10 hidden border-y border-[#F0E4E5] bg-[#FEFAF9]/95 lg:block">

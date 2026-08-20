@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { Camera, Mail, MessageCircle, Music2, Share2 } from "lucide-react";
+import { Camera, Mail, Music2, Share2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { boutique, boutiqueSans, boutiqueSerif } from "@/lib/boutique-theme";
 import { productsCategoryHref } from "@/lib/products/search";
+import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 
 const COLUMNS = [
   {
@@ -25,9 +26,7 @@ const COLUMNS = [
     title: "Ayuda",
     links: [
       { href: "/contacto", label: "Contacto" },
-      { href: "/productos", label: "Envíos" },
-      { href: "/productos", label: "Cambios y devoluciones" },
-      { href: "/contacto", label: "Preguntas frecuentes" },
+      { href: "/preguntas-frecuentes", label: "Preguntas frecuentes" },
     ],
   },
   {
@@ -110,10 +109,20 @@ export function BoutiqueFooter() {
             Atención al cliente
           </h3>
           <ul className="space-y-3 text-sm text-[#2C2C2C]/70">
-            <li>Lun – Sáb · 10:00 – 19:00</li>
+            <li>
+              <p>Lun – Sáb · 8:30 a. m. – 9:00 p. m.</p>
+              <p className="mt-1">Dom · 9:00 a. m. – 8:00 p. m.</p>
+            </li>
             <li className="flex items-start gap-2">
-              <MessageCircle className="mt-0.5 size-4 shrink-0 text-[#D68C96]" />
-              <span>WhatsApp · Consultas de rutina</span>
+              <WhatsAppIcon className="mt-0.5 size-4 text-[#D68C96]" />
+              <a
+                href="https://wa.me/51973371522"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#D68C96]"
+              >
+                WhatsApp · +51 973 371 522
+              </a>
             </li>
             <li className="flex items-start gap-2">
               <Mail className="mt-0.5 size-4 shrink-0 text-[#D68C96]" />

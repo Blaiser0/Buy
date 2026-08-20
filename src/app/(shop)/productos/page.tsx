@@ -3,6 +3,7 @@ import { ProductGrid } from "@/components/products/product-grid";
 import { getDb } from "@/lib/db";
 import {
   applyCatalogFilters,
+  describeCatalogFilters,
   getAvailableBrands,
   getAvailableCategories,
   hasActiveCatalogFilters,
@@ -34,14 +35,30 @@ export default async function ProductsPage({ searchParams }: ProductsPageProps) 
   const categories = getAvailableCategories(products);
   const brands = getAvailableBrands(products);
   const active = hasActiveCatalogFilters(filters);
+  const filterLabels = describeCatalogFilters(filters, brands, categories);
+
+  const brandName =
+    brands.find((b) => b.slug === filters.marca)?.name ?? filters.marca;
+  const categoryName =
+    categories.find((c) =>
+      c.name.toLowerCase().includes(filters.categoria.toLowerCase()),
+    )?.name ?? filters.categoria;
 
   const heading = filters.q
     ? `Resultados para “${filters.q}”`
-    : filters.categoria
-      ? filters.categoria
-      : filters.marca
-        ? brands.find((b) => b.slug === filters.marca)?.name ?? "Marca"
-        : "Colección";
+    : filters.categoria && filters.marca
+      ? `${brandName} · ${categoryName}`
+      : filters.categoria
+        ? categoryName
+        : filters.marca
+          ? brandName
+          : filters.precio || filters.stock
+            ? "Selección filtrada"
+            : "Colección";
+
+  const subtitle = active
+    ? `${filtered.length} producto${filtered.length === 1 ? "" : "s"} · ${filterLabels.join(" · ")}`
+    : "Skincare coreano seleccionado para tu rutina diaria. Usa los filtros de la izquierda para acotar.";
 
   return (
     <div
@@ -62,16 +79,12 @@ export default async function ProductsPage({ searchParams }: ProductsPageProps) 
           embedded
           products={filtered}
           title={heading}
-          subtitle={
-            active
-              ? `${filtered.length} producto${filtered.length === 1 ? "" : "s"} encontrado${filtered.length === 1 ? "" : "s"}`
-              : "Skincare coreano seleccionado para tu rutina diaria."
-          }
+          subtitle={subtitle}
           emptyMessage={
             filters.q
               ? `No encontramos productos para “${filters.q}”. Prueba con otra marca o palabra.`
               : active
-                ? "No hay productos con estos filtros. Prueba otras opciones."
+                ? "No hay productos con esta combinación. Quita algún filtro o prueba otras opciones."
                 : "Pronto añadiremos nuevos productos a la colección."
           }
         />

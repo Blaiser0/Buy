@@ -2,11 +2,20 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Minus, Plus, Trash2, X } from "lucide-react";
+import { useEffect, useState } from "react";
+import { ArrowLeft, Minus, Plus, Trash2, X } from "lucide-react";
 import { formatPenPrice } from "@/lib/products/detail-content";
 import { cn } from "@/lib/utils";
 import { boutique, boutiqueSans, boutiqueSerif } from "@/lib/boutique-theme";
 import { useShop, type ShopItem } from "@/components/shop/shop-provider";
+import {
+  BUYU_WHATSAPP,
+  PAYMENT_ACCOUNTS,
+  buildWhatsAppUrl,
+  orderConfirmationMessage,
+  summarizeCartItems,
+} from "@/lib/checkout";
+import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 
 function DrawerShell({
   open,
@@ -14,12 +23,14 @@ function DrawerShell({
   onClose,
   children,
   footer,
+  onBack,
 }: {
   open: boolean;
   title: string;
   onClose: () => void;
   children: React.ReactNode;
   footer?: React.ReactNode;
+  onBack?: () => void;
 }) {
   return (
     <>
@@ -28,26 +39,38 @@ function DrawerShell({
         aria-label="Cerrar panel"
         onClick={onClose}
         className={cn(
-          "fixed inset-0 z-[60] bg-black/25 transition-opacity",
+          "fixed inset-0 z-[110] bg-black/25 transition-opacity",
           open ? "opacity-100" : "pointer-events-none opacity-0",
         )}
       />
       <aside
         className={cn(
           boutiqueSans.className,
-          "fixed top-0 right-0 z-[70] flex h-dvh w-full max-w-md flex-col bg-white shadow-2xl transition-transform duration-300",
+          "fixed top-0 right-0 z-[120] flex h-dvh w-full max-w-md flex-col bg-white shadow-2xl transition-transform duration-300",
           open ? "translate-x-0" : "translate-x-full",
         )}
       >
         <div className="flex items-center justify-between border-b border-[#F0E4E5] px-5 py-4">
-          <h2
-            className={cn(
-              boutiqueSerif.className,
-              "text-xl font-semibold text-[#2C2C2C]",
-            )}
-          >
-            {title}
-          </h2>
+          <div className="flex min-w-0 items-center gap-2">
+            {onBack ? (
+              <button
+                type="button"
+                aria-label="Volver"
+                onClick={onBack}
+                className="rounded-full p-1.5 text-[#2C2C2C]/70 hover:bg-[#FEFAF9] hover:text-[#D68C96]"
+              >
+                <ArrowLeft className="size-5" />
+              </button>
+            ) : null}
+            <h2
+              className={cn(
+                boutiqueSerif.className,
+                "truncate text-xl font-semibold text-[#2C2C2C]",
+              )}
+            >
+              {title}
+            </h2>
+          </div>
           <button
             type="button"
             aria-label="Cerrar"
@@ -114,9 +137,7 @@ function ItemRow({
               <button
                 type="button"
                 aria-label="Disminuir"
-                onClick={() =>
-                  updateCartQuantity(item.id, item.quantity - 1)
-                }
+                onClick={() => updateCartQuantity(item.id, item.quantity - 1)}
                 className="flex h-full w-8 items-center justify-center hover:bg-[#FEFAF9]"
               >
                 <Minus className="size-3" />
@@ -127,9 +148,7 @@ function ItemRow({
               <button
                 type="button"
                 aria-label="Aumentar"
-                onClick={() =>
-                  updateCartQuantity(item.id, item.quantity + 1)
-                }
+                onClick={() => updateCartQuantity(item.id, item.quantity + 1)}
                 className="flex h-full w-8 items-center justify-center hover:bg-[#FEFAF9]"
               >
                 <Plus className="size-3" />
@@ -183,6 +202,111 @@ function ItemRow({
   );
 }
 
+function PaymentCheckout({
+  total,
+  items,
+}: {
+  total: number;
+  items: ShopItem[];
+}) {
+  const [method, setMethod] = useState<"yape" | "plin">("yape");
+  const selected = method === "yape" ? PAYMENT_ACCOUNTS.yape : PAYMENT_ACCOUNTS.plin;
+  const totalLabel = formatPenPrice(total);
+  const confirmHref = buildWhatsAppUrl(
+    orderConfirmationMessage({
+      totalLabel,
+      itemsSummary: summarizeCartItems(items),
+    }),
+  );
+
+  return (
+    <div className="space-y-5">
+      <div className="rounded-xl bg-[#FEFAF9] px-4 py-3">
+        <p className="text-[11px] font-semibold tracking-[0.14em] text-[#D68C96] uppercase">
+          Monto a pagar
+        </p>
+        <p className="mt-1 text-2xl font-semibold text-[#2C2C2C]">{totalLabel}</p>
+        <p className="mt-1 text-xs text-[#2C2C2C]/55">
+          Titular: {PAYMENT_ACCOUNTS.titular}
+        </p>
+        <p className="text-xs text-[#2C2C2C]/55">
+          Número: {selected.number} · Consultas {BUYU_WHATSAPP.display}
+        </p>
+      </div>
+
+      <div>
+        <p className="mb-2 text-sm font-semibold text-[#2C2C2C]">
+          Método de pago
+        </p>
+        <div className="grid grid-cols-2 gap-2">
+          <button
+            type="button"
+            onClick={() => setMethod("yape")}
+            className={cn(
+              "rounded-lg border px-3 py-2.5 text-sm font-semibold transition-colors",
+              method === "yape"
+                ? "border-[#6C1D7A] bg-[#6C1D7A]/10 text-[#6C1D7A]"
+                : "border-[#EAD6D8] text-[#2C2C2C]/70 hover:bg-[#FEFAF9]",
+            )}
+          >
+            Yape
+          </button>
+          <button
+            type="button"
+            onClick={() => setMethod("plin")}
+            className={cn(
+              "rounded-lg border px-3 py-2.5 text-sm font-semibold transition-colors",
+              method === "plin"
+                ? "border-[#00AEEF] bg-[#00AEEF]/10 text-[#008FC4]"
+                : "border-[#EAD6D8] text-[#2C2C2C]/70 hover:bg-[#FEFAF9]",
+            )}
+          >
+            Plin
+          </button>
+        </div>
+      </div>
+
+      <div className="rounded-2xl border border-[#F0E4E5] bg-white p-4 text-center">
+        <p className="text-[11px] font-semibold tracking-[0.14em] text-[#2C2C2C]/55 uppercase">
+          Escanea el QR de {selected.label}
+        </p>
+        <div className="mx-auto mt-3 w-full max-w-[220px] overflow-hidden rounded-xl">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={selected.qrPath}
+            alt={`QR ${selected.label} (ejemplo)`}
+            className="h-auto w-full object-contain"
+          />
+        </div>
+        <p className="mt-3 text-xs text-[#2C2C2C]/50">
+          QR de ejemplo. Reemplázalo por el código real de {selected.label}.
+        </p>
+      </div>
+
+      <ol className="space-y-2 rounded-xl bg-[#FEFAF9] px-4 py-3 text-[12px] leading-relaxed text-[#2C2C2C]/70">
+        <li>1. Escanea el QR o paga al número indicado.</li>
+        <li>2. Transfiere exactamente {totalLabel}.</li>
+        <li>3. Guarda la captura del pago.</li>
+        <li>4. Confirma tu pedido por WhatsApp y adjunta la captura.</li>
+      </ol>
+
+      <a
+        href={confirmHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md bg-[#25D366] text-[12px] font-semibold tracking-[0.1em] text-white uppercase shadow-[0_10px_24px_rgba(37,211,102,0.28)] transition-colors hover:bg-[#1ebe5d]"
+      >
+        <WhatsAppIcon className="size-4" />
+        Confirmar pedido por WhatsApp
+      </a>
+      <p className="text-center text-[11px] leading-relaxed text-[#2C2C2C]/50">
+        Se abrirá WhatsApp con un mensaje listo. Adjunta allí tu captura de
+        Yape/Plin.
+      </p>
+    </div>
+  );
+}
+
 export function ShopDrawers() {
   const {
     cart,
@@ -193,15 +317,27 @@ export function ShopDrawers() {
     setWishlistOpen,
     cartTotal,
   } = useShop();
+  const [checkoutStep, setCheckoutStep] = useState<"cart" | "payment">("cart");
+
+  useEffect(() => {
+    if (!cartOpen) setCheckoutStep("cart");
+  }, [cartOpen]);
+
+  useEffect(() => {
+    if (cart.length === 0) setCheckoutStep("cart");
+  }, [cart.length]);
 
   return (
     <>
       <DrawerShell
         open={cartOpen}
-        title="Carrito"
+        title={checkoutStep === "payment" ? "Pago Yape / Plin" : "Carrito"}
         onClose={() => setCartOpen(false)}
+        onBack={
+          checkoutStep === "payment" ? () => setCheckoutStep("cart") : undefined
+        }
         footer={
-          cart.length > 0 ? (
+          cart.length > 0 && checkoutStep === "cart" ? (
             <div className="space-y-3">
               <div className="flex items-center justify-between text-sm">
                 <span className="text-[#2C2C2C]/70">Total</span>
@@ -211,7 +347,7 @@ export function ShopDrawers() {
               </div>
               <button
                 type="button"
-                onClick={() => setCartOpen(false)}
+                onClick={() => setCheckoutStep("payment")}
                 className="inline-flex h-11 w-full items-center justify-center rounded-md text-[11px] font-semibold tracking-[0.14em] text-white uppercase"
                 style={{ backgroundColor: boutique.rose }}
               >
@@ -232,6 +368,8 @@ export function ShopDrawers() {
               Ver colección
             </Link>
           </div>
+        ) : checkoutStep === "payment" ? (
+          <PaymentCheckout total={cartTotal} items={cart} />
         ) : (
           cart.map((item) => <ItemRow key={item.id} item={item} mode="cart" />)
         )}

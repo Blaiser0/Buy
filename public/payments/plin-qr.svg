@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 320" fill="none">
+  <rect width="280" height="320" rx="20" fill="#00AEEF"/>
+  <text x="140" y="36" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="22" font-weight="700">Plin</text>
+  <text x="140" y="58" text-anchor="middle" fill="#D9F4FF" font-family="Arial, sans-serif" font-size="11">QR de ejemplo</text>
+  <rect x="40" y="74" width="200" height="200" rx="12" fill="white"/>
+  <!-- Placeholder QR pattern -->
+  <g fill="#2C2C2C">
+    <rect x="58" y="92" width="48" height="48"/>
+    <rect x="66" y="100" width="32" height="32" fill="white"/>
+    <rect x="74" y="108" width="16" height="16"/>
+    <rect x="174" y="92" width="48" height="48"/>
+    <rect x="182" y="100" width="32" height="32" fill="white"/>
+    <rect x="190" y="108" width="16" height="16"/>
+    <rect x="58" y="208" width="48" height="48"/>
+    <rect x="66" y="216" width="32" height="32" fill="white"/>
+    <rect x="74" y="224" width="16" height="16"/>
+    <rect x="124" y="108" width="12" height="12"/>
+    <rect x="144" y="124" width="12" height="12"/>
+    <rect x="128" y="144" width="20" height="20"/>
+    <rect x="156" y="168" width="12" height="12"/>
+    <rect x="124" y="184" width="12" height="12"/>
+    <rect x="176" y="156" width="16" height="16"/>
+    <rect x="196" y="180" width="12" height="12"/>
+    <rect x="168" y="216" width="12" height="12"/>
+    <rect x="188" y="232" width="20" height="12"/>
+    <rect x="128" y="220" width="12" height="12"/>
+    <rect x="148" y="236" width="12" height="12"/>
+  </g>
+  <text x="140" y="302" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">Ejemplo · Reemplazar QR real</text>
+</svg>

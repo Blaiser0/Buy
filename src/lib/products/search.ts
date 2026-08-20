@@ -18,9 +18,9 @@ export type CatalogFilters = {
 };
 
 export const PRICE_RANGES = [
-  { id: "0-80", label: "Hasta S/ 80", min: 0, max: 80 },
-  { id: "80-120", label: "S/ 81 – S/ 120", min: 81, max: 120 },
-  { id: "120-200", label: "S/ 121 – S/ 200", min: 121, max: 200 },
+  { id: "0-80", label: "Menos de S/ 80", min: 0, max: 80 },
+  { id: "80-120", label: "De S/ 81 a S/ 120", min: 81, max: 120 },
+  { id: "120-200", label: "De S/ 121 a S/ 200", min: 121, max: 200 },
   { id: "200+", label: "Más de S/ 200", min: 201, max: Number.POSITIVE_INFINITY },
 ] as const;
 
@@ -199,4 +199,98 @@ export function categoryMatchesFilter(
   const needle = normalizeSearchQuery(filterValue).toLowerCase();
   if (!needle) return false;
   return categoryName.toLowerCase().includes(needle);
+}
+
+/** Plain-language summary of active filters for UI. */
+export function describeCatalogFilters(
+  filters: CatalogFilters,
+  brands: BrandInfo[] = [],
+  categories: Array<{ name: string; matchKey: string }> = [],
+) {
+  const parts: string[] = [];
+
+  if (filters.q) {
+    parts.push(`búsqueda “${filters.q}”`);
+  }
+
+  if (filters.categoria) {
+    const category =
+      categories.find((item) =>
+        categoryMatchesFilter(item.name, filters.categoria),
+      )?.name ?? filters.categoria;
+    parts.push(`categoría ${category}`);
+  }
+
+  if (filters.marca) {
+    const brand =
+      brands.find((item) => item.slug === filters.marca)?.name ?? filters.marca;
+    parts.push(`marca ${brand}`);
+  }
+
+  if (filters.precio) {
+    const range = PRICE_RANGES.find((item) => item.id === filters.precio);
+    if (range) parts.push(`precio ${range.label.toLowerCase()}`);
+  }
+
+  if (filters.stock === "disponible") {
+    parts.push("solo disponibles");
+  } else if (filters.stock === "agotado") {
+    parts.push("solo agotados");
+  }
+
+  return parts;
+}
+
+export type SearchSuggestion = {
+  id: string;
+  name: string;
+  category: string;
+  price: number;
+  imageUrl: string | null;
+  href: string;
+  kind: "product";
+};
+
+/**
+ * Live search suggestions as the user types (from first character).
+ */
+export function getSearchSuggestions(
+  products: Product[],
+  query: string,
+  limit = 8,
+): SearchSuggestion[] {
+  const needle = normalizeSearchQuery(query).toLowerCase();
+  if (!needle) return [];
+
+  const suggestions: SearchSuggestion[] = [];
+
+  const scored = products
+    .map((product) => {
+      const name = product.name.toLowerCase();
+      const category = product.category.toLowerCase();
+      const description = (product.description ?? "").toLowerCase();
+      let score = 0;
+      if (name.startsWith(needle)) score += 100;
+      else if (name.includes(needle)) score += 60;
+      else if (category.includes(needle)) score += 30;
+      else if (description.includes(needle)) score += 10;
+      else return null;
+      return { product, score };
+    })
+    .filter((item): item is { product: Product; score: number } => Boolean(item))
+    .sort((a, b) => b.score - a.score || a.product.name.localeCompare(b.product.name, "es"));
+
+  for (const item of scored.slice(0, limit)) {
+    suggestions.push({
+      id: item.product.id,
+      name: item.product.name,
+      category: item.product.category,
+      price: item.product.price,
+      imageUrl: item.product.image_url,
+      href: `/productos/${item.product.id}`,
+      kind: "product",
+    });
+  }
+
+  return suggestions;
 }

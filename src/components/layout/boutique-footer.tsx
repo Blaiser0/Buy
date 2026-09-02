@@ -1,9 +1,11 @@
 import Link from "next/link";
-import { Camera, Mail, Music2, Share2 } from "lucide-react";
+import { Camera, Mail, Share2, type LucideIcon } from "lucide-react";
+import type { ComponentType, SVGProps } from "react";
 import { cn } from "@/lib/utils";
 import { boutique, boutiqueSans, boutiqueSerif } from "@/lib/boutique-theme";
 import { productsCategoryHref } from "@/lib/products/search";
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
+import { TikTokIcon } from "@/components/icons/tiktok-icon";
 
 const COLUMNS = [
   {
@@ -39,11 +41,23 @@ const COLUMNS = [
   },
 ] as const;
 
-const SOCIAL = [
+type SocialIcon = LucideIcon | ComponentType<SVGProps<SVGSVGElement>>;
+
+const SOCIAL: Array<{
+  href: string;
+  label: string;
+  Icon: SocialIcon;
+  filled?: boolean;
+}> = [
   { href: "https://instagram.com", label: "Instagram", Icon: Camera },
   { href: "https://facebook.com", label: "Facebook", Icon: Share2 },
-  { href: "https://youtube.com", label: "YouTube", Icon: Music2 },
-] as const;
+  {
+    href: "https://www.tiktok.com/@buyu_puertomaldonado?_r=1&_t=ZS-9921ACrnEpx",
+    label: "TikTok",
+    Icon: TikTokIcon,
+    filled: true,
+  },
+];
 
 export function BoutiqueFooter() {
   return (
@@ -71,14 +85,20 @@ export function BoutiqueFooter() {
             seleccionados para tu piel.
           </p>
           <div className="flex items-center gap-1 text-[#2C2C2C]/55">
-            {SOCIAL.map(({ href, label, Icon }) => (
+            {SOCIAL.map(({ href, label, Icon, filled }) => (
               <a
                 key={label}
                 href={href}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label={label}
                 className="flex size-10 items-center justify-center hover:text-[#D68C96]"
               >
-                <Icon className="size-4" strokeWidth={1.5} />
+                {filled ? (
+                  <Icon className="size-4" />
+                ) : (
+                  <Icon className="size-4" strokeWidth={1.5} />
+                )}
               </a>
             ))}
           </div>

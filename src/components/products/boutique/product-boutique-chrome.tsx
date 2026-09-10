@@ -280,11 +280,11 @@ function ProductBoutiqueChromeInner() {
           </div>
         </div>
 
-        <div className="relative z-10 mx-auto max-w-6xl px-4 py-3 sm:px-6 lg:hidden">
+        <div className="relative z-10 mx-auto max-w-6xl px-2 py-2.5 min-[380px]:px-4 sm:px-6 sm:py-3 lg:hidden">
           <div className="flex items-center justify-between gap-2">
             <button
               type="button"
-              className="flex size-11 shrink-0 items-center justify-center text-[#2C2C2C]"
+              className="flex size-10 shrink-0 items-center justify-center text-[#2C2C2C] sm:size-11"
               aria-label={mobileOpen ? "Cerrar menú" : "Abrir menú"}
               aria-expanded={mobileOpen}
               onClick={() => setMobileOpen((v) => !v)}
@@ -294,11 +294,11 @@ function ProductBoutiqueChromeInner() {
 
             <BoutiqueBrandLockup compact />
 
-            <div className="flex items-center text-[#2C2C2C]">
+            <div className="flex shrink-0 items-center text-[#2C2C2C]">
               <Link
                 href="/login"
                 aria-label="Mi cuenta"
-                className="flex size-11 items-center justify-center"
+                className="flex size-10 items-center justify-center sm:size-11"
               >
                 <User className="size-4" strokeWidth={1.5} />
               </Link>
@@ -306,7 +306,7 @@ function ProductBoutiqueChromeInner() {
                 type="button"
                 aria-label="Mis deseos"
                 onClick={() => setWishlistOpen(true)}
-                className="relative flex size-11 items-center justify-center"
+                className="relative flex size-10 items-center justify-center sm:size-11"
               >
                 <Heart className="size-4" strokeWidth={1.5} />
                 {wishlistCount > 0 ? (
@@ -319,7 +319,7 @@ function ProductBoutiqueChromeInner() {
                 type="button"
                 aria-label="Carrito"
                 onClick={() => setCartOpen(true)}
-                className="relative flex size-11 items-center justify-center"
+                className="relative flex size-10 items-center justify-center sm:size-11"
               >
                 <ShoppingBag className="size-4" strokeWidth={1.5} />
                 <span className="absolute top-1.5 right-1.5 flex size-3.5 items-center justify-center rounded-full bg-[#E35D67] text-[8px] font-semibold text-white">

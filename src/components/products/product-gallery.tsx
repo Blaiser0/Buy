@@ -24,16 +24,16 @@ export function ProductGallery({ name, images }: ProductGalleryProps) {
   }
 
   return (
-    <div className="flex h-full gap-2.5 sm:gap-3">
-      <div className="flex w-[56px] shrink-0 flex-col items-center gap-1.5 sm:w-[64px] lg:w-[58px] lg:justify-between xl:w-[64px]">
-        <div className="flex w-full flex-col gap-1.5 lg:min-h-0 lg:flex-1 lg:justify-center">
+    <div className="flex h-full flex-col-reverse gap-2.5 sm:flex-row sm:gap-3">
+      <div className="flex w-full shrink-0 items-center gap-1.5 sm:w-[64px] sm:flex-col lg:w-[58px] lg:justify-between xl:w-[64px]">
+        <div className="flex min-w-0 flex-1 gap-1.5 overflow-x-auto pb-1 sm:w-full sm:flex-col sm:overflow-visible sm:pb-0 lg:min-h-0 lg:justify-center">
           {safeImages.map((src, index) => (
             <button
               key={`${src}-${index}`}
               type="button"
               onClick={() => setActive(index)}
               className={cn(
-                "relative aspect-square w-full overflow-hidden rounded-lg transition-opacity lg:max-h-[18%]",
+                "relative aspect-square w-14 shrink-0 overflow-hidden rounded-lg transition-opacity sm:w-full lg:max-h-[18%]",
                 active === index
                   ? "opacity-100 ring-1 ring-[#D68C96]"
                   : "opacity-70 hover:opacity-100",

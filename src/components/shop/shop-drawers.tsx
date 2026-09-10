@@ -50,7 +50,7 @@ function DrawerShell({
           open ? "translate-x-0" : "translate-x-full",
         )}
       >
-        <div className="flex items-center justify-between border-b border-[#F0E4E5] px-5 py-4">
+        <div className="flex items-center justify-between border-b border-[#F0E4E5] px-4 py-3.5 sm:px-5 sm:py-4">
           <div className="flex min-w-0 items-center gap-2">
             {onBack ? (
               <button
@@ -80,9 +80,9 @@ function DrawerShell({
             <X className="size-5" />
           </button>
         </div>
-        <div className="min-h-0 flex-1 overflow-y-auto px-5 py-4">{children}</div>
+        <div className="min-h-0 flex-1 overflow-y-auto px-4 py-4 sm:px-5">{children}</div>
         {footer ? (
-          <div className="border-t border-[#F0E4E5] px-5 py-4">{footer}</div>
+          <div className="border-t border-[#F0E4E5] px-4 py-4 sm:px-5">{footer}</div>
         ) : null}
       </aside>
     </>

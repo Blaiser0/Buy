@@ -7,7 +7,7 @@ export const BUYU_WHATSAPP = {
 
 /** Datos de pago para Yape / Plin. */
 export const PAYMENT_ACCOUNTS = {
-  titular: "BUYU Boutique S.A.C. (Ejemplo)",
+  titular: "Tian Min Sac",
   yape: {
     label: "Yape",
     number: "973 371 522",

@@ -18,12 +18,39 @@ function mapProduct(row: Record<string, unknown>): Product {
 export const supabaseProductRepository: ProductRepository = {
   async list() {
     const supabase = await createClient();
-    const { data, error } = await supabase
-      .from("products")
-      .select("*")
-      .order("created_at", { ascending: false });
+    const destination = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/rest/v1/products`;
+    let result;
 
-    if (error) throw new Error(error.message);
+    try {
+      result = await supabase
+        .from("products")
+        .select("*")
+        .order("created_at", { ascending: false });
+    } catch (error) {
+      const requestError = error as Error & { cause?: unknown; status?: number };
+      console.error("[Supabase fetch failed]", {
+        destination,
+        function: "supabaseProductRepository.list",
+        file: "src/lib/db/providers/supabase/products.ts",
+        status: requestError.status,
+        message: requestError.message,
+        cause: requestError.cause,
+      });
+      throw error;
+    }
+
+    const { data, error, status } = result;
+    if (error) {
+      console.error("[Supabase request failed]", {
+        destination,
+        function: "supabaseProductRepository.list",
+        file: "src/lib/db/providers/supabase/products.ts",
+        status,
+        message: error.message,
+      });
+      throw new Error(error.message);
+    }
+
     return (data ?? []).map(mapProduct);
   },
 

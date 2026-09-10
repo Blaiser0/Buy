@@ -25,9 +25,33 @@ export async function updateSession(request: NextRequest) {
     },
   );
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  let user = null;
+
+  try {
+    const { data, error } = await supabase.auth.getUser();
+    user = data.user;
+
+    if (error) {
+      console.error("[Supabase request failed]", {
+        destination: `${process.env.NEXT_PUBLIC_SUPABASE_URL}/auth/v1/user`,
+        function: "updateSession",
+        file: "src/lib/supabase/middleware.ts",
+        status: error.status,
+        message: error.message,
+      });
+    }
+  } catch (error) {
+    const requestError = error as Error & { cause?: unknown; status?: number };
+    console.error("[Supabase fetch failed]", {
+      destination: `${process.env.NEXT_PUBLIC_SUPABASE_URL}/auth/v1/user`,
+      function: "updateSession",
+      file: "src/lib/supabase/middleware.ts",
+      status: requestError.status,
+      message: requestError.message,
+      cause: requestError.cause,
+    });
+    throw error;
+  }
 
   if (request.nextUrl.pathname.startsWith("/admin") && !user) {
     const url = request.nextUrl.clone();

@@ -5,18 +5,18 @@ export const BUYU_WHATSAPP = {
   e164: "51973371522",
 } as const;
 
-/** Datos de ejemplo para Yape / Plin (reemplazar por los reales). */
+/** Datos de pago para Yape / Plin. */
 export const PAYMENT_ACCOUNTS = {
   titular: "BUYU Boutique S.A.C. (Ejemplo)",
   yape: {
     label: "Yape",
     number: "973 371 522",
-    qrPath: "/payments/yape-qr.svg",
+    qrPath: "/payments/payment-qr.png",
   },
   plin: {
     label: "Plin",
     number: "973 371 522",
-    qrPath: "/payments/plin-qr.svg",
+    qrPath: "/payments/payment-qr.png",
   },
 } as const;
 

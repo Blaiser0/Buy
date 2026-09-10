@@ -274,12 +274,12 @@ function PaymentCheckout({
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={selected.qrPath}
-            alt={`QR ${selected.label} (ejemplo)`}
+            alt={`QR ${selected.label}`}
             className="h-auto w-full object-contain"
           />
         </div>
         <p className="mt-3 text-xs text-[#2C2C2C]/50">
-          QR de ejemplo. Reemplázalo por el código real de {selected.label}.
+          Escanea este código para pagar con {selected.label}.
         </p>
       </div>
 

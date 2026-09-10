@@ -40,12 +40,12 @@ export default async function ProductDetailPage({
 }: ProductDetailPageProps) {
   const { id } = await params;
   const db = getDb();
-  const product = await db.products.getById(id);
+  const allProducts = await db.products.list();
+  const product = allProducts.find((item) => item.id === id);
 
   if (!product) notFound();
 
   const details = getProductDetailContent(product);
-  const allProducts = await db.products.list();
   const related = allProducts
     .filter((item) => item.id !== product.id)
     .slice(0, 8);

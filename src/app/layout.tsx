@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.buyubeauty.pe"),
   title: "BUYU | Skincare Coreano",
   description:
     "Fórmulas auténticas de skincare coreano para una piel radiante y natural.",

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getDb } from "@/lib/db";
 
-const origin = "https://buyubeauty.pe";
+const origin = "https://www.buyubeauty.pe";
 
 export const dynamic = "force-dynamic";
 

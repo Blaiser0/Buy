@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/admin", "/login", "/register", "/api/"],
     },
-    sitemap: "https://buyubeauty.pe/sitemap.xml",
+    sitemap: "https://www.buyubeauty.pe/sitemap.xml",
   };
 }

@@ -1,4 +1,6 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+import { cache } from "react";
 import { notFound } from "next/navigation";
 import { Playfair_Display, Montserrat } from "next/font/google";
 import { Star } from "lucide-react";
@@ -16,6 +18,7 @@ import {
 } from "@/lib/products/detail-content";
 import { getProductGalleryImages } from "@/lib/products/gallery";
 import { cn } from "@/lib/utils";
+import { pageMetadata, productDescription, productImageUrl, productJsonLd, serializeJsonLd } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
 
@@ -35,12 +38,33 @@ type ProductDetailPageProps = {
   params: Promise<{ id: string }>;
 };
 
+// Share the existing catalog read between metadata and page during one request.
+const loadProducts = cache(() => getDb().products.list());
+
+export async function generateMetadata({ params }: ProductDetailPageProps): Promise<Metadata> {
+  const { id } = await params;
+  const path = `/productos/${encodeURIComponent(id)}`;
+  try {
+    const product = (await loadProducts()).find((item) => item.id === id);
+    if (product) {
+      return pageMetadata(
+        `${product.name} | Buyú Beauty`,
+        productDescription(product.description),
+        path,
+        productImageUrl(product.image_url),
+      );
+    }
+  } catch {
+    console.error("[SEO] No se pudo cargar la metadata del producto");
+  }
+  return pageMetadata("Producto | Buyú Beauty", "", path);
+}
+
 export default async function ProductDetailPage({
   params,
 }: ProductDetailPageProps) {
   const { id } = await params;
-  const db = getDb();
-  const allProducts = await db.products.list();
+  const allProducts = await loadProducts();
   const product = allProducts.find((item) => item.id === id);
 
   if (!product) notFound();
@@ -67,6 +91,7 @@ export default async function ProductDetailPage({
         "bg-white text-[#2C2C2C]",
       )}
     >
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(productJsonLd(product)) }} />
       <div>
         <div className="mx-auto flex w-full max-w-6xl flex-col px-4 pt-4 pb-4 sm:px-6 lg:pt-5 lg:pb-4">
           <nav

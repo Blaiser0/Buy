@@ -11,6 +11,13 @@ import {
 } from "@/lib/products/search";
 import { cn } from "@/lib/utils";
 import { boutiqueSans } from "@/lib/boutique-theme";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata(
+  "Productos de Skincare Coreano | Buyú Beauty",
+  "Explora la colección de skincare coreano de Buyú Beauty. Encuentra limpiadores, tónicos, sueros, hidratantes y protectores solares para tu rutina de cuidado facial.",
+  "/productos",
+);
 
 export const dynamic = "force-dynamic";
 

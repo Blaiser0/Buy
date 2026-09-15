@@ -1,3 +1,11 @@
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata(
+  "Contacto | Buyú Beauty",
+  "Contacta con Buyú Beauty para resolver tus dudas sobre productos de skincare coreano, tu rutina de cuidado facial o el estado de un pedido.",
+  "/contacto",
+);
+
 export default function ContactPage() {
   return (
     <section className="mx-auto w-full max-w-3xl px-4 py-10 sm:py-14 md:px-6 md:py-16">

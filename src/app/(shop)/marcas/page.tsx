@@ -3,6 +3,13 @@ import { getDb } from "@/lib/db";
 import { groupProductsByBrand } from "@/lib/products/brands";
 import { cn } from "@/lib/utils";
 import { boutiqueSans } from "@/lib/boutique-theme";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata(
+  "Marcas de Cosmética Coreana | Buyú Beauty",
+  "Descubre las marcas de cosmética coreana disponibles en Buyú Beauty y explora sus productos de K-Beauty para completar tu rutina de cuidado de la piel.",
+  "/marcas",
+);
 
 export const dynamic = "force-dynamic";
 

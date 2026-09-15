@@ -1,3 +1,11 @@
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata(
+  "Sobre Nosotros | Buyú Beauty",
+  "Conoce Buyú Beauty y nuestra selección de cosmética coreana: fórmulas auténticas, ingredientes transparentes y rutinas sencillas para el cuidado de la piel.",
+  "/sobre-nosotros",
+);
+
 export default function AboutPage() {
   return (
     <section className="mx-auto w-full max-w-3xl px-4 py-10 sm:py-14 md:px-6 md:py-16">

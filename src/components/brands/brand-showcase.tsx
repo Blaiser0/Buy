@@ -255,10 +255,11 @@ export function BrandShowcase({ brands }: BrandShowcaseProps) {
 
   return (
     <div className="relative">
+      <h1 className="sr-only">Descubre Estas Marcas</h1>
       {/* Desktop: título izquierdo + columnas escalonadas */}
       <div className="hidden lg:grid lg:grid-cols-[0.9fr_1fr_1fr_1fr] lg:items-start lg:gap-6 xl:gap-8">
         <div className="sticky top-36 pt-6">
-          <h1
+          <p aria-hidden="true"
             className={cn(
               boutiqueSerif.className,
               "text-[3.35rem] leading-[1.05] font-semibold text-[#2C2C2C] xl:text-[3.75rem]",
@@ -267,7 +268,7 @@ export function BrandShowcase({ brands }: BrandShowcaseProps) {
             <span className="block">Descubre</span>
             <span className="block">Estas</span>
             <span className="block">Marcas</span>
-          </h1>
+          </p>
           <p className="mt-5 max-w-[16rem] text-sm leading-relaxed text-[#2C2C2C]/55">
             Tu catálogo de cosmética coreana seleccionado para lograr esa piel
             de porcelana perfecta.
@@ -341,7 +342,7 @@ export function BrandShowcase({ brands }: BrandShowcaseProps) {
 
       {/* Tablet / móvil */}
       <div className="lg:hidden">
-        <h1
+        <p aria-hidden="true"
           className={cn(
             boutiqueSerif.className,
             "mb-8 text-[2.4rem] leading-[1.08] font-semibold text-[#2C2C2C] sm:text-5xl",
@@ -350,7 +351,7 @@ export function BrandShowcase({ brands }: BrandShowcaseProps) {
           <span className="block">Descubre</span>
           <span className="block">Estas</span>
           <span className="block">Marcas</span>
-        </h1>
+        </p>
         <p className="mb-8 max-w-md text-sm leading-relaxed text-[#2C2C2C]/55 sm:text-base">
           Tu catálogo de cosmética coreana seleccionado para lograr esa piel de
           porcelana perfecta.

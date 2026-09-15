@@ -30,14 +30,14 @@ export function ProductGrid({
       )}
     >
       <div className="mb-6 space-y-2 sm:mb-8">
-        <h2
+        <h1
           className={cn(
             boutiqueSerif.className,
             "text-2xl font-semibold text-[#2C2C2C] sm:text-3xl",
           )}
         >
           {title}
-        </h2>
+        </h1>
         <p className="max-w-2xl text-sm text-[#2C2C2C]/70 sm:text-base">
           {subtitle}
         </p>

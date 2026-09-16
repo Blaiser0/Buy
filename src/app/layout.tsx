@@ -17,14 +17,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: HOME_TITLE,
   description: HOME_DESCRIPTION,
-  icons: {
-    icon: [
-      { url: "/favicon.png", type: "image/png", sizes: "32x32" },
-      { url: "/favicon.png", type: "image/png", sizes: "48x48" },
-      { url: "/favicon.png", type: "image/png", sizes: "192x192" },
-    ],
-    apple: [{ url: "/favicon.png", type: "image/png", sizes: "180x180" }],
-  },
+  // App Router generates icon metadata from favicon.ico, icon.png and apple-icon.png.
 };
 
 export const viewport: Viewport = {

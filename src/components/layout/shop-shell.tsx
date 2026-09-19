@@ -6,6 +6,7 @@ import { BoutiqueFooter } from "@/components/layout/boutique-footer";
 import { ProductBoutiqueChrome } from "@/components/products/boutique/product-boutique-chrome";
 import { ShopDrawers } from "@/components/shop/shop-drawers";
 import { ShopProvider } from "@/components/shop/shop-provider";
+import { FloatingWhatsApp } from "@/components/layout/floating-whatsapp";
 
 export function ShopShell({ children }: { children: ReactNode }) {
   const pathname = usePathname();
@@ -27,6 +28,7 @@ export function ShopShell({ children }: { children: ReactNode }) {
         </div>
       )}
       <ShopDrawers />
+      <FloatingWhatsApp />
     </ShopProvider>
   );
 }

@@ -146,8 +146,8 @@ export function BoutiqueFooter() {
             </li>
             <li className="flex items-start gap-2">
               <Mail className="mt-0.5 size-4 shrink-0 text-[#D68C96]" />
-              <a href="mailto:hola@buyu.pe" className="hover:text-[#D68C96]">
-                hola@buyu.pe
+              <a href="mailto:tianmin2025sac@gmail.com" className="min-w-0 break-words hover:text-[#D68C96]">
+                tianmin2025sac@gmail.com
               </a>
             </li>
           </ul>

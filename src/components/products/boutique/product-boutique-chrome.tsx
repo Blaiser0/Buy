@@ -8,7 +8,7 @@ import {
   Heart,
   Menu,
   ShoppingBag,
-  User,
+  BookOpen,
   X,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -247,11 +247,11 @@ function ProductBoutiqueChromeInner() {
 
           <div className="flex items-center justify-self-end gap-3 text-[#2C2C2C] xl:gap-4">
             <Link
-              href="/login"
+              href="/catalogo"
               className="inline-flex items-center gap-1.5 text-[11px] font-medium tracking-wide transition-colors hover:text-[#D68C96]"
             >
-              <User className="size-4" strokeWidth={1.5} />
-              Mi cuenta
+              <BookOpen className="size-4" strokeWidth={1.5} />
+              Catálogo
             </Link>
             <button
               type="button"
@@ -296,11 +296,12 @@ function ProductBoutiqueChromeInner() {
 
             <div className="flex shrink-0 items-center text-[#2C2C2C]">
               <Link
-                href="/login"
-                aria-label="Mi cuenta"
+                href="/catalogo"
+                aria-label="Catálogo"
+                title="Catálogo"
                 className="flex size-10 items-center justify-center sm:size-11"
               >
-                <User className="size-4" strokeWidth={1.5} />
+                <BookOpen className="size-4" strokeWidth={1.5} />
               </Link>
               <button
                 type="button"

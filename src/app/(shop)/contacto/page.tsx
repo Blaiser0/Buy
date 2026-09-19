@@ -17,10 +17,10 @@ export default function ContactPage() {
         <p>
           Escríbenos a{" "}
           <a
-            href="mailto:hola@buyu.store"
-            className="font-medium text-[#E50914] hover:underline"
+            href="mailto:tianmin2025sac@gmail.com"
+            className="break-words font-medium text-[#E50914] hover:underline"
           >
-            hola@buyu.store
+            tianmin2025sac@gmail.com
           </a>
         </p>
       </div>

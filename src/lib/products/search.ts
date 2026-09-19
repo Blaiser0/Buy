@@ -67,6 +67,19 @@ export function filterProductsByQuery(products: Product[], query: string) {
   });
 }
 
+/** Name-only search for the catalog, independent of description/category matches. */
+export function filterProductsByName(products: Product[], query: string) {
+  const normalize = (value: string) => normalizeSearchQuery(value)
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const words = normalize(query).split(" ").filter(Boolean);
+  if (!words.length) return products;
+
+  return products.filter((product) => {
+    const name = normalize(product.name);
+    return words.every((word) => name.includes(word));
+  });
+}
+
 export function filterProductsByCategory(
   products: Product[],
   category: string,

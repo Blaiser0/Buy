@@ -5,16 +5,11 @@ export const BUYU_WHATSAPP = {
   e164: "51973371522",
 } as const;
 
-/** Datos de pago para Yape / Plin. */
+/** Datos de pago para Yape. */
 export const PAYMENT_ACCOUNTS = {
   titular: "Tian Min Sac",
   yape: {
     label: "Yape",
-    number: "973 371 522",
-    qrPath: "/payments/payment-qr.png",
-  },
-  plin: {
-    label: "Plin",
     number: "973 371 522",
     qrPath: "/payments/payment-qr.png",
   },

@@ -209,8 +209,7 @@ function PaymentCheckout({
   total: number;
   items: ShopItem[];
 }) {
-  const [method, setMethod] = useState<"yape" | "plin">("yape");
-  const selected = method === "yape" ? PAYMENT_ACCOUNTS.yape : PAYMENT_ACCOUNTS.plin;
+  const selected = PAYMENT_ACCOUNTS.yape;
   const totalLabel = formatPenPrice(total);
   const confirmHref = buildWhatsAppUrl(
     orderConfirmationMessage({
@@ -226,9 +225,6 @@ function PaymentCheckout({
           Monto a pagar
         </p>
         <p className="mt-1 text-2xl font-semibold text-[#2C2C2C]">{totalLabel}</p>
-        <p className="mt-1 text-xs text-[#2C2C2C]/55">
-          Titular: {PAYMENT_ACCOUNTS.titular}
-        </p>
         <p className="text-xs text-[#2C2C2C]/55">
           Número: {selected.number} · Consultas {BUYU_WHATSAPP.display}
         </p>
@@ -238,37 +234,17 @@ function PaymentCheckout({
         <p className="mb-2 text-sm font-semibold text-[#2C2C2C]">
           Método de pago
         </p>
-        <div className="grid grid-cols-2 gap-2">
-          <button
-            type="button"
-            onClick={() => setMethod("yape")}
-            className={cn(
-              "rounded-lg border px-3 py-2.5 text-sm font-semibold transition-colors",
-              method === "yape"
-                ? "border-[#6C1D7A] bg-[#6C1D7A]/10 text-[#6C1D7A]"
-                : "border-[#EAD6D8] text-[#2C2C2C]/70 hover:bg-[#FEFAF9]",
-            )}
-          >
+        <div className="rounded-lg border border-[#6C1D7A] bg-[#6C1D7A]/10 px-3 py-2.5 text-center text-sm font-semibold text-[#6C1D7A]">
             Yape
-          </button>
-          <button
-            type="button"
-            onClick={() => setMethod("plin")}
-            className={cn(
-              "rounded-lg border px-3 py-2.5 text-sm font-semibold transition-colors",
-              method === "plin"
-                ? "border-[#00AEEF] bg-[#00AEEF]/10 text-[#008FC4]"
-                : "border-[#EAD6D8] text-[#2C2C2C]/70 hover:bg-[#FEFAF9]",
-            )}
-          >
-            Plin
-          </button>
         </div>
       </div>
 
       <div className="rounded-2xl border border-[#F0E4E5] bg-white p-4 text-center">
         <p className="text-[11px] font-semibold tracking-[0.14em] text-[#2C2C2C]/55 uppercase">
           Escanea el QR de {selected.label}
+        </p>
+        <p className="mt-2 text-sm font-semibold text-[#2C2C2C]">
+          Titular: {PAYMENT_ACCOUNTS.titular}
         </p>
         <div className="mx-auto mt-3 w-full max-w-[220px] overflow-hidden rounded-xl">
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -301,7 +277,7 @@ function PaymentCheckout({
       </a>
       <p className="text-center text-[11px] leading-relaxed text-[#2C2C2C]/50">
         Se abrirá WhatsApp con un mensaje listo. Adjunta allí tu captura de
-        Yape/Plin.
+        Yape.
       </p>
     </div>
   );
@@ -331,7 +307,7 @@ export function ShopDrawers() {
     <>
       <DrawerShell
         open={cartOpen}
-        title={checkoutStep === "payment" ? "Pago Yape / Plin" : "Carrito"}
+        title={checkoutStep === "payment" ? "Pago Yape" : "Carrito"}
         onClose={() => setCartOpen(false)}
         onBack={
           checkoutStep === "payment" ? () => setCheckoutStep("cart") : undefined

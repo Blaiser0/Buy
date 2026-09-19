@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState, type FormEvent } from "react";
-import { LayoutGrid, Search, X } from "lucide-react";
+import { ArrowLeft, LayoutGrid, Search, X } from "lucide-react";
 import { CatalogProductDetails } from "@/components/products/catalog-product-details";
 import type { Product } from "@/lib/db/types";
 import { detectBrandFromProductName } from "@/lib/products/brands";
@@ -31,7 +32,13 @@ export function CatalogBrowser({ products }: { products: Product[] }) {
   return (
     <div className="bg-[#FEFAF9] text-[#2C2C2C]">
       <section className="border-b border-[#EAD6D8] bg-gradient-to-r from-[#F7E8EA] via-[#FCE8EC] to-[#F3DDE1]">
-        <div className="mx-auto flex max-w-7xl flex-col gap-7 px-4 py-8 sm:px-6 sm:py-10 lg:flex-row lg:items-center lg:gap-12">
+        <div className="mx-auto max-w-7xl px-4 pt-5 sm:px-6">
+          <Link href="/" className="inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-lg border border-[#EAD6D8] bg-white/90 px-4 py-2 text-xs font-medium text-[#98535C] transition-colors hover:bg-[#FFF5F6] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C46F7A]">
+            <ArrowLeft className="size-4" aria-hidden="true" />
+            Regresar a la tienda
+          </Link>
+        </div>
+        <div className="mx-auto flex max-w-7xl flex-col gap-7 px-4 pt-5 pb-8 sm:px-6 sm:pb-10 lg:flex-row lg:items-center lg:gap-12">
           <div className="flex shrink-0 items-center gap-4">
             <div className="flex size-20 shrink-0 items-center justify-center rounded-2xl border border-white bg-white/90 p-3 shadow-sm sm:size-24">
               <Image src="/logo.png" alt="Buyú Beauty" width={80} height={71} className="h-auto w-full object-contain" />

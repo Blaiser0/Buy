@@ -10,6 +10,7 @@ import { FloatingWhatsApp } from "@/components/layout/floating-whatsapp";
 
 export function ShopShell({ children }: { children: ReactNode }) {
   const pathname = usePathname();
+  const isCatalog = pathname === "/catalogo";
   const isProductDetail = /^\/productos\/[^/]+$/.test(pathname);
 
   return (
@@ -22,7 +23,7 @@ export function ShopShell({ children }: { children: ReactNode }) {
         </div>
       ) : (
         <div className="flex min-h-screen flex-col bg-white">
-          <ProductBoutiqueChrome />
+          {!isCatalog && <ProductBoutiqueChrome />}
           <main className="w-full flex-1">{children}</main>
           <BoutiqueFooter />
         </div>

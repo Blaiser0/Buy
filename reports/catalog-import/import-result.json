@@ -1,0 +1,241 @@
+{
+  "mode": "apply",
+  "before": 33,
+  "after": 78,
+  "originalRecordsUnchanged": true,
+  "duplicateNames": [],
+  "originallyExisting": 28,
+  "pending": [
+    "Bean Essence 30ml Mixsoon",
+    "MIXSOON DOUBLE CLEANSING SET",
+    "Mixsoon Bean Essence",
+    "LATTE TIRTIR MASK FIT RED CUSHION"
+  ],
+  "results": [
+    {
+      "name": "ANUA Heartleaf Pore Control Cleansing Oil",
+      "status": "CREADO",
+      "id": "57f96def-da80-4508-a73d-b5bb6a4f0320"
+    },
+    {
+      "name": "Anua PDRN Hyaluronic Acid Capsule 100 Serum 30ml",
+      "status": "CREADO",
+      "id": "8f836b21-b8ab-4ead-81eb-bab3683d4d3e"
+    },
+    {
+      "name": "BEAUTY OF JOSEON RELIEF SUN AQUA-FRESH: RICE + B5 50ML",
+      "status": "CREADO",
+      "id": "ffa4c903-f620-43e0-a6a1-4c9f85984fed"
+    },
+    {
+      "name": "Centellian24 Expert Madeca Cream Active Renew PDRN",
+      "status": "CREADO",
+      "id": "2f22cced-f750-4cdc-8a06-30ee0702edc0"
+    },
+    {
+      "name": "COSRX Advanced Snail 92 All In One Cream",
+      "status": "CREADO",
+      "id": "6edd0774-a146-4fe7-8966-6f062943c1db"
+    },
+    {
+      "name": "K-SECRET Seoul 1988 Cleansing Oil: Pine Cica 1% + Probiotics",
+      "status": "CREADO",
+      "id": "1fc6dbef-eff8-45c2-a523-ea85c637a741"
+    },
+    {
+      "name": "K-SECRET Seoul 1988 Sun: Pine Tree + Ceramide",
+      "status": "CREADO",
+      "id": "1e775e88-9d1e-4979-b801-4961fb8bb6e3"
+    },
+    {
+      "name": "K-SECRET Seoul 1988 Essence: Snail Mucin 97% + Rice",
+      "status": "CREADO",
+      "id": "46a036b2-00e7-42b0-b2d8-f77c5c4fee82"
+    },
+    {
+      "name": "K-SECRET Seoul 1988 Cleansing Foam: Pine Cica 1% + Probiotics",
+      "status": "CREADO",
+      "id": "f649999d-46b2-45f4-9d50-e257ddb7cbb4"
+    },
+    {
+      "name": "K-SECRET SEOUL 1988 EYE CREAM: RETINAL LIPOSOME 4% + FERMENTED BEAN",
+      "status": "CREADO",
+      "id": "eecf4fc6-c3e8-4deb-a721-49dbeebb6274"
+    },
+    {
+      "name": "CENTELLIAN24 Madeca Cream Time Reverse",
+      "status": "CREADO",
+      "id": "18aedcbb-d7d1-4f18-9ce5-2e20955d4d47"
+    },
+    {
+      "name": "MIXSOON CENTELLA SUN CREAM",
+      "status": "CREADO",
+      "id": "6a8102e8-9c7d-4fa6-b73f-34888a895a65"
+    },
+    {
+      "name": "MIXSOON COLLAGEN CLEANSING BALM 50ml",
+      "status": "CREADO",
+      "id": "9b1d55a5-c995-434e-b793-06a43b897f48"
+    },
+    {
+      "name": "Mixsoon Glass Skin Suitcase",
+      "status": "CREADO",
+      "id": "3a23fb97-5b3f-4b89-b93f-6bd3bdeeb3a9"
+    },
+    {
+      "name": "MIXSOON BEAN CLEANSING OIL 195ML",
+      "status": "CREADO",
+      "id": "2d7b1f02-b6dd-4f9c-a6a6-d8329f30ff10"
+    },
+    {
+      "name": "MIXSOON MASTER SERUM 60ML",
+      "status": "CREADO",
+      "id": "29162183-ad0c-401d-b750-8e89d77beb21"
+    },
+    {
+      "name": "MIXSOON SOONDY CENTELLA ASIATICA ESSENCE",
+      "status": "CREADO",
+      "id": "1e928a0e-7b6b-4b7f-b09d-b558f84ac664"
+    },
+    {
+      "name": "MIXSOON GLACIER WATER HYALORONIC ACID SERUM 300ML",
+      "status": "CREADO",
+      "id": "4c2e4341-d2e1-450c-887a-8ebc08b7ceff"
+    },
+    {
+      "name": "TONYMOLY Tomatox Magic Massage Pack 80gr",
+      "status": "CREADO",
+      "id": "9931b60b-e6dc-4979-8fe9-d79238b3edfa"
+    },
+    {
+      "name": "TOCOBO BIFIDA BIOME ESSENCE 50ML",
+      "status": "CREADO",
+      "id": "0142bfce-f78a-4f1a-9f2c-28a9e220aa80"
+    },
+    {
+      "name": "TOCOBO Blur Finish Sun Cushion 01 COTTON BLUE",
+      "status": "CREADO",
+      "id": "2ddce9be-931f-4cdc-aecb-bafc9f707e13"
+    },
+    {
+      "name": "TOCOBO Mini Cotton Soft Sun Stick",
+      "status": "CREADO",
+      "id": "3e7a0124-0d54-4b3b-adf4-8458f0cf7b8b"
+    },
+    {
+      "name": "TOCOBO Mini Cica Cooling Sun Stick",
+      "status": "CREADO",
+      "id": "8000c0cf-63df-43e4-9b04-4137ed470625"
+    },
+    {
+      "name": "TOCOBO Mini Sun Stick Trio",
+      "status": "CREADO",
+      "id": "559940bc-2ab7-4913-87b5-adfdc2572e56"
+    },
+    {
+      "name": "TOCOBO Double Cleansing Duo",
+      "status": "CREADO",
+      "id": "cb74dc98-78e6-4973-b3d2-7e09b315026c"
+    },
+    {
+      "name": "TOCOBO - Cica Calming Sun Serum SPF50+ PA++++ - 50ML",
+      "status": "CREADO",
+      "id": "334f9505-3ca9-4de7-b82d-ba33dfba03e9"
+    },
+    {
+      "name": "TOCOBO COLLAGEN BRIGHTENING EYE GEL CREAM",
+      "status": "CREADO",
+      "id": "45dc7b8f-6e8a-4623-b20c-0f4217c94763"
+    },
+    {
+      "name": "TOCOBO MULTI CERAMIDE CREAM",
+      "status": "CREADO",
+      "id": "376e5814-f4c6-4303-a0df-640569f9e2e1"
+    },
+    {
+      "name": "TOCOBO SUN STICK COTTON SOFT- BARRA",
+      "status": "CREADO",
+      "id": "3ea1325b-8cd0-4c15-a241-017dc1d502ea"
+    },
+    {
+      "name": "TOCOBO CALAMINE PORE CONTROL CLEANSING OIL 200ml",
+      "status": "CREADO",
+      "id": "8343f15b-efb5-46b4-942f-bdb02bc6a6bf"
+    },
+    {
+      "name": "TOCOBO STICK CENTELLA ASIATICA",
+      "status": "CREADO",
+      "id": "921f5954-dc53-4460-8a7c-4c4521d6ee79"
+    },
+    {
+      "name": "SKIN1004 Poremizing Velvet Finish Sunscreen",
+      "status": "CREADO",
+      "id": "740148a5-fb6a-4fe8-8ab9-ddf0b849bfd6"
+    },
+    {
+      "name": "SKIN1004 Madagascar Centella Hyalu-Cica Water-Fit Sun Serum Twin Pack SPF50+ PA++++",
+      "status": "CREADO",
+      "id": "00737704-7447-4f37-bcf6-ae6ade2c684b"
+    },
+    {
+      "name": "SKIN1004 Madagascar Centella Air Fit Suncream Light",
+      "status": "CREADO",
+      "id": "d12b46f2-c0a6-494e-ab82-2f207daa9d50"
+    },
+    {
+      "name": "SKIN1004 HYALU-CICA TRAVEL KIT",
+      "status": "CREADO",
+      "id": "21d00e1f-c87c-4e28-bbd1-b6dc6d730ee1"
+    },
+    {
+      "name": "SKIN 1004 TEA-TRICA TRAVEL KIT",
+      "status": "CREADO",
+      "id": "c567c3f5-b110-4170-aa93-9fbe34273ba7"
+    },
+    {
+      "name": "SKIN1004 MADAGASCAR CENTELLA TONE BRIGHTENING CAPSULE CREAM 75ml",
+      "status": "CREADO",
+      "id": "e188b1df-b96d-4da6-a62b-9c5002b362ce"
+    },
+    {
+      "name": "SKIN1004 CENTELLA TONE BRIGHTENING TONE-UP SUNSCREEN",
+      "status": "CREADO",
+      "id": "e1d4d0aa-8783-499b-bd79-30905b14ce70"
+    },
+    {
+      "name": "SKIN1004 Soothing cream CENTELLA -crema",
+      "status": "CREADO",
+      "id": "cc55d345-6d6d-491b-9de3-465eee1d5e1e"
+    },
+    {
+      "name": "SKIN1004 Madagascar Centella Tea-Trica Soothing Sun Milk",
+      "status": "CREADO",
+      "id": "8d23a88d-daa3-48f8-9e7d-04caf835dce7"
+    },
+    {
+      "name": "SKIN1004 MADAGASCAR CENTELLA TEA-TRICA PURIFYING TONER 210M",
+      "status": "CREADO",
+      "id": "b07925f8-fe8a-453e-b52a-2bd7f56a9288"
+    },
+    {
+      "name": "SKIN1004 Madagascar Centella Poremizing Light Gel Cream",
+      "status": "CREADO",
+      "id": "7f1a967f-1e41-4d8e-9204-81f867d2c3b4"
+    },
+    {
+      "name": "SKIN1004 Madagascar Centella Even Tone Kit 20ml",
+      "status": "CREADO",
+      "id": "4f92c17e-94ec-4ebe-96d1-605698efb9c1"
+    },
+    {
+      "name": "SKIN1004 Madagascar Centella Poremizing Clear Toner",
+      "status": "CREADO",
+      "id": "cd8debd0-028e-433f-aa1c-540d2d0cdb61"
+    },
+    {
+      "name": "SKIN1004 Madagascar Centella Ampoule Set",
+      "status": "CREADO",
+      "id": "778ab718-fe01-470e-b1c5-2b4a294b5cfb"
+    }
+  ]
+}

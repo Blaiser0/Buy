@@ -1,0 +1,332 @@
+[
+  {
+    "id": "18407a29-2997-4a65-8a5e-fe25de48febc",
+    "name": "Skin1004 Madagascar Centella Hyalu-Cica Sleeping Pack",
+    "description": "Mascarilla nocturna hidratante en gel, ligera, con Centella Asiática, 5 tipos de ácido hialurónico, melatonina y Ceramide NP. Hidrata, calma y mejora la apariencia del tono mientras duermes.",
+    "price": 80,
+    "stock_quantity": 20,
+    "image_url": "/products/skin1004-madagascar-centella-hyalu-cica-sleeping-pack/1.jpg",
+    "created_at": "2026-08-13T19:19:59.037735+00:00",
+    "category": "Hidratantes"
+  },
+  {
+    "id": "3261faa0-aa32-4d07-b4d2-2f6159bf7a37",
+    "name": "TOCOBO Bio Watery Sun Cream",
+    "description": "Sun Cream vegano de textura muy ligera tipo sérum, formulado con Bio-Hyaluronic Acid y extracto de frijol mungo. Alta protección UV con hidratación y acabado fresco, sin efecto blanco.",
+    "price": 79,
+    "stock_quantity": 20,
+    "image_url": "/products/tocobo-bio-watery-sun-cream/1.jpg",
+    "created_at": "2026-08-13T23:17:30.959795+00:00",
+    "category": "Protectores Solares"
+  },
+  {
+    "id": "3bf675ee-58c5-4d1c-8774-d5668a11b09f",
+    "name": "Anua 10+ Azelaic Acid 10 Hyaluron Redness Soothing Serum",
+    "description": "Sérum ligero con 10% de ácido azelaico, ingredientes hidratantes y calmantes. Pensado para piel sensible y para mejorar la apariencia del enrojecimiento asociado a resequedad o irritación externa.",
+    "price": 99,
+    "stock_quantity": 20,
+    "image_url": "/products/anua-10-azelaic-acid-10-hyaluron-redness-soothing-serum/1.jpg",
+    "created_at": "2026-08-13T15:40:43.469491+00:00",
+    "category": "Sueros y Ampollas"
+  },
+  {
+    "id": "3f641a94-68a1-4a45-985d-c123348ff72d",
+    "name": "TOCOBO Cica Calming Serum",
+    "description": "Sérum vegano, ligero y de rápida absorción. Calma, hidrata y apoya la barrera de la piel sensible o deshidratada, con Cica fermentada, Tea Tree y complejo de ácido hialurónico.",
+    "price": 89,
+    "stock_quantity": 20,
+    "image_url": "/products/tocobo-cica-calming-serum/1.jpg",
+    "created_at": "2026-08-13T18:21:06.561141+00:00",
+    "category": "Sueros y Ampollas"
+  },
+  {
+    "id": "3fdd7032-b1b8-4e4b-8f84-ddf3d85c5e76",
+    "name": "Centellian 24+ Madeca Mela Capture Ampoule Pad",
+    "description": "Set de 60 ampoule pads / 165 ml empapados en una esencia concentrada, enfocado especialmente en manchas visibles, tono desigual, luminosidad y textura. Destaca MadeWhiteMax y tecnologías patentadas para el cuidado de la pigmentación.",
+    "price": 105,
+    "stock_quantity": 20,
+    "image_url": "/products/centellian-24-madeca-mela-capture-ampoule-pad/1.jpg",
+    "created_at": "2026-08-14T17:18:11.025359+00:00",
+    "category": "Tónicos"
+  },
+  {
+    "id": "5347ff4d-3acb-43d6-b9a7-4a0c80938552",
+    "name": "Mixsoon Centella Cleansing Foam",
+    "description": "Foam Cleanser coreano de 150 ml con 32.8% de Centella Asiática y fórmula suavemente ácida. Limpia impurezas, exceso de sebo y residuos sin dejar la piel excesivamente tirante.",
+    "price": 67,
+    "stock_quantity": 20,
+    "image_url": "/products/mixsoon-centella-cleansing-foam/1.jpg",
+    "created_at": "2026-08-13T00:54:31.866645+00:00",
+    "category": "Limpiadores"
+  },
+  {
+    "id": "58a6a5ce-d20a-4543-a2d6-8ab4a0a54fe6",
+    "name": "SKIN1004 Madagascar Centella Hyalu-Cica Silky-Fit Sun Stick",
+    "description": "Protección solar K-Beauty para llevar a todas partes. El SKIN1004 Hyalu-Cica Silky-Fit Sun Stick es un Sun Stick coreano SPF50+ PA++++ que ayuda a proteger la piel de los rayos UVA y UVB mientras aporta hidratación. Su textura se desliza suavemente y deja un Silky Finish —acabado sedoso y ligero— sin efecto blanco. Ideal para tu Daily Sun Care: protección solar diaria y práctica.",
+    "price": 69,
+    "stock_quantity": 15,
+    "image_url": "/products/skin1004-sun-stick/1.jpg",
+    "created_at": "2026-08-07T16:37:21.750511+00:00",
+    "category": "Protectores Solares"
+  },
+  {
+    "id": "5a89d4af-ee79-4ae1-9ba3-b51320a9867e",
+    "name": "Beauty of Joseon Relief Sun: Rice + Probiotics",
+    "description": "Protección solar diaria SPF50+ PA++++ con 30% extracto de arroz y granos fermentados. Textura cremosa ligera, hidratante y sin efecto blanco.",
+    "price": 79,
+    "stock_quantity": 20,
+    "image_url": "/products/beauty-of-joseon-relief-sun-rice-probiotics/1.jpg",
+    "created_at": "2026-08-13T23:04:34.659942+00:00",
+    "category": "Protectores Solares"
+  },
+  {
+    "id": "5f3cb88c-d4c6-443f-8b98-f855e07ef939",
+    "name": "Skin1004 Madagascar Centella Tone Brightening Cleansing Gel Foam",
+    "description": "Gel limpiador hidratante de 125 ml que forma espuma suave. Limpia maquillaje e impurezas sin retirar en exceso la humedad natural y ayuda a mejorar la apariencia luminosa de la piel.",
+    "price": 68,
+    "stock_quantity": 20,
+    "image_url": "/products/skin1004-madagascar-centella-tone-brightening-cleansing-gel-foam/1.jpg",
+    "created_at": "2026-08-13T00:29:15.425137+00:00",
+    "category": "Limpiadores"
+  },
+  {
+    "id": "73b29cd9-049a-493b-b4ee-b7203bc48561",
+    "name": "Celimax Pore + Dark Spot Brightening Care Sunscreen",
+    "description": "Sun Care químico SPF50+ PA++++ que combina protección UV con cuidado de manchas, luminosidad e hidratación. 5% niacinamida + 1% ácido tranexámico, con fórmula tipo esencia (79.3% componentes hidratantes).",
+    "price": 89,
+    "stock_quantity": 20,
+    "image_url": "/products/celimax-pore-dark-spot-brightening-care-sunscreen/1.jpg",
+    "created_at": "2026-08-13T22:53:20.130285+00:00",
+    "category": "Protectores Solares"
+  },
+  {
+    "id": "896c4073-c1dd-42ff-99b1-6c2570358c0b",
+    "name": "Centellian 24+ Madeca Mela Capture Ampoule Capsule Cream",
+    "description": "Crema coreana de doble textura: cápsulas blancas de ampoule suspendidas en una gel cream rosada. Enfocada en luminosidad, manchas visibles, hidratación y firmeza.",
+    "price": 95,
+    "stock_quantity": 20,
+    "image_url": "/products/centellian-24-madeca-mela-capture-ampoule-capsule-cream/1.jpg",
+    "created_at": "2026-08-14T16:57:55.656827+00:00",
+    "category": "Hidratantes"
+  },
+  {
+    "id": "8abab2f7-eb1f-431c-aa34-e1bf469df179",
+    "name": "Beauty of Joseon Matte Sun Stick : Mugwort + Camelia SPF50+ PA++++",
+    "description": "Sun Stick coreano de 18 g desarrollado para ofrecer alta protección UV con un acabado mate y suave. Su fórmula destaca sílica para controlar el exceso de sebo y extractos botánicos como Mugwort (artemisia) y té verde/camelia para complementar el cuidado calmante de la piel.",
+    "price": 69,
+    "stock_quantity": 20,
+    "image_url": "/products/beauty-of-joseon-matte-sun-stick-mugwort-camelia-spf50-pa/1.jpg",
+    "created_at": "2026-08-14T22:43:06.284918+00:00",
+    "category": "Protectores Solares"
+  },
+  {
+    "id": "8c512d9f-6c1c-4643-84b2-5a29fc8f09bc",
+    "name": "SKIN1004 Madagascar Centella Tone Brightening Capsule Ampoule",
+    "description": "Ampoule iluminadora de uso diario formulada con 4% de niacinamida, 2% de ácido tranexámico y Madewhite™ encapsulado, enfocada en manchas visibles, tono desigual y piel apagada.",
+    "price": 89,
+    "stock_quantity": 20,
+    "image_url": "/products/skin1004-madagascar-centella-tone-brightening-capsule-ampoule/1.jpg",
+    "created_at": "2026-08-14T19:41:11.534366+00:00",
+    "category": "Sueros y Ampollas"
+  },
+  {
+    "id": "8d919e3f-f7b8-4c8f-bab0-3b39e35c691e",
+    "name": "Skin1004 Madagascar Centella Toning Toner",
+    "description": "Suavidad y renovación al estilo K-Beauty. El SKIN1004 Madagascar Centella Toning Toner es un tónico diario coreano que combina Centella Asiática de Madagascar y PHA para exfoliar suavemente, retirar células muertas y dejar la piel más lisa y luminosa. Su textura ligera y acuosa prepara la piel después de la limpieza sin sensación pesada.",
+    "price": 79,
+    "stock_quantity": 20,
+    "image_url": "/products/skin1004-toning-toner/1.jpg",
+    "created_at": "2026-08-10T02:39:41.407689+00:00",
+    "category": "Tónicos"
+  },
+  {
+    "id": "8fa846da-c867-4c13-9e81-580c6846b933",
+    "name": "Mixsoon Centella Cleansing Water",
+    "description": "Agua limpiadora coreana de 300 ml con Centella Asiática. Retira maquillaje, sebo e impurezas con suavidad; fórmula ligera adecuada también para piel sensible.",
+    "price": 89,
+    "stock_quantity": 20,
+    "image_url": "/products/mixsoon-centella-cleansing-water/1.jpg",
+    "created_at": "2026-08-12T17:21:34.754684+00:00",
+    "category": "Limpiadores"
+  },
+  {
+    "id": "9670659a-5f6f-457a-8ca1-985364bcca46",
+    "name": "SKIN1004 Madagascar Centella Retinol 0.2% Boosting Shot Ampoule",
+    "description": "Ampoule de noche con 0.2% retinol, retinal, Centella de Madagascar, pantenol y microespículas. Enfocada en firmeza, elasticidad y textura.",
+    "price": 95,
+    "stock_quantity": 20,
+    "image_url": "/products/skin1004-madagascar-centella-retinol-0-2-boosting-shot-ampoule/1.jpg",
+    "created_at": "2026-08-13T18:49:34.642086+00:00",
+    "category": "Sueros y Ampollas"
+  },
+  {
+    "id": "ab661514-fba1-4920-b1d8-d7a5d07a7921",
+    "name": "TOCOBO Cica Calming Gel Cream",
+    "description": "Crema hidratante en gel de textura ligera, con Cica fermentada, complejo de ácido hialurónico, Tea Tree y Ceramide NP. Calma, hidrata y cuida la barrera de la piel.",
+    "price": 89,
+    "stock_quantity": 20,
+    "image_url": "/products/tocobo-cica-calming-gel-cream/1.jpg",
+    "created_at": "2026-08-13T19:46:25.496973+00:00",
+    "category": "Hidratantes"
+  },
+  {
+    "id": "b2ad0f3a-f98b-4eb4-84ee-cc9345ef12d1",
+    "name": "mixsoon Bean Cream",
+    "description": "Crema nutritiva e intensamente hidratante con soja fermentada. Conserva la humedad, suaviza la textura y apoya la barrera de la piel, con acabado suave y no graso.",
+    "price": 89,
+    "stock_quantity": 20,
+    "image_url": "/products/mixsoon-bean-cream/1.jpg",
+    "created_at": "2026-08-13T20:08:09.852435+00:00",
+    "category": "Hidratantes"
+  },
+  {
+    "id": "b6798ee8-e01c-4174-9633-03a9b7b076e5",
+    "name": "SKIN1004 Madagascar Centella Hyalu-Cica First Ampoule",
+    "description": "First Ampoule de textura acuosa formulada con 5 tipos de ácido hialurónico, Centella Asiática de Madagascar, savia de abedul e hiedra, diseñada para aportar hidratación rápida y preparar la piel para los siguientes pasos de la rutina.",
+    "price": 85,
+    "stock_quantity": 20,
+    "image_url": "/products/skin1004-madagascar-centella-hyalu-cica-first-ampoule/1.jpg",
+    "created_at": "2026-08-14T23:19:09.472675+00:00",
+    "category": "Sueros y Ampollas"
+  },
+  {
+    "id": "c1c3c01c-b5c9-49fd-8dcf-236d5d1398b0",
+    "name": "SKIN1004 Madagascar Centella Niacinamide 10% Boosting Shot Ampoule",
+    "description": "Ampolla de alto rendimiento con 10% de niacinamida y Centella de Madagascar. Enfocada en mejorar visualmente la apariencia de poros, textura y luminosidad.",
+    "price": 95,
+    "stock_quantity": 20,
+    "image_url": "/products/skin1004-madagascar-centella-niacinamide-10-boosting-shot-ampoule/1.jpg",
+    "created_at": "2026-08-13T03:03:19.655552+00:00",
+    "category": "Sueros y Ampollas"
+  },
+  {
+    "id": "c80aa218-e6fb-46cc-ba9d-ca2df654384c",
+    "name": "Anua 10+ Niacinamide 10 TXA 4 Serum",
+    "description": "Sérum iluminador con 10% niacinamida + 4% ácido tranexámico (TXA) + 2% arbutina. Enfocado en manchas visibles, tono desigual, opacidad y apariencia de poros. Textura acuosa, ligera y no grasa.",
+    "price": 99,
+    "stock_quantity": 20,
+    "image_url": "/products/anua-10-niacinamide-10-txa-4-serum/1.jpg",
+    "created_at": "2026-08-13T16:02:47.017728+00:00",
+    "category": "Sueros y Ampollas"
+  },
+  {
+    "id": "d2c33f03-8baa-47de-bcb0-5748b482b6d5",
+    "name": "Pure Glow Essentials Set",
+    "description": "Kit K-Beauty de 5 pasos en formato mini pensado para realizar una rutina completa: limpiar, tonificar, tratar e hidratar. Set suave e hidratante orientado a una apariencia fresca y luminosa tipo Glass Skin.",
+    "price": 105,
+    "stock_quantity": 20,
+    "image_url": "/products/pure-glow-essentials-set/1.jpg",
+    "created_at": "2026-08-14T16:41:22.080827+00:00",
+    "category": "Sets & Regalos"
+  },
+  {
+    "id": "dc3f1234-7abd-495a-b7e9-36e09b5d6a37",
+    "name": "K-SECRET SEOUL 1988 SERUM: Retinal liposome 2% + black ginseng",
+    "description": "Sérum enfocado en firmeza, arrugas visibles, pigmentación y textura irregular. Formulada con 2% de retinal liposomado, ginseng negro, bakuchiol, vitamina C y péptidos.",
+    "price": 85,
+    "stock_quantity": 20,
+    "image_url": "/products/k-secret-seoul-1988-serum-retinal-liposome-2-black-ginseng/1.jpg",
+    "created_at": "2026-08-13T19:09:22.182692+00:00",
+    "category": "Sueros y Ampollas"
+  },
+  {
+    "id": "ddadf850-155a-4a71-85cd-3adf107b3a13",
+    "name": "Skin1004 Madagascar Centella Hyalu-Cica Water-Fit Sun Serum",
+    "description": "Sun Serum químico, ultraligero y de rápida absorción. Combina protección UV con hidratación y cuidado calmante. Acabado dewy luminoso, no graso y sin efecto blanco. SPF50+ PA++++.",
+    "price": 80,
+    "stock_quantity": 20,
+    "image_url": "/products/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum/1.jpg",
+    "created_at": "2026-08-13T21:21:24.365115+00:00",
+    "category": "Protectores Solares"
+  },
+  {
+    "id": "e01b311e-300d-428b-9721-40883efb0ca4",
+    "name": "Skin1004 Madagascar Centella Ampoule Foam",
+    "description": "Limpiador facial en espuma coreano con Centella de Madagascar y pH 5. Retira impurezas y exceso de sebo sin dejar la piel tirante.",
+    "price": 999,
+    "stock_quantity": 20,
+    "image_url": "/products/skin1004-madagascar-centella-ampoule-foam/1.jpg",
+    "created_at": "2026-08-12T19:20:15.708279+00:00",
+    "category": "Limpiadores"
+  },
+  {
+    "id": "e01d420c-ecfa-46ad-b802-78fe7b0260ea",
+    "name": "SKIN1004 Madagascar Centella Air-Fit Suncream Plus SPF50+ PA++++",
+    "description": "Sun Cream mineral con ligero tono beige, pensado especialmente para piel mixta y grasa. Acabado natural mate, efecto visual difuminador sobre poros y textura, y cuidado calmante con Centella Asiática.",
+    "price": 85,
+    "stock_quantity": 25,
+    "image_url": "/products/skin1004-madagascar-centella-air-fit-suncream-plus-spf50-pa/1.jpg",
+    "created_at": "2026-08-14T22:23:42.759079+00:00",
+    "category": "Protectores Solares"
+  },
+  {
+    "id": "e2bbf526-9d09-4c94-adfb-19ca8b472c65",
+    "name": "Skin1004 Madagascar Centella Hyalu-Cica Brightening Toner",
+    "description": "Tónico hidratante con exfoliación suave AHA + LHA. Aporta hidratación, suaviza la textura y mejora la luminosidad. Recomendado principalmente para piel normal y seca.",
+    "price": 80,
+    "stock_quantity": 20,
+    "image_url": "/products/skin1004-madagascar-centella-hyalu-cica-brightening-toner/1.jpg",
+    "created_at": "2026-08-13T02:31:53.897491+00:00",
+    "category": "Tónicos"
+  },
+  {
+    "id": "e8ce733f-abb3-4f60-b200-f4577d62bd18",
+    "name": "Centellian 24 360° Shot PDRN Lifting Eye Cream",
+    "description": "Crema para el contorno de ojos con PDRN de salmón, componentes de Centella Asiática y complejo TECA-2X PDRN. Enfocada en elasticidad y apariencia de arrugas del contorno.",
+    "price": 85,
+    "stock_quantity": 20,
+    "image_url": "/products/centellian-24-360-shot-pdrn-lifting-eye-cream/1.jpg",
+    "created_at": "2026-08-13T21:13:24.968333+00:00",
+    "category": "Hidratantes"
+  },
+  {
+    "id": "ea795983-fa14-4555-8ea8-86b7a31dc08a",
+    "name": "Skin1004 Madagascar Centella Hyalu-Cica Blue Serum",
+    "description": "Sérum hidratante ligero all-in-one con Centella Asiática, 5 tipos de ácido hialurónico, Ceramide NP, niacinamida y adenosina. Orientado a hidratación y confort en piel normal o seca.",
+    "price": 80,
+    "stock_quantity": 20,
+    "image_url": "/products/skin1004-madagascar-centella-hyalu-cica-blue-serum/1.jpg",
+    "created_at": "2026-08-13T02:49:47.589757+00:00",
+    "category": "Sueros y Ampollas"
+  },
+  {
+    "id": "ee703e17-3d5b-4110-9f88-3a0eb5f060ae",
+    "name": "TOCOBO Coconut Clay Cleansing Foam",
+    "description": "Limpiador facial coreano de 150 ml con arcillas minerales y 27% de agentes limpiadores derivados del coco. Limpieza profunda de poros y exceso de sebo sin dejar la piel excesivamente seca. Ideal para piel mixta o grasa.",
+    "price": 65,
+    "stock_quantity": 20,
+    "image_url": "/products/tocobo-coconut-clay-cleansing-foam/1.jpg",
+    "created_at": "2026-08-13T00:43:21.569169+00:00",
+    "category": "Limpiadores"
+  },
+  {
+    "id": "f1446046-86ab-48e6-90ea-fa0c9f656611",
+    "name": "COSRX Advanced Snail 96 Mucin Power Essence",
+    "description": "Su fórmula contiene 96.3% de filtrado de secreción de caracol, y está enfocada en hidratación, confort, recuperación de la apariencia de la piel y mejora de la textura. COSRX la recomienda para todo tipo de piel, incluida piel sensible.",
+    "price": 78,
+    "stock_quantity": 20,
+    "image_url": "/products/cosrx-advanced-snail-96-mucin-power-essence/1.jpg",
+    "created_at": "2026-08-14T22:58:31.23632+00:00",
+    "category": "Sueros y Ampollas"
+  },
+  {
+    "id": "f6fc80d8-c6c2-4f75-abda-d6de6f143f92",
+    "name": "TIRTIR Mask Fit Red Cushion (27C Cool Beige)",
+    "description": "Base cushion coreana de alta cobertura en tono 27C Cool Beige (matiz frío). Acabado semi-mate natural, textura ligera e hidratante, con protección UV SPF40 PA++.",
+    "price": 999,
+    "stock_quantity": 15,
+    "image_url": "/products/tirtir-mask-fit-red-cushion/1.jpg",
+    "created_at": "2026-08-12T16:21:27.615061+00:00",
+    "category": "Maquillaje"
+  },
+  {
+    "id": "fb02514c-ba64-4a7b-9c02-991ab5f4bae8",
+    "name": "Anua 7+ Rice Ceramide Hydrating Barrier Serum",
+    "description": "Sérum hidratante y calmante, sin fragancia. Refuerza la barrera de humedad, equilibra el exceso de sebo y aporta un acabado luminoso tipo Glass Skin.",
+    "price": 79,
+    "stock_quantity": 20,
+    "image_url": "/products/anua-7-rice-ceramide-hydrating-barrier-serum/1.jpg",
+    "created_at": "2026-08-13T03:10:26.074959+00:00",
+    "category": "Sueros y Ampollas"
+  }
+]

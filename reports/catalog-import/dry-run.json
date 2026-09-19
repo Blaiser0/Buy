@@ -1,0 +1,1248 @@
+[
+  {
+    "name": "ANUA Heartleaf Pore Control Cleansing Oil",
+    "source": "El ANUA Heartleaf Pore Control Cleansing Oil es un aceite limpiador facial que disuelve maquillaje-fusionado (1).docx",
+    "startParagraph": 3,
+    "endParagraphExclusive": 10,
+    "sourceText": "El ANUA Heartleaf Pore Control Cleansing Oil es un aceite limpiador facial que disuelve maquillaje, protector solar y exceso de grasa. Gracias al extracto de Heartleaf (hoja de corazón), limpia los poros a fondo y calma la piel sin causar irritación ni brotes de acné.\nBeneficios principales\nControla la grasa: Remueve los \"filamentos sebáceos\" (puntos negros y blancos) y regula la producción de sebo de forma natural.\nCalma la piel: El Heartleaf tiene propiedades antiinflamatorias que reducen las rojeces y cuidan las pieles sensibles o con acné.\nNo obstruye los poros: Tiene una textura muy ligera (no comedogénica) que no deja sensación grasosa.\nDesmaquilla sin frotar: Retira maquillaje a prueba de agua y filtros solares con total suavidad.\nS/. 80.00",
+    "price": 80.0,
+    "category": "Limpiadores",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "Anua PDRN Hyaluronic Acid Capsule 100 Serum 30ml",
+    "source": "El ANUA Heartleaf Pore Control Cleansing Oil es un aceite limpiador facial que disuelve maquillaje-fusionado (1).docx",
+    "startParagraph": 14,
+    "endParagraphExclusive": 22,
+    "sourceText": "Anua PDRN Hyaluronic Acid 100 es una línea de cuidado de la piel que combina PDRN (ADN de salmón) y ácido hialurónico. Está diseñada para ofrecer hidratación profunda multicapa, estimular la regeneración celular, mejorar la elasticidad y reducir los signos de envejecimiento.\nHidratación profunda y duradera: Gracias a sus múltiples tipos de ácido hialurónico, penetra en distintas capas de la piel, restaurándola y manteniéndola hidratada por horas.\nEfecto antiedad y regeneración: El PDRN (derivado del ADN de salmón) estimula la renovación celular y la producción natural de colágeno, ayudando a rellenar y disminuir líneas de expresión.\nMayor elasticidad y firmeza: La combinación con colágeno y antioxidantes devuelve la elasticidad, mejorando la textura general del rostro.\nLuminosidad natural (Glass Skin): Aporta un brillo saludable al rostro sin dejar una sensación pesada o grasosa.\nBarrera cutánea reforzada: Fortalece la piel frente a agresores externos y es ideal para pieles sensibles o deshidratadas\n\nS/. 99.00",
+    "price": 99.0,
+    "category": "Sueros y Ampollas",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "Anua Niacinamide 10% + TXA 4% Serum 30ml",
+    "source": "El ANUA Heartleaf Pore Control Cleansing Oil es un aceite limpiador facial que disuelve maquillaje-fusionado (1).docx",
+    "startParagraph": 57,
+    "endParagraphExclusive": 65,
+    "sourceText": "El Anua Niacinamide 10% + TXA 4% Serum 30ml es un suero facial coreano diseñado para aclarar manchas oscuras, reducir marcas de acné y unificar el tono de la piel. Contiene un 10% de niacinamida, un 4% de ácido tranexámico y un 2% de arbutina.\n¿Qué aporta la combinación de niacinamida y ácido tranexámico en este sérum?\nLa niacinamida y el ácido tranexámico son ingredientes ampliamente utilizados en productos de cuidado facial para ayudar a mejorar la apariencia del tono desigual y favorecer una piel con aspecto más uniforme.\n\n\n\n\nS/95.00 SOLES",
+    "price": 95.0,
+    "category": "Sueros y Ampollas",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "c80aa218-e6fb-46cc-ba9d-ca2df654384c",
+        "name": "Anua 10+ Niacinamide 10 TXA 4 Serum",
+        "price": 99
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "Anua 10+ Azelaic Acid 10 Hyaluron Redness Soothing Serum",
+    "source": "El ANUA Heartleaf Pore Control Cleansing Oil es un aceite limpiador facial que disuelve maquillaje-fusionado (1).docx",
+    "startParagraph": 103,
+    "endParagraphExclusive": 106,
+    "sourceText": "Su fórmula ligera y no irritante es ideal para piel sensible, grasa o propensa al acné, ofreciendo hidratación profunda y una piel más suave y uniforme.\nAdemás, su acción antiinflamatoria y antioxidante ayuda a mejorar el tono y a proteger la barrera cutánea.\nS/. 99.00",
+    "price": 99.0,
+    "category": "Sueros y Ampollas",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "3bf675ee-58c5-4d1c-8774-d5668a11b09f",
+        "name": "Anua 10+ Azelaic Acid 10 Hyaluron Redness Soothing Serum",
+        "price": 99
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "ANUA 7 Rice Ceramide Hydrating Barrier Serum",
+    "source": "El ANUA Heartleaf Pore Control Cleansing Oil es un aceite limpiador facial que disuelve maquillaje-fusionado (1).docx",
+    "startParagraph": 110,
+    "endParagraphExclusive": 113,
+    "sourceText": "El ANUA 7 Rice Ceramide Hydrating Barrier Serum es un serum hidratante que fortalece la barrera cutánea, mejora la elasticidad y aporta luminosidad. Su fórmula con arroz, ceramida, ácido hialurónico y miel hidrata profundamente, dejando la piel más firme, suave y radiante. Ideal para piel seca, opaca o deshidratada.\n\nS/. 79.00",
+    "price": 79.0,
+    "category": "Sueros y Ampollas",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "fb02514c-ba64-4a7b-9c02-991ab5f4bae8",
+        "name": "Anua 7+ Rice Ceramide Hydrating Barrier Serum",
+        "price": 79
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "BEAUTY OF JOSEON Matte Sun Stick: Mugwort + Camelia SPF50+ PA++++",
+    "source": "El ANUA Heartleaf Pore Control Cleansing Oil es un aceite limpiador facial que disuelve maquillaje-fusionado (1).docx",
+    "startParagraph": 116,
+    "endParagraphExclusive": 121,
+    "sourceText": "Matte Sun Stick: Mugwort + Camelia SPF50+ PA++++\n\n🔴Precio recomendado: s/85\nBEAUTY OF JOSEON Matte Sun Stick: Mugwort + Camelia SPF50+ PA++++ es un bloqueador en barra de retoque pensando en las pieles grasas y/o mixtas creo este bloqueador de acabado mate que es perfecto para el retoque de la protección solar durante el día.\nS/. 69.00",
+    "price": 69.0,
+    "category": "Protectores Solares",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "8abab2f7-eb1f-431c-aa34-e1bf469df179",
+        "name": "Beauty of Joseon Matte Sun Stick : Mugwort + Camelia SPF50+ PA++++",
+        "price": 69
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "Beauty Of Joseon - Pr Solar SPF 50+ PA ++++",
+    "source": "El ANUA Heartleaf Pore Control Cleansing Oil es un aceite limpiador facial que disuelve maquillaje-fusionado (1).docx",
+    "startParagraph": 125,
+    "endParagraphExclusive": 130,
+    "sourceText": "Beauty Of Joseon - Pr Solar SPF 50+ PA ++++\n\n🔴Precio de venta recomendado: s/80\nProtector solar orgánico de tipo ligero y cremoso que resulta cómodo para la piel. Aunque se aplique una gran cantidad varias veces, no es pegajoso y da un acabado húmedo como el de una crema hidratante ligera.\nS/. 79.00",
+    "price": 79.0,
+    "category": "Protectores Solares",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "5a89d4af-ee79-4ae1-9ba3-b51320a9867e",
+        "name": "Beauty of Joseon Relief Sun: Rice + Probiotics",
+        "price": 79
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "BEAUTY OF JOSEON RELIEF SUN AQUA-FRESH: RICE + B5 50ML",
+    "source": "El ANUA Heartleaf Pore Control Cleansing Oil es un aceite limpiador facial que disuelve maquillaje-fusionado (1).docx",
+    "startParagraph": 134,
+    "endParagraphExclusive": 139,
+    "sourceText": "BEAUTY OF JOSEON RELIEF SUN AQUA-FRESH: RICE + B5 50ML\n\nRelief Sun Aqua Fresh es el nuevo lanzamiento de su línea de protectores solares.\nEnriquecido con 30% de extracto de arroz y pantenol(vitamina B5), no solo protege sino también revitaliza la piel estresada por la exposición a los rayos UV y al calor.\nS/. 79.00",
+    "price": 79.0,
+    "category": "Protectores Solares",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "CELIMAX PORE + DARK SPOT BRIGHTENING CARE SUNSCREEN",
+    "source": "El ANUA Heartleaf Pore Control Cleansing Oil es un aceite limpiador facial que disuelve maquillaje-fusionado (1).docx",
+    "startParagraph": 141,
+    "endParagraphExclusive": 155,
+    "sourceText": "CELIMAX PORE + DARK SPOT BRIGHTENING CARE SUNSCREEN\n\n\nEl pore+dark spot brightening care sunscreen proporciona alta protección contra los rayos UV, mientras ayuda a controlar la producción de sebo, reducir la apariencia de los poros dilatados y aclarar las manchas oscuras.\nTiene un acabado natural en la piel sin dejar sensación grasosa ni efecto blanco; por eso es ideal para el uso diario e incluso para las pieles mixtas o grasas.\n✨Beneficios de incluirlo en tu rutina\n\nProtección solar de amplio espectro (UVA y UVB).\nControla el exceso de grasa en la piel sin resecar.\nAporta luminosidad a la piel y reduce las manchas.\n\n\n\nS/89.00",
+    "price": 89.0,
+    "category": "Protectores Solares",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "73b29cd9-049a-493b-b4ee-b7203bc48561",
+        "name": "Celimax Pore + Dark Spot Brightening Care Sunscreen",
+        "price": 89
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "Centellian24 Expert Madeca Cream Active Renew PDRN",
+    "source": "El ANUA Heartleaf Pore Control Cleansing Oil es un aceite limpiador facial que disuelve maquillaje-fusionado (1).docx",
+    "startParagraph": 238,
+    "endParagraphExclusive": 242,
+    "sourceText": "Centellian24 Expert Madeca Cream Active Renew PDRN\n\nes una crema antienvejecimiento coreana altamente elogiada por hidratar intensamente, reafirmar y mejorar la elasticidad de la piel gracias a su tecnología TECA-PDRN. Es valorada por su textura ligera de rápida absorción, no grasa, y su capacidad para suavizar arrugas, siendo adecuada para pieles sensibles y secas.\nS/. 95.00",
+    "price": 95.0,
+    "category": "Hidratantes",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "COSRX Snail 96 Mucin Power Essence",
+    "source": "El ANUA Heartleaf Pore Control Cleansing Oil es un aceite limpiador facial que disuelve maquillaje-fusionado (1).docx",
+    "startParagraph": 257,
+    "endParagraphExclusive": 261,
+    "sourceText": "COSRX Snail 96 Mucin Power Essence\n\nEsencia ultrahidratante con 96% de mucina de caracol que mejora la elasticidad, repara la piel dañada y ayuda a calmar la sensibilidad. Textura ligera tipo gel, no pegajosa.\nS/. 78.00",
+    "price": 78.0,
+    "category": "Sueros y Ampollas",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "f1446046-86ab-48e6-90ea-fa0c9f656611",
+        "name": "COSRX Advanced Snail 96 Mucin Power Essence",
+        "price": 78
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "COSRX Advanced Snail 92 All In One Cream",
+    "source": "El ANUA Heartleaf Pore Control Cleansing Oil es un aceite limpiador facial que disuelve maquillaje-fusionado (1).docx",
+    "startParagraph": 305,
+    "endParagraphExclusive": 313,
+    "sourceText": "COSRX Advanced Snail 92 All In One Cream\nLa COSRX Advanced Snail 92 All In One Cream es una crema facial hidratante y reparadora hecha con 92% de mucina de caracol, ácido hialurónico y alantoína. Ayuda a calmar la piel, retener la humedad y mejorar marcas de acné.\nBeneficios Principales\nRepara la piel: Ayuda a sanar zonas irritadas o dañadas por brotes.\nHidrata sin pesar: Su textura tipo gel se absorbe rápido y no deja la piel grasosa.\nMejora la elasticidad: Deja el rostro más suave, firme y con brillo natural.\n\nS/80.00",
+    "price": 80.0,
+    "category": "Hidratantes",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "K-SECRET Seoul 1988 Cleansing Oil: Pine Cica 1% + Probiotics",
+    "source": "El ANUA Heartleaf Pore Control Cleansing Oil es un aceite limpiador facial que disuelve maquillaje-fusionado (1).docx",
+    "startParagraph": 318,
+    "endParagraphExclusive": 327,
+    "sourceText": "Seoul 1988 Cleansing Oil: Pine Cica 1% + Probiotics\n\nEl Seoul 1988 Cleansing Oil ofrece limpieza profunda. También aporta calma cutánea inmediata. Destaca su 1% de Pine Cica junto a probióticos. Ambos componentes fortalecen la barrera protectora celular.\nBeneficios principales\nDesmaquilla eficazmente: Disuelve cosméticos resistentes al agua. Elimina protector solar: Retira filtros solares diarios.\nLimpia poros: Reduce puntos negros y blancos. Calma rojeces: Alivia pieles sensibles o irritadas.\nEquilibra la microbiota: Los probióticos protegen la dermis. Regula la grasa: Controla el exceso de sebo.\nEvita la resequedad: Preserva la hidratación natural cutánea. Emulsión rápida: Se enjuaga fácilmente sin dejar grasa.\nS/. 75.00",
+    "price": 75.0,
+    "category": "Limpiadores",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "K-SECRET Seoul 1988 Sun: Pine Tree + Ceramide",
+    "source": "El ANUA Heartleaf Pore Control Cleansing Oil es un aceite limpiador facial que disuelve maquillaje-fusionado (1).docx",
+    "startParagraph": 329,
+    "endParagraphExclusive": 332,
+    "sourceText": "Seoul 1988 Sun: Pine Tree + Ceramide\nEl K-SECRET Seoul 1988 Sun: Pine Tree + Ceramide rinde homenaje a la pureza de la cosmética coreana tradicional con una fórmula de última generación. Este protector solar de amplio espectro (SPF 50+ PA++++) está diseñado específicamente para las pieles más exigentes, reactivas y con tendencia a brotes, ofreciendo una defensa total contra los rayos UV sin asfixiar tu cutis.\nS/85.00",
+    "price": 85.0,
+    "category": "Protectores Solares",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "K-SECRET Seoul 1988 Essence: Snail Mucin 97% + Rice",
+    "source": "El ANUA Heartleaf Pore Control Cleansing Oil es un aceite limpiador facial que disuelve maquillaje-fusionado (1).docx",
+    "startParagraph": 334,
+    "endParagraphExclusive": 342,
+    "sourceText": "Seoul 1988 Essence: Snail Mucin 97% + Rice\n\nEsta esencia combina el alto poder regenerador de la baba de caracol con las propiedades iluminadoras del arroz, ofreciendo un tratamiento intensivo para transformar la textura y el tono de la piel.\nBeneficios Principales\nRegeneración Cutánea Avanzada: Con un 97% de mucina de caracol, acelera la reparación de la piel, ayuda a sanar imperfecciones y desvanece visiblemente las marcas o cicatrices de acné.\nIluminación y Tono Uniforme: El extracto de arroz actúa directamente sobre la opacidad y las manchas, devolviendo la luminosidad natural y unificando el tono del rostro.\nElasticidad y Efecto Plump: Aporta una hidratación profunda que rellena las líneas finas de expresión, mejorando significativamente la firmeza y la flexibilidad de la piel. Nutrición y Calma: Repara la barrera cutánea dañada y calma la irritación, dejando la piel protegida, suave y reconfortada.\nS/. 79.00",
+    "price": 79.0,
+    "category": "Sueros y Ampollas",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "K-SECRET Seoul 1988 Cleansing Foam: Pine Cica 1% + Probiotics",
+    "source": "El ANUA Heartleaf Pore Control Cleansing Oil es un aceite limpiador facial que disuelve maquillaje-fusionado (1).docx",
+    "startParagraph": 344,
+    "endParagraphExclusive": 352,
+    "sourceText": "Seoul 1988 Cleansing Foam: Pine Cica 1% + Probiotics\nEste limpiador en espuma combina la purificación profunda con el cuidado de la barrera cutánea, utilizando las propiedades calmantes del pino y la fuerza protectora de los probióticos para limpiar sin resecar.\nBeneficios Principales\nLimpieza Profunda y Respetuosa: Elimina eficazmente las impurezas, el exceso de sebo y los residuos de contaminación de los poros sin alterar el equilibrio natural de la piel.\nCalma y Alivio Térmico: Gracias al 1% de Pine Cica (complejo de pino y centella asiática), calma instantáneamente la irritación, reduce las rojeces y desinflama las pieles sensibles o con brotes.\nFortalecimiento de la Barrera: El complejo de probióticos nutre y protege el microbioma de la piel, reforzando sus defensas naturales contra bacterias y agentes externos.\nHidratación Post-Limpieza: Mantiene los niveles de humedad óptimos en el rostro, evitando la incómoda sensación de tirantez o resequedad después del enjuague.\nS/65.00",
+    "price": 65.0,
+    "category": "Limpiadores",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "K-SECRET SEOUL 1988 SERUM: RETINAL LIPOSOME 2% + BLACK GINSENG-serum",
+    "source": "El ANUA Heartleaf Pore Control Cleansing Oil es un aceite limpiador facial que disuelve maquillaje-fusionado (1).docx",
+    "startParagraph": 354,
+    "endParagraphExclusive": 361,
+    "sourceText": "SEOUL 1988 SERUM: RETINAL LIPOSOME 2% + BLACK GINSENG-serum\n\nes un serum antiedad intensivo formulado con retinal al 2% encapsulado en liposomas y ginseng negro fermentado, dos ingredientes de alta eficacia que trabajan en sinergia para mejorar la textura de la piel, reducir líneas finas, estimular la producción de colágeno y aportar luminosidad. Así como un 58 % de extracto de ginseng negro para tener propiedades antioxidantes, antiinflamatorias y estimulantes del colágeno.\nEste sérum reduce drásticamente la pigmentación, rellena las arrugas desde el interior con nutrientes y las hace menos visibles, reduce la producción de melanina, causante de las manchas de pigmentación, estimula la producción de colágeno, mejora la elasticidad y firmeza de la dermis\nContenido:\n30ml\nS/. 85.00",
+    "price": 85.0,
+    "category": "Sueros y Ampollas",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "dc3f1234-7abd-495a-b7e9-36e09b5d6a37",
+        "name": "K-SECRET SEOUL 1988 SERUM: Retinal liposome 2% + black ginseng",
+        "price": 85
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "K-SECRET SEOUL 1988 EYE CREAM: RETINAL LIPOSOME 4% + FERMENTED BEAN",
+    "source": "El ANUA Heartleaf Pore Control Cleansing Oil es un aceite limpiador facial que disuelve maquillaje-fusionado (1).docx",
+    "startParagraph": 365,
+    "endParagraphExclusive": 373,
+    "sourceText": "SEOUL 1988 EYE CREAM: RETINAL LIPOSOME 4% + FERMENTED BEAN\n\n\nEs un contorno de ojos de alta eficacia formulado con Retinal Liposome 4%, una forma estabilizada y potente de vitamina A, y Fermented Bean Extract, rico en antioxidantes y nutrientes que ayudan a rejuvenecer la piel. Esta crema elimina la hinchazón, reduce la apariencia de arrugas, elimina las ojeras y cuida al máximo esta zona sensible del rostro.\nGracias a la combinación de ingredientes como el retinal liposomal 4%, bakuchiol, vitaminas C y E, enzimas de frijol y péptidos, el producto combate eficazmente los cambios de edad, restaura la barrera protectora de la piel, mejora la firmeza y la elasticidad.\nContenido:\n30ml\nS/. 85.00",
+    "price": 85.0,
+    "category": "Hidratantes",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "Centellian24 MADECA MELA CAPTURE AMPOULE PAD",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 1,
+    "endParagraphExclusive": 10,
+    "sourceText": "MADECA MELA CAPTURE AMPOULE PAD\nAyuda a reducir manchas y hiperpigmentación visibles gracias a la Niacinamida y al Complejo despigmentante Mela Capture.\nIlumina y mejora el tono desde la primera aplicación.\nCalma y repara la piel gracias a la centella asiática.\nApto para piel sensible y uso frecuente.\nFormato práctico para tratamiento localizado o uso facial completo.\n\nS/105\n",
+    "price": 105.0,
+    "category": "Sueros y Ampollas",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "3fdd7032-b1b8-4e4b-8f84-ddf3d85c5e76",
+        "name": "Centellian 24+ Madeca Mela Capture Ampoule Pad",
+        "price": 105
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "Centellian24 360º Shot PDRN Lifting Eye Cream",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 10,
+    "endParagraphExclusive": 23,
+    "sourceText": "360º Shot PDRN Lifting Eye Cream\nAfirma, eleva y rejuvenece la zona de los ojos con esta crema todo en uno de Centellian24. Está formulada con ingredientes icónicos como PDRN de salmón, PDRN derivado de centella, péptidos y retinol para potenciar al máximo la elasticidad de la piel. También contiene ingredientes hidratantes como el aceite de jojoba y agentes iluminadores como la niacinamida. Aplica la fórmula cada noche para minimizar arrugas, hinchazón, flacidez y ojeras.\n \nÚsalo con: para un cuidado antiedad integral, combina la crema de ojos con el Sérum 360º Shot PDRN Active de Centellian24, que minimiza las líneas finas y mejora la textura de la piel\n\nS/85\n\n\n\n\n\n\n",
+    "price": 85.0,
+    "category": "Hidratantes",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "e8ce733f-abb3-4f60-b200-f4577d62bd18",
+        "name": "Centellian 24 360° Shot PDRN Lifting Eye Cream",
+        "price": 85
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "CENTELLIAN24 Madeca Cream Time Reverse",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 23,
+    "endParagraphExclusive": 26,
+    "sourceText": "CENTELLIAN24 Madeca Cream Time Reverse\n\n✔ Reduce arrugas y líneas de expresión.\n\n✔ Mejora la elasticidad y uniformidad del tono.\n\n✔ Calma la piel sensible y fortalece la barrera natural.\n\n✔ Textura ligera de rápida absorción, sin sensación grasa.\n\n✔ Ilumina el rostro.\nS/. 92.00\n",
+    "price": 92.0,
+    "category": "Hidratantes",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "CENTELLIAN24 Madeca Mela Capture Ampoule Capsule Cream",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 26,
+    "endParagraphExclusive": 30,
+    "sourceText": "CENTELLIAN24 Madeca Mela Capture Ampoule Capsule Cream\nMadeca Mela Capture Ampoule Pad es un tratamiento intensivo en formato diseñado para actuar directamente sobre manchas, hiperpigmentación y tono irregular. Cada pad está impregnado con una alta concentración de esencia iluminadora, equivalente a múltiples ampollas, lo que permite resultados visibles en menos tiempo y con una aplicación práctica.\n\n\nEs ideal para piel normal, mixta, grasa, seca y sensible, especialmente aquellas con manchas, tono desigual, piel opaca o marcas visibles. También es una excelente opción para pieles con tendencia acneica que buscan iluminar sin comprometer la barrera cutánea.\n\n",
+    "price": null,
+    "category": "Hidratantes",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "896c4073-c1dd-42ff-99b1-6c2570358c0b",
+        "name": "Centellian 24+ Madeca Mela Capture Ampoule Capsule Cream",
+        "price": 95
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "MIXSOON CENTELLA SUN CREAM",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 30,
+    "endParagraphExclusive": 41,
+    "sourceText": "MIXSOON CENTELLA SUN CREAM\nDescripción\n50 g – protector solar con centella asiática, calma la piel mientras protege con SPF50\nComo usarlo\nAplicar una cantidad adecuada sobre el rostro como último paso de la rutina de cuidado de la piel. Extender de manera uniforme, asegurando cubrir todas las zonas expuestas. Reaplicar cada dos horas si hay exposición prolongada al sol.\nS/85\n\n\n\n\n\n",
+    "price": 85.0,
+    "category": "Protectores Solares",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "Bean Essence 30ml Mixsoon",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 41,
+    "endParagraphExclusive": 49,
+    "sourceText": "Bean Essence 30ml Mixsoon\nComo usarlo\nAplicar después de la limpieza y el tónico sobre la piel seca o ligeramente húmeda. Tomar una cantidad adecuada y extender suavemente con las manos o dando ligeros toques. Puede utilizarse en varias capas según la necesidad de hidratación. Continuar con el resto de la rutina de cuidado facial, aplicando crema hidratante y protector solar por la mañana.\nS/75\n\n\n\n\n",
+    "price": 75.0,
+    "category": "Sueros y Ampollas",
+    "status": "REVISAR",
+    "existing": [],
+    "issue": "Bean Essence 30ml S/75 frente a Bean Essence sin tamaño S/89. Confirmar si son presentaciones distintas.",
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "Mixsoon Centella Cleansing Water",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 49,
+    "endParagraphExclusive": 56,
+    "sourceText": "Mixsoon Centella Cleansing Water\n\nes un desmaquillante micelar suave y eficaz que elimina impurezas y maquillaje, ideal para pieles sensibles, con acné o rosácea. Formulada con extracto de Centella Asiática, calma, hidrata y fortalece la barrera cutánea sin causar irritación ni sensación pegajosa\nS/. 85.00\n\n\n",
+    "price": 85.0,
+    "category": "Limpiadores",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "8fa846da-c867-4c13-9e81-580c6846b933",
+        "name": "Mixsoon Centella Cleansing Water",
+        "price": 89
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "MIXSOON COLLAGEN CLEANSING BALM 50ml",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 56,
+    "endParagraphExclusive": 61,
+    "sourceText": "\nMIXSOON COLLAGEN CLEANSING BALM 50ml\n\n\nUn bálsamo que limpia sin irritar gracias a su bálsamo cremoso de lujo que se convierte en aceite y después se hace una textura lechosa, dejando tu piel fresca e hidratada. Enriquecido con Colágeno de tamaño molecular pequeño que nutre la piel, proporciona humedad intensa y previene la deshidratación después de la limpieza.\nS/. 79.0\n\n",
+    "price": 79.0,
+    "category": "Limpiadores",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "Mixsoon Glass Skin Suitcase",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 61,
+    "endParagraphExclusive": 78,
+    "sourceText": "Mixsoon Glass Skin Suitcase\nEste kit específico incluye los siguientes productos en formato mini:\nMixsoon Bean Essence :\nIngredientes Clave: Fermento de soja, cebada, pera y granada.\nFunción: Esta esencia es un producto multifuncional. Actúa como un exfoliante suave para eliminar células muertas, a la vez que hidrata. El fermento de soja aporta aminoácidos y antioxidantes para mejorar la textura, suavizar e iluminar la piel.\nMixsoon Mini Oil:\nIngredientes Clave: Depende de la variedad del aceite (p. ej., aceite de semilla de soja, aceite de oliva).\nFunción: Los aceites faciales de Mixsoon están diseñados para proporcionar una hidratación profunda y nutritiva. Ayudan a fortalecer la barrera cutánea, retener la humedad y aportar suavidad a la piel. La elección del aceite específico dentro del kit puede variar, pero generalmente buscan equilibrar la piel y evitar la sequedad.\nMixsoon Mini Foam:\nFunción: Este limpiador facial en espuma está diseñado para eliminar suavemente las impurezas, el exceso de sebo y los residuos de maquillaje sin resecar la piel. Es un paso fundamental para preparar la piel para los siguientes productos de la rutina.\nMixsoon Mini Bean Cream:\nIngredientes Clave: Extracto de soja, ceramidas.\nFunción: Esta crema hidratante está formulada para nutrir y fortalecer la piel. Ayuda a retener la humedad, mejorar la elasticidad y crear una barrera protectora. Las ceramidas son lípidos esenciales que ayudan a mantener la integridad de la barrera cutánea.\nS/129\n\n\n",
+    "price": 129.0,
+    "category": "Sets & Regalos",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "Mixsoon Pure Glow Essentials Set (5 in 1)",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 78,
+    "endParagraphExclusive": 87,
+    "sourceText": "Mixsoon Pure Glow Essentials Set (5 in 1)\n\nEste kit contiene toda una rutina completa de Mixsoon en versión mini♥\nContiene 5 pasos: un aceite limpiador de frijoles, espuma limpiadora de centella, tónico de centella, esencia de frijoles y crema de frijoles.\nEs ideal para todo tipo de piel\nS/. 105.00\n\n\n\n\n",
+    "price": 105.0,
+    "category": "Sets & Regalos",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "d2c33f03-8baa-47de-bcb0-5748b482b6d5",
+        "name": "Pure Glow Essentials Set",
+        "price": 105
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "MIXSOON DOUBLE CLEANSING SET",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 87,
+    "endParagraphExclusive": 100,
+    "sourceText": "MIXSOON DOUBLE CLEANSING SET\n\nEspuma Limpiadora Mixsoon Centella, un limpiador suave pero eficaz que nutre y suaviza la piel sin alterar su hidratación natural. Gracias a su alto contenido en extracto de Centella Asiática y Altermonas, esta espuma limpiadora hidrata y suaviza la piel, ideal para todo tipo de piel. Su fórmula suave con un pH entre 3.0 y 5.0 mantiene el equilibrio natural de la piel y proporciona una limpieza refrescante.\nModo de uso:\nAceite limpiador de frijoles Mixsoon\nAplique 2-3 cucharadas sobre las manos secas y masajee suavemente sobre la piel seca y limpia.\nAñade una pequeña cantidad de agua hasta que adquiera un color blanco lechoso.\nEnjuague bien con agua tibia.\nEspuma limpiadora Mixsoon Centella\n\n\n\n",
+    "price": null,
+    "category": "Sets & Regalos",
+    "status": "REVISAR",
+    "existing": [],
+    "issue": "MIXSOON DOUBLE CLEANSING SET no tiene precio propio legible en el texto. S/85 pertenece al aceite siguiente.",
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "MIXSOON BEAN CLEANSING OIL 195ML",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 100,
+    "endParagraphExclusive": 106,
+    "sourceText": "MIXSOON BEAN CLEANSING OIL 195ML\nTiene una textura de aceite líquido ligero que no deja residuos en la piel, sino deja una sensación fresca e hidratada después de usar. Hidrata la piel mientras elimina eficazmente el maquillaje y las impurezas.\nCon un acabado refrescante e hidratante sin sensación residual, esta formula es buena para la limpieza diaria incluso en pieles grasas.\nS/. 85.00\n\n\n",
+    "price": 85.0,
+    "category": "Limpiadores",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "Mixsoon Centella Cleansing Foam 150ml",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 106,
+    "endParagraphExclusive": 113,
+    "sourceText": "Mixsoon Centella Cleansing Foam 150ml\nEspuma limpiadora suave y de pH bajo que elimina eficazmente impurezas, exceso de sebo y residuos de maquillaje sin resecar la piel. Enriquecida con extracto de Centella Asiatica, calma irritaciones, reduce el enrojecimiento y fortalece la barrera cutánea, proporcionando una limpieza profunda y respetuosa. Su textura cremosa se transforma en una espuma rica y ligera que deja la piel fresca, suave y confortable después de cada uso.\nS/. 67.00\n\n\n\n",
+    "price": 67.0,
+    "category": "Limpiadores",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "5347ff4d-3acb-43d6-b9a7-4a0c80938552",
+        "name": "Mixsoon Centella Cleansing Foam",
+        "price": 67
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "Mixsoon Bean Essence",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 113,
+    "endParagraphExclusive": 117,
+    "sourceText": "Mixsoon Bean Essence\nComo usarlo\nAplicar después de la limpieza y el tónico sobre la piel seca o ligeramente húmeda. Tomar una cantidad adecuada y extender suavemente con las manos o dando ligeros toques. Puede utilizarse en varias capas según la necesidad de hidratación. Continuar con el resto de la rutina de cuidado facial, aplicando crema hidratante y protector solar por la mañana.\nS/89\n",
+    "price": 89.0,
+    "category": "Sueros y Ampollas",
+    "status": "REVISAR",
+    "existing": [],
+    "issue": "Bean Essence sin tamaño S/89 frente a 30ml S/75. Confirmar contenido antes de consolidar.",
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "MIXSOON MASTER SERUM 60ML",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 117,
+    "endParagraphExclusive": 120,
+    "sourceText": "MIXSOON MASTER SERUM 60ML\nEs un suero multifuncional diseñado para equilibrar, hidratar y revitalizar la piel. Formulado con ingredientes naturales cuidadosamente seleccionados, este suero ayuda a mejorar la textura de la piel, minimizar la apariencia de poros y promover un tono uniforme.\nS/85",
+    "price": 85.0,
+    "category": "Sueros y Ampollas",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "MIXSOON SOONDY CENTELLA ASIATICA ESSENCE",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 120,
+    "endParagraphExclusive": 136,
+    "sourceText": "SOONDY CENTELLA ASIATICA ESSENCE\n\nSOONDY CENTELLA ASIATICA ESSENCE\nSoondy Centella calma la piel irritada y enrojecida gracias a sus propiedades antiinflamatorias, limpia los poros en profundidad y la hidrata intensamente. Además, estimula la producción de colágeno, reduciendo los signos del envejecimiento y dejando la piel visiblemente más sana y radiante.\nS/. 95.00\n\n\n\n\n\n\n\n\n\n\n",
+    "price": 95.0,
+    "category": "Sueros y Ampollas",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "MIXSOON GLACIER WATER HYALORONIC ACID SERUM 300ML",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 136,
+    "endParagraphExclusive": 142,
+    "sourceText": "GLACIER WATER HYALORONIC ACID SERUM 300ML\n🔴Precio venta recomendado: s/99\nOfrece un efecto hidratante instantáneo para la piel seca. Forma una barrera de la humedad con tres capas de ácido hialurónico para aumentar la hidratación. La textura densa y rica del suero ayuda a crear una piel radiante.\nPermite que se absorba fácilmente sin dejar una sensación pegajosa, creando una piel radiante.\nS/. 92.00\n\n\n",
+    "price": 92.0,
+    "category": "Sueros y Ampollas",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "MIXSOON/ BEAN CREAM 50ML",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 142,
+    "endParagraphExclusive": 150,
+    "sourceText": "MIXSOON/ BEAN CREAM 50ML\n\nMIXSOON/ BEAN CREAM 50ML\nCrema facial iluminadora con niacinamida y extractos naturales que ayudan a atenuar manchas, emparejar el tono y devolverle la luminosidad al rostro. Su fórmula humectante, enriquecida con extracto de soya fermentada, forma una capa protectora sobre la piel que retiene la humedad y refuerza la barrera cutánea. De textura ligera, es ideal para el uso diario y apta para todo tipo de piel.\nS/. 89.00\n\n\n",
+    "price": 89.0,
+    "category": "Hidratantes",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "b2ad0f3a-f98b-4eb4-84ee-cc9345ef12d1",
+        "name": "mixsoon Bean Cream",
+        "price": 89
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "TONYMOLY Tomatox Magic Massage Pack 80gr",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 150,
+    "endParagraphExclusive": 158,
+    "sourceText": "TONYMOLY Tomatox Magic Massage Pack 80gr\n\nTONYMOLY Tomatox Magic Massage Pack 80gr\nMascarilla détox en crema para reducir manchas causadas por el sol, por el paso del tiempo o por pequeñas cicatrices de acné. NOMBRE DEL PRODUCTO:Tomatox Magic Massage Pack LINEA:Tomatox CATEGORÍA:Mascarilla facial / tratamiento semana BENEFICIOS:Porta efecto “détox” para eliminar impurezas. Reduce manchas causadas por el sol, por el paso del tiempo, o por pequeñas cicatrices de acné. Haru BLUnifica el tono de la piel. Brinda luminosidad. Hidrata y suaviza la piel. Calma rojeces, reduciendo brotes pequeños (gracias a centella asiática y té verde) PASO DENTRO DE LA RUTINA:Se emplea como mascarilla de tratamiento, únicamente de noche Se aplica tras la limpieza, antes de los sueros o cremas y para pieles sensibles aplicar después de un tónico calmante o humectante ORDEN DENTRO DE LA RUTINA:Paso de tratamiento en la rutina nocturna, antes de las cremas o esencias por sus activos concentrados CONTENIDO:80 gramos.\nS/. 65.00\nTOCOBO \n\n",
+    "price": 65.0,
+    "category": "Hidratantes",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "TOCOBO BIFIDA BIOME ESSENCE 50ML",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 158,
+    "endParagraphExclusive": 163,
+    "sourceText": "TOCOBO BIFIDA BIOME ESSENCE 50ML\nLa Tocobo Bifida Biome Essence es un tratamiento facial coreano rico en probióticos. Fortalece la barrera de tu piel, la hidrata a fondo y repara los daños. Suaviza las arrugas y te da un brillo natural. Es ideal para todo tipo de piel, incluso para pieles sensibles. \nHidratación profunda: Penetra fácil y rápido sin dejar sensación grasosa.\nEfecto antiedad: Mejora la elasticidad y regenera las células.\nPiel luminosa: Unifica la textura y reduce el aspecto apagado\n\nS/. 82.00\n",
+    "price": 82.0,
+    "category": "Sueros y Ampollas",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "TOCOBO Blur Finish Sun Cushion 01 COTTON BLUE",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 163,
+    "endParagraphExclusive": 166,
+    "sourceText": "TOCOBO Blur Finish Sun Cushion 01 COTTON BLUE\n\nCorrección de Color: El subtono 01 Cotton Blue ilumina e iguala el cutis, combatiendo instantáneamente el enrojecimiento.\nEfecto Blur y Control de Brillo: Su fórmula con Water Powder matifica la piel, difumina imperfecciones y controla el exceso de sebo sin resecar.\nSensación Refrescante: Contiene agua glaciar e ingredientes calmantes (como epilobio alpino) que reducen la temperatura de la piel.\nFórmula Vegana: Combina filtros físicos y químicos, dejando una textura ligera y no grasosa.\nS/. 75.00\n",
+    "price": 75.0,
+    "category": "Protectores Solares",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "TOCOBO Mini Cotton Soft Sun Stick",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 166,
+    "endParagraphExclusive": 176,
+    "sourceText": "TOCOBO Mini Cotton Soft Sun Stick\nDescripción\nProtector solar en barra SPF50+ PA++++ con acabadomate y efecto que ayuda a controlar el exceso de sebo y minimizar el brillo durante el día. Su fórmula ligera se desliza suavemente sin dejar sensación pegajosa ni residuos blancos, permitiendo reaplicar fácilmente incluso sobre el maquillaje. Su formato mini es perfecto para llevar en la cartera y mantener la piel protegida en todo momento. Ideal para piel mixta a grasa o para quienes buscan una protección solar práctica, portátil y con efecto soft matte.\n\nS/55\n\n\n\n\n",
+    "price": 55.0,
+    "category": "Protectores Solares",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "TOCOBO Mini Cica Cooling Sun Stick",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 176,
+    "endParagraphExclusive": 184,
+    "sourceText": "TOCOBO Mini Cica Cooling Sun Stick\nDescripción\nProtector solar en barra SPF50+ PA++++ enriquecido con ingredientes calmantes como Cica (Centella Asiática), que ayuda a aliviar la piel sensibilizada mientras la protege eficazmente de los rayos UV. Su efecto cooling proporciona una sensación inmediata de frescura, ideal para climas cálidos o pieles que tienden a enrojecerse con la exposición solar. Su textura ligera no deja residuos blancos ni sensación pesada, y su formato mini permite reaplicar fácilmente durante el día. Recomendado para piel sensible.\nComo usarlo\nAplicar como último paso de la rutina de skincare. Deslizar suavemente la barra sobre el rostro de manera uniforme. Reaplicar cada 2 o 3 horas, especialmente después de sudar o exponerse al sol por tiempo prolongado. Puede aplicarse sobre maquillaje con ligeros toques.\nS/55\n\n\n",
+    "price": 55.0,
+    "category": "Protectores Solares",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "TOCOBO Mini Sun Stick Trio",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 184,
+    "endParagraphExclusive": 195,
+    "sourceText": "TOCOBO Mini Sun Stick Trio\nAplicar como último paso de la rutina de skincare. Deslizar suavemente la barra sobre el rostro de manera uniforme. Reaplicar cada 2 o 3 horas, especialmente después de sudar o exponerse al sol por tiempo prolongado. Puede aplicarse sobre maquillaje con ligeros toques.\nS/125\n\n\n\n\n\n\n\n",
+    "price": 125.0,
+    "category": "Sets & Regalos",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "TOCOBO Cica Calming Serum",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 195,
+    "endParagraphExclusive": 200,
+    "sourceText": "TOCOBO Cica Calming Serum\n\nEste suero concentrado de alta eficacia está diseñado para proporcionar un alivio inmediato a las pieles sensibles, reactivas o estresadas, enfocándose en restaurar la salud de la barrera cutánea a través de una hidratación profunda y calmante.\n\nBeneficios Principales\nAlivio Inmediato de la Irritación: Enriquecido con un alto porcentaje de complejo de Centella Asiática (Cica), reduce el enrojecimiento, la inflamación y la sensación de ardor al instante.\nReparación Intensa de la Barrera: Ayuda a reconstruir y fortalecer las defensas naturales de la piel, haciéndola menos vulnerable a los agresores externos y ambientales.\nHidratación Profunda sin Pesadez: Aporta una gran cantidad de humedad a las capas de la piel, equilibrando los niveles de agua y grasa sin dejar residuos grasos o pegajosos.\nTextura Suave y Confortable: Suaviza la aspereza de la piel texturizada por la deshidratación o los brotes, devolviendo una apariencia tersa y saludable.\nS/. 89.00\n",
+    "price": 89.0,
+    "category": "Sueros y Ampollas",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "3f641a94-68a1-4a45-985d-c123348ff72d",
+        "name": "TOCOBO Cica Calming Serum",
+        "price": 89
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "TOCOBO Cica Calming Gel Cream",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 200,
+    "endParagraphExclusive": 205,
+    "sourceText": "TOCOBO Cica Calming Gel Cream\nEsta crema en textura gel proporciona una intensa ola de frescura e hidratación, diseñada específicamente para calmar, desinflamar y restaurar el equilibrio de las pieles mixtas, grasas, sensibles o con tendencia al acné.\n\nBeneficios Principales\nEfecto Calmante y Refrescante: Reduce la temperatura de la piel al instante, aliviando el enrojecimiento, la irritación y el estrés cutáneo causado por factores ambientales.\nRegeneración y Alivio Térmico: Formulada con un alto porcentaje de Centella Asiática (Cica), acelera la recuperación de la piel y mitiga las molestias de los brotes activos.\nHidratación Ligera de Larga Duración: Aporta la humedad necesaria para mantener la piel flexible sin obstruir los poros ni aportar pesadez.\nControl de Brillo y Sebo: Su textura en gel se absorbe por completo, ayudando a equilibrar la producción de grasa y dejando un acabado fresco y limpio.\nS/. 89.00\n",
+    "price": 89.0,
+    "category": "Hidratantes",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "ab661514-fba1-4920-b1d8-d7a5d07a7921",
+        "name": "TOCOBO Cica Calming Gel Cream",
+        "price": 89
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "TOCOBO Double Cleansing Duo",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 205,
+    "endParagraphExclusive": 210,
+    "sourceText": "TOCOBO Double Cleansing Duo\nElimina maquillaje, protector solar, suciedad, sebo e impurezas acumuladas.\n\n\nLimpieza profunda de los poros, ayudando a prevenir la obstrucción o acumulación de residuos.\n\n\n\nControl del exceso de grasa, especialmente en zonas tipo T o zonas oleosas.\n\n\nTextura confortable: se anuncia que no deja sensación tirante después del lavado.\n\n\nCalma la piel gracias a la calamina, lo que puede ayudar con rojeces o sensibilidad leve.\n\n\nMejora la apariencia de la textura cutánea y reduce la visibilidad de los poros con uso continuo.\n\nPreparar la piel para que los productos siguientes de la rutina (suero, hidratante) se absorban mejor. (Un beneficio implícito cuando se aplica la doble limpieza)\nS/105\n\n",
+    "price": 105.0,
+    "category": "Sets & Regalos",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "TOCOBO - Cica Calming Sun Serum SPF50+ PA++++ - 50ML",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 210,
+    "endParagraphExclusive": 219,
+    "sourceText": "TOCOBO - Cica Calming Sun Serum SPF50+ PA++++ - 50ML\n🔴Precio venta recomendado: s/105\nes un protector solar híbrido de textura ligera tipo sérum, diseñado para hidratar, calmar la piel irritada y ofrecer alta protección solar UVA/UVB. Su fórmula contiene cica fermentada, ácido hialurónico y aloe vera, ideal para pieles sensibles o con acné, sin dejar sensación pegajosa\nS/. 79.00\n\n\n\n\n\n",
+    "price": 79.0,
+    "category": "Protectores Solares",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "TOCOBO COLLAGEN BRIGHTENING EYE GEL CREAM",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 219,
+    "endParagraphExclusive": 226,
+    "sourceText": "COLLAGEN BRIGHTENING EYE GEL CREAM\nTratamiento específico para el área del contorno de los ojos, diseñado para proporcionar hidratación, luminosidad y firmeza. Ayuda a reforzar la barrera cutánea y a mantener la hidratación, lo que resulta en un contorno de ojos más suave y juvenil. La textura ligera de gel se absorbe rápidamente, dejando una sensación fresca y no grasa, ideal para el uso diario.\nS/. 75.00\n\n\n\n",
+    "price": 75.0,
+    "category": "Hidratantes",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "TOCOBO MULTI CERAMIDE CREAM",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 226,
+    "endParagraphExclusive": 235,
+    "sourceText": "TOCOBO MULTI CERAMIDE CREAM\nDescripción\nProporciona una abundante hidratación que se extiende fácilmente y se absorbe rápidamente en la piel, dejando un acabado húmedo. Certificada EWG Green y sin fragancias, esta crema es ideal para calmar la piel y aumentar la retención de humedad, con pruebas de irritación cutánea completadas.\nComo usarlo\nEn la etapa de la crema en la rutina, tomar una cantidad apropiada y esparcirla suavemente en todo el rostro, luego frotar suavemente hasta que la fórmula se derrita y absorba en la piel.\nS/79\n\n\n\n",
+    "price": 79.0,
+    "category": "Hidratantes",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "Tocobo Coconut Clay Cleansing Foam 150ml",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 235,
+    "endParagraphExclusive": 239,
+    "sourceText": "Tocobo Coconut Clay Cleansing Foam 150ml\n🔴Precio venta recomendado: s/80\nOCOBO Coconut Clay Cleansing Foam es un limpiador facial innovador que combina la suavidad del coco con las propiedades purificadoras de la arcilla, ofreciendo una experiencia de limpieza profunda y refrescante.\nS/. 65.00\n",
+    "price": 65.0,
+    "category": "Limpiadores",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "ee703e17-3d5b-4110-9f88-3a0eb5f060ae",
+        "name": "TOCOBO Coconut Clay Cleansing Foam",
+        "price": 65
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "TOCOBO SUN STICK COTTON SOFT- BARRA",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 239,
+    "endParagraphExclusive": 249,
+    "sourceText": "TOCOBO SUN STICK COTTON SOFT- BARRA\nEs un protector solar en formato de barra diseñado para ofrecer una protección eficaz y cómoda contra los dañinos rayos UVA y UVB.\nEl stick solar se caracteriza por su textura suave y sedosa, que se desliza fácilmente sobre la piel sin dejar residuos grasos ni blanquecinos.\nS/. 65.00\n\n\n\n\n\n\n",
+    "price": 65.0,
+    "category": "Protectores Solares",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "TOCOBO CALAMINE PORE CONTROL CLEANSING OIL 200ml",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 249,
+    "endParagraphExclusive": 256,
+    "sourceText": "CALAMINE PORE CONTROL CLEANSING OIL 200ml\nDescripción\n¡Limpieza y cuidado de poros en un solo paso! La fórmula combinada de polvo de calamina y aceite de leche limpia el exceso de sebo y los puntos negros. Incluso después de enjuagar, la piel queda con una textura suave y sedosa, como si hubiera sido cubierta de humedad.\nComo usarlo\nToma una cantidad adecuada y aplícala sobre todo el rostro realizando un suave masaje. Dedica más tiempo a las zonas T y U, que se preocupan por el exceso de sebo, y luego enjuaga con agua tibia. 1. En el rostro seco, toma una cantidad adecuada y aplícala sobre todo el rostro realizando un suave masaje. 2.Moja tu rostro, emulsiona bien y enjuaga con agua tibia. Dedica más tiempo a las zonas T y U, que requieren cuidado extra para el exceso de sebo.\nS/75\n\n",
+    "price": 75.0,
+    "category": "Limpiadores",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "TOCOBO BLO WATERY SUN CREAM SPF50+PA++++50ML LIQUIDO",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 256,
+    "endParagraphExclusive": 264,
+    "sourceText": "TOCOBO BLO WATERY SUN CREAM SPF50+PA++++50ML LIQUIDO\n\nEs un protector solar líquido de alta protección que defiende la piel eficazmente contra los rayos UVA y UVB, ayudando a prevenir el envejecimiento prematuro y las manchas solares. Su fórmula ligera y acuosa se absorbe rápidamente sin dejar rastro blanco ni sensación pegajosa, proporcionando una hidratación refrescante y un acabado natural. Enriquecido con ingredientes calmantes y antioxidantes, ayuda a mantener la piel equilibrada, suave y protegida durante el día. Ideal para el uso diario y apto para todo tipo de piel, incluso piel sensible\nS/. 79.00\n\n\n\n",
+    "price": 79.0,
+    "category": "Protectores Solares",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "3261faa0-aa32-4d07-b4d2-2f6159bf7a37",
+        "name": "TOCOBO Bio Watery Sun Cream",
+        "price": 79
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "TOCOBO STICK CENTELLA ASIATICA",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 264,
+    "endParagraphExclusive": 269,
+    "sourceText": "TOCOBO STICK CENTELLA ASIATICA\nEste protector solar en barra está formulado con un complejo de Cica fermentada de bajo peso molecular, ácido hialurónico en 10 capas y polvo de menta de maíz.\n\nSu fórmula no pegajosa proporciona una hidratación profunda y alivia la piel, reduciendo rápidamente la temperatura y la irritación con una sensación refrescante.\n\nAdemás, gestiona el sebo y el aceite de la piel sin obstruir los poros, siendo ideal para pieles sensibles y propensas al acné.\nS/. 65.00\n\n",
+    "price": 65.0,
+    "category": "Protectores Solares",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "LATTE TIRTIR MASK FIT RED CUSHION",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 269,
+    "endParagraphExclusive": 279,
+    "sourceText": "LATTE TIRTIR MASK FIT RED CUSHION\n\nTirtir Mask Fit Red Cushion ofrece un acabado mate. Esta innovadora base oculta las imperfecciones, garantizando una duración duradera y a prueba de manchas. El polvo fino acumulable cubre perfectamente el enrojecimiento, las imperfecciones y las ojeras para lograr un acabado radiante.\nS/. 95.00\n\n\n\n\nSENTELLA \n",
+    "price": 95.0,
+    "category": "Maquillaje",
+    "status": "REVISAR",
+    "existing": [],
+    "issue": "LATTE TIRTIR: existe Mask Fit Red Cushion (27C Cool Beige). Falta confirmar tono/presentación; no unir ni insertar.",
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "SKIN1004 Poremizing Velvet Finish Sunscreen",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 279,
+    "endParagraphExclusive": 282,
+    "sourceText": "SKIN1004 Poremizing Velvet Finish Sunscreen\nEl protector solar Alta protección: Filtro SPF50+ (protege de quemaduras) y PA++++ (evita el envejecimiento prematuro por el sol).\nEfecto terciopelo: Su fórmula deja un acabado mate sin brillo, ideal si tienes piel mixta o grasa.\nDisimula los poros: Su color y textura rellenan y esconden los poros dilatados, actuando como base de maquillaje.\nCalma la piel: Contiene Centella Asiática, un ingrediente natural que ayuda a relajar y reparar la piel irritada.\nNo es pesado: Es ligero y no deja sensación pegajosa.\nS/. 85.00",
+    "price": 85.0,
+    "category": "Protectores Solares",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "SKIN1004 Madagascar Centella Niacinamide 10 Boosting Shot Ampoule 30ml",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 282,
+    "endParagraphExclusive": 291,
+    "sourceText": "SKIN1004 Madagascar Centella Niacinamide 10 Boosting Shot Ampoule 30ml\nSKIN1004 Madagascar Centella Niacinamide 10 Boosting Shot Ampoule 30ml\n\nSKIN1004 Madagascar Centella Niacinamide 10 Boosting Shot Ampoule 30ml\nAmpoule facial formulada con 10% de niacinamida y centella asiática que ayuda a mejorar la apariencia del tono de la piel, controlar el exceso de grasa y reducir la apariencia de imperfecciones. Su textura ligera se absorbe rápidamente, dejando la piel fresca y equilibrada.\n\nGracias a sus ingredientes, contribuye a minimizar visualmente los poros, aportar luminosidad y mejorar la textura de la piel, logrando un aspecto más uniforme y saludable con el uso constante.\n\nModo de uso:\nAplicar una pequeña cantidad sobre el rostro limpio y seco, distribuyendo suavemente hasta su completa absorción. Usar mañana y noche.\nS/. 95.00\n\n",
+    "price": 95.0,
+    "category": "Sueros y Ampollas",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "c1c3c01c-b5c9-49fd-8dcf-236d5d1398b0",
+        "name": "SKIN1004 Madagascar Centella Niacinamide 10% Boosting Shot Ampoule",
+        "price": 95
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "Skin1004 Centella Retinol 0.2 Boosting Shot Ampoule 30 ml",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 291,
+    "endParagraphExclusive": 296,
+    "sourceText": "Skin1004 Centella Retinol 0.2 Boosting Shot Ampoule 30 ml\n\nAmpolla intensiva con Retinol 0.2% y Centella Asiática de Madagascar, diseñada para mejorar la textura de la piel, estimular la renovación celular y tratar los signos visibles del envejecimiento, mientras calma y protege la piel. Su fórmula equilibrada permite un tratamiento eficaz con retinol minimizando la irritación.\n\nRetinol 0.2%: estimula la renovación celular y mejora la apariencia de líneas finas y textura.\nCentella Asiática de Madagascar: calma, repara y refuerza la barrera cutánea.\nComplejo calmante e hidratante: ayuda a reducir la irritación asociada al uso de retinol.\nS/. 95.00\n",
+    "price": 95.0,
+    "category": "Sueros y Ampollas",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "9670659a-5f6f-457a-8ca1-985364bcca46",
+        "name": "SKIN1004 Madagascar Centella Retinol 0.2% Boosting Shot Ampoule",
+        "price": 95
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "SKIN1004 Madagascar Centella Air-Fit Suncream Plus 50m",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 296,
+    "endParagraphExclusive": 302,
+    "sourceText": "SKIN1004 Madagascar Centella Air-Fit Suncream Plus 50m\nProtector solar mineral con Centella Asiática que protege de los rayos UV y ayuda a mantener la piel calmada con acabado ligero.\n\nBeneficios\n- Brinda protección solar de amplio espectro contra los rayos UVA y UVB.\n- Ayuda a calmar y proteger la piel frente a factores externos.\n- Deja un acabado natural sin sensación pesada.\n\nIdeal para: piel sensible, normal, seca, mixta.\n\nS/85\n\n",
+    "price": 85.0,
+    "category": "Protectores Solares",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "e01d420c-ecfa-46ad-b802-78fe7b0260ea",
+        "name": "SKIN1004 Madagascar Centella Air-Fit Suncream Plus SPF50+ PA++++",
+        "price": 85
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "HYALU-CICA SLEEPING PACK SKIN1004",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 302,
+    "endParagraphExclusive": 308,
+    "sourceText": "HYALU-CICA SLEEPING PACK SKIN1004\nEl SKIN1004 Madagascar Centella Hyalu-Cica Sleeping Pack es una mascarilla nocturna en gel ultraligera. Diseñada para todo tipo de pieles (especialmente secas y sensibles), hidrata, calma y repara la barrera cutánea durante el sueño gracias a su combinación de centella asiática, ácido hialurónico y melatonina.\n\n💧 Beneficios Principales\nHidratación Profunda: Su complejo Hyalu-Cica retiene la humedad para evitar la pérdida de agua durante la noche.\nEfecto Calmante: La centella asiática alivia irritaciones, rojeces y el estrés oxidativo acumulado.\nRevitalización: Contiene melatonina y ceramidas que mejoran la luminosidad y reparan la piel fatigada para despertar con un rostro radiante.\nTextura Ligera: Es un gel refrescante (con un tono azul natural) que se absorbe rápido sin dejar sensación pegajosa o pesada.\nS/. 80.00\n\n\n",
+    "price": 80.0,
+    "category": "Hidratantes",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "18407a29-2997-4a65-8a5e-fe25de48febc",
+        "name": "Skin1004 Madagascar Centella Hyalu-Cica Sleeping Pack",
+        "price": 80
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "HYALU-CICA BLUE SERUM SKIN1004",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 308,
+    "endParagraphExclusive": 312,
+    "sourceText": "HYALU-CICA BLUE SERUM SKIN1004\nEl SKIN1004 Madagascar Centella Hyalu-Cica Blue Serum es un suero ligero en gel diseñado para hidratar profundamente, calmar las pieles irritadas y mejorar la barrera cutánea sin dejar sensación pegajosa. Es ideal para todo tipo de pieles, especialmente las secas y sensibles.\n\nIngredientes clave y beneficios\nFórmula Hyalu-Cica: Combina ácido hialurónico (en 5 capas) y extracto de Centella Asiática para retener la humedad y aliviar la inflamación.\nCeramida NP: Repara y fortalece la barrera cutánea, evitando la pérdida de agua.\nNiacinamida y Adenosina: Iluminan el tono de la piel, reducen la apariencia de poros y mejoran la elasticidad.\nS/. 80.00\n",
+    "price": 80.0,
+    "category": "Sueros y Ampollas",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "ea795983-fa14-4555-8ea8-86b7a31dc08a",
+        "name": "Skin1004 Madagascar Centella Hyalu-Cica Blue Serum",
+        "price": 80
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "SKIN1004 Madagascar Centella Hyalu-Cica Water-Fit Sun Serum Twin Pack SPF50+ PA++++",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 312,
+    "endParagraphExclusive": 322,
+    "sourceText": "SKIN1004 Madagascar Centella Hyalu-Cica Water-Fit Sun Serum Twin Pack SPF50+ PA++++\nEs un protector solar químico de amplio espectro que combina la protección contra los rayos UVA y UVB (SPF50+ y PA++++) con ingredientes que aportan cuidado para la piel —como hidratación, calmante y antioxidantes— en una textura ligera tipo sérum que se absorbe rápido sin dejar residuo blanco ni sensación pegajosa.\nS/125\n\n\n\n\n\n\n",
+    "price": 125.0,
+    "category": "Sets & Regalos",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "SKIN1004 MADAGASCAR CENTELLA HYALU-CICA SILKY-FIT SUN STICK",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 322,
+    "endParagraphExclusive": 329,
+    "sourceText": "SKIN1004 MADAGASCAR CENTELLA HYALU-CICA SILKY-FIT SUN STICK\n¡Transforma tu rutina con nuestra barra solar química! Se desliza suavemente y ofrece hidratación instantánea con un acabado mate y sedoso.\nIdeal para pieles sensibles, normales y secas, mejora el sebo y protege contra los rayos UV. Enriquecida con Extracto de Centella Asiática, Ácido Hialurónico y Extracto de Cáscara de Castanea Crenata, para una piel hidratada, equilibrada y radiante.\n¡Descubre la frescura y protección diaria que tu piel merece!\nCONTENIDO:\n20 gr\nS/69\n",
+    "price": 69.0,
+    "category": "Protectores Solares",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "58a6a5ce-d20a-4543-a2d6-8ab4a0a54fe6",
+        "name": "SKIN1004 Madagascar Centella Hyalu-Cica Silky-Fit Sun Stick",
+        "price": 69
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "SKIN1004 Madagascar Centella Air Fit Suncream Light",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 329,
+    "endParagraphExclusive": 341,
+    "sourceText": "Madagascar Centella Air Fit Suncream Light\nrotector solar físico (mineral) con SPF30 PA++++, formulado con 100% de óxido de zinc y extracto de centella asiática para proteger la piel de los rayos UV y calmarla.\nS/85\n\n\n\n\n\n\n\n\n",
+    "price": 85.0,
+    "category": "Protectores Solares",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "SKIN1004 HYALU-CICA TRAVEL KIT",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 341,
+    "endParagraphExclusive": 357,
+    "sourceText": "SKIN1004 HYALU-CICA TRAVEL KIT\nTipo de piel:Todo tipo de piel\nDermatológico:Sí\nCondición de la piel:Deshidratada\nCaracterísticas:Humectante\n\nCuatro Pasos para una Hidratación Profunda\nEl ritual inicia con el Brightening Toner, que exfolia suavemente con AHA y LHA para revelar luminosidad, seguido del famoso Blue Serum, un baño de juventud que rellena líneas finas con 5 tipos de ácido hialurónico. Para sellar esa humedad, la Moisture Cream aporta colágeno vegetal sin peso graso, y la joya final es el Sleeping Pack, una mascarilla nocturna con Melatonina que trabaja mientras descansas para reparar la barrera cutánea intensivamente.\nS/99\n\n\n\n\n\n\n",
+    "price": 99.0,
+    "category": "Sets & Regalos",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "SKIN 1004 TEA-TRICA TRAVEL KIT",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 357,
+    "endParagraphExclusive": 362,
+    "sourceText": "SKIN 1004 TEA-TRICA TRAVEL KIT\n\nKit compacto con 4 mini productos de la línea Tea-Trica de SKIN1004, formulados con Centella Asiática de Madagascar, árbol de té y pantenol para equilibrar el sebo, calmar brotes y reducir rojeces sin resecar la piel. Ideal para piel grasa, mixta, sensible, viajes o para probar la línea completa enfocada en acné e inflamación.\n\nIncluye:\n• Tea-Trica BHA Foam\n• Tea-Trica Purifying Toner\n• Tea-Trica Relief Ampoule\n• Tea-Trica B5 Cream\n\nBeneficios principales\n• Ayuda a controlar granitos y brotes gracias al árbol de té.\n• Reduce la inflamación y calma rojeces con centella asiática.\n• Limpieza profunda que ayuda a desobstruir poros y retirar exceso de sebo.\n• Textura más uniforme con exfoliación suave del tónico (PHA).\n• Refuerza la barrera cutánea con pantenol (B5).\n• Hidratación ligera oil-free ideal para piel grasa/mixta.\n• Fórmulas no comedogénicas aptas para piel sensible.\nS/99\n\n",
+    "price": 99.0,
+    "category": "Sets & Regalos",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "SKIN1004 MADAGASCAR CENTELLA TONE BRIGHTENING CAPSULE CREAM 75ml",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 362,
+    "endParagraphExclusive": 371,
+    "sourceText": "SKIN1004 MADAGASCAR CENTELLA TONE BRIGHTENING CAPSULE CREAM 75ml\n\nCrema iluminadora que ayuda a unificar el tono de la piel y aporta hidratación para un rostro más radiante.\n\nBeneficios\n- Ayuda a iluminar la piel y mejorar la apariencia de pigmentaciones.\n- Aporta hidratación profunda para mantener la piel suave y confortable.\n- Fortalece la barrera cutánea y ayuda a mejorar la textura de la piel.\n\nIdeal para: piel normal, seca, mixta y con pigmentaciones.\nS/80\n\n\n\n\n",
+    "price": 80.0,
+    "category": "Hidratantes",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "SKIN1004 CENTELLA TONE BRIGHTENING TONE-UP SUNSCREEN",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 371,
+    "endParagraphExclusive": 376,
+    "sourceText": "CENTELLA TONE BRIGHTENING TONE-UP SUNSCREEN\nProtector solar con Centella Asiática que protege de los rayos UV y ayuda a unificar el tono de la piel con acabado natural.\n\nBeneficios\n- Brinda protección solar de amplio espectro contra los rayos UVA y UVB.\n- Ayuda a unificar visualmente el tono y aportar luminosidad.\n- Hidrata la piel dejando un acabado ligero.\n\nIdeal para: piel normal, seca, mixta y tono desigual.\nS/80\n\n",
+    "price": 80.0,
+    "category": "Protectores Solares",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "SKIN1004 Soothing cream CENTELLA -crema",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 376,
+    "endParagraphExclusive": 394,
+    "sourceText": "Soothing cream CENTELLA -crema\nDescripción:\nCrema facial hidratante enriquecida con extracto puro de Centella Asiatica de Madagascar, formulada para calmar, reparar y fortalecer la barrera cutánea. Su textura ligera se absorbe rápidamente, dejando la piel suave, nutrida y libre de sensación grasosa. Ideal para piel sensible, deshidratada o con irritaciones.\nBeneficios:\nCalma rojeces e irritaciones.\nRefuerza y protege la barrera de la piel.\nAporta hidratación profunda y duradera.\nTextura ligera de rápida absorción.\nUso:\nAplicar una cantidad adecuada sobre el rostro limpio, después del sérum o ampolla.\nMasajear suavemente hasta su completa absorción.\nUsar de día y/o noche.\nS/80\n\n\n\n\n\n",
+    "price": 80.0,
+    "category": "Hidratantes",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "SKIN1004 Madagascar Centella Hyalu-Cica Brightening Toner 210ml. -CELESTE",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 394,
+    "endParagraphExclusive": 400,
+    "sourceText": "Madagascar Centella Hyalu-Cica Brightening Toner 210ml. -CELESTE\nTónico facial con centella asiática, ácido hialurónico y AHA que hidrata, calma y exfolia suavemente, revelando una piel más luminosa y uniforme.\n\nContenido:\n210ml\nS/. 80.00\n\n\n",
+    "price": 80.0,
+    "category": "Tónicos",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "e2bbf526-9d09-4c94-adfb-19ca8b472c65",
+        "name": "Skin1004 Madagascar Centella Hyalu-Cica Brightening Toner",
+        "price": 80
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "SKIN1004 Madagascar Centella Hyalu-Cica First Ampoule 100ml",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 400,
+    "endParagraphExclusive": 404,
+    "sourceText": "Madagascar Centella Hyalu-Cica First Ampoule 100ml\nEsta ampolla multiusos ofrece hidratación profunda y duradera mientras calma la piel. Contiene una gran cantidad de extracto de Centella Asiática y otros extractos botánicos que fortalecen la barrera cutánea. Se puede usar justo después de la limpieza para obtener resultados óptimos.\n\nContenido: 100ml\nS/. 85.00\n",
+    "price": 85.0,
+    "category": "Sueros y Ampollas",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "b6798ee8-e01c-4174-9633-03a9b7b076e5",
+        "name": "SKIN1004 Madagascar Centella Hyalu-Cica First Ampoule",
+        "price": 85
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "SKIN1004 Madagascar Centella Tea-Trica Soothing Sun Milk",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 404,
+    "endParagraphExclusive": 418,
+    "sourceText": "Madagascar Centella Tea-Trica Soothing Sun Milk\nDESCRIPCIÓN Y BENEFICIOS 🧴\nProtector solar coreano de textura leche con árbol de té y centella. Protege, calma y refresca la piel con acabado ligero y sin residuo blanco.\n\nTipo de piel Piel sensible, mixta, grasa o con tendencia al acné y rojeces. Apto para uso diario en todo tipo de piel.\n\nBeneficios principales\n\nProtección alta SPF50+ PA++++ contra UVA y UVB\nCalma rojeces e irritaciones\nControla el exceso de sebo\nAcabado natural sin sensación pegajosa\nS/85\n",
+    "price": 85.0,
+    "category": "Protectores Solares",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "SKIN1004 MADAGASCAR CENTELLA TEA-TRICA PURIFYING TONER 210M",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 418,
+    "endParagraphExclusive": 422,
+    "sourceText": "SKIN1004 MADAGASCAR CENTELLA TEA-TRICA PURIFYING TONER 210M\nAyuda a controlar el exceso de grasa.\nContribuye a mantener los poros limpios.\nExfolia suavemente para mejorar la textura de la piel.\nAyuda a calmar la piel con tendencia al acné.\nDeja una sensación fresca y equilibrada.\n\n✔ Cuidado de poros\n✔ Exfoliación suave\n✔ Ideal para piel grasa\nS/79\n",
+    "price": 79.0,
+    "category": "Tónicos",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "SKIN1004 Madagascar Centella Poremizing Light Gel Cream",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 422,
+    "endParagraphExclusive": 432,
+    "sourceText": "Madagascar Centella Poremizing Light Gel Cream\nSKIN1004 Madagascar Centella Poremizing Light Gel Cream es una crema hidratante que contiene extracto de centella asiática de Madagascar y sales minerales rosas que ayudan a calmar la piel.\nS/. 80.00\n\n\n\n\n\n\n",
+    "price": 80.0,
+    "category": "Hidratantes",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "SKIN1004 Madagascar Centella Even Tone Kit 20ml",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 432,
+    "endParagraphExclusive": 444,
+    "sourceText": "SKIN1004 Madagascar Centella Even Tone Kit 20ml\n¿Sientes que tu piel luce apagada, cansada o con manchitas visibles cuando el estrés de los viajes o la rutina te pasan factura? Si buscas devolverle la vida a tu rostro y unificar su tono sin complicaciones, este kit de viaje iluminador es la solución completa que fusiona la calma de la Centella con potentes agentes despigmentantes, todo en un formato mini listo para acompañarte en tu equipaje de mano.\nS/99\n\n\n\n\n\n\n\n\n",
+    "price": 99.0,
+    "category": "Sets & Regalos",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "SKIN1004 Madagascar Centella Poremizing Clear Toner",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 444,
+    "endParagraphExclusive": 454,
+    "sourceText": "Madagascar Centella Poremizing Clear Toner\nCómo utilizarlo\nUtilizar después dela limpieza . Aplique unas gotas en undisco de algodón o en los dedos y aplique con suaves golpecitos sobre el rostro.\n\nUtilizar AM y PM.\n\nAplique después un protector solar si utiliza el producto AM.\nS/79\n\n",
+    "price": 79.0,
+    "category": "Tónicos",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "SKIN1004 MADAGASCAR CENTELLA TONING TONER 210ML",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 454,
+    "endParagraphExclusive": 462,
+    "sourceText": "SKIN1004 MADAGASCAR CENTELLA TONING TONER 210ML\nEl SKIN1004 Madagascar Centella Toning Toner es un tónico suave y refrescante que utiliza extracto de Centella Asiática de Madagascar para calmar y reparar la piel.\n\nS/. 79.00\n\n\n\n",
+    "price": 79.0,
+    "category": "Tónicos",
+    "status": "EXISTE",
+    "existing": [
+      {
+        "id": "8d919e3f-f7b8-4c8f-bab0-3b39e35c691e",
+        "name": "Skin1004 Madagascar Centella Toning Toner",
+        "price": 79
+      }
+    ],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  },
+  {
+    "name": "SKIN1004 Madagascar Centella Ampoule Set",
+    "source": "SKIN CARE.docx",
+    "startParagraph": 462,
+    "endParagraphExclusive": 475,
+    "sourceText": "SKIN1004 Madagascar Centella Ampoule Set\nFunciones: calmante.\nEs un producto hipoalergénico.\nEs libre de fragancia.\nEs libre de alcohol.\nEs libre de sulfatos.\nEs libre de crueldad.\nEs libre de parabenos.\nS/110\n\n\n\n",
+    "price": 110.0,
+    "category": "Sets & Regalos",
+    "status": "NUEVO",
+    "existing": [],
+    "issue": null,
+    "image_url": null,
+    "stock_quantity": 0
+  }
+]

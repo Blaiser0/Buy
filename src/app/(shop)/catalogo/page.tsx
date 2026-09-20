@@ -2,6 +2,7 @@ import { CatalogBrowser } from "@/components/products/catalog-browser";
 import { getDb } from "@/lib/db";
 import { boutiqueSans } from "@/lib/boutique-theme";
 import { pageMetadata } from "@/lib/seo";
+import { withCatalogImage } from "@/lib/products/catalog-images";
 
 export const dynamic = "force-dynamic";
 
@@ -15,7 +16,7 @@ export default async function CatalogPage() {
   const products = await getDb().products.list();
   return (
     <div className={boutiqueSans.className}>
-      <CatalogBrowser products={products} />
+      <CatalogBrowser products={products.map(withCatalogImage)} />
     </div>
   );
 }

@@ -160,7 +160,6 @@ export default async function ProductDetailPage({
                   productName={product.name}
                   price={product.price}
                   imageUrl={product.image_url}
-                  inStock={product.stock_quantity > 0}
                 />
                 <ProductTrustBadges />
               </div>

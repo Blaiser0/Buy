@@ -16,7 +16,6 @@ type ProductPurchasePanelProps = {
   productName: string;
   price: number;
   imageUrl: string | null;
-  inStock: boolean;
 };
 
 export function ProductPurchasePanel({
@@ -24,7 +23,6 @@ export function ProductPurchasePanel({
   productName,
   price,
   imageUrl,
-  inStock,
 }: ProductPurchasePanelProps) {
   const [quantity, setQuantity] = useState(1);
   const { addToCart, toggleWishlist, isInWishlist, setCartOpen } = useShop();
@@ -82,12 +80,6 @@ export function ProductPurchasePanel({
         <ShoppingBag className="size-3.5" strokeWidth={1.75} />
         Añadir al carrito
       </button>
-
-      {!inStock && (
-        <p className="text-xs text-[#2C2C2C]/65">
-          Puedes realizar tu pedido aunque no haya stock registrado. Consulta la disponibilidad por WhatsApp.
-        </p>
-      )}
 
       <a
         href={stockWhatsAppHref}

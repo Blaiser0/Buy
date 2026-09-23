@@ -9,7 +9,6 @@ import { cn } from "@/lib/utils";
 import { boutique, boutiqueSans, boutiqueSerif } from "@/lib/boutique-theme";
 import { useShop, type ShopItem } from "@/components/shop/shop-provider";
 import {
-  BUYU_WHATSAPP,
   PAYMENT_ACCOUNTS,
   buildWhatsAppUrl,
   orderConfirmationMessage,
@@ -225,9 +224,6 @@ function PaymentCheckout({
           Monto a pagar
         </p>
         <p className="mt-1 text-2xl font-semibold text-[#2C2C2C]">{totalLabel}</p>
-        <p className="text-xs text-[#2C2C2C]/55">
-          Número: {selected.number} · Consultas {BUYU_WHATSAPP.display}
-        </p>
       </div>
 
       <div>
@@ -260,7 +256,7 @@ function PaymentCheckout({
       </div>
 
       <ol className="space-y-2 rounded-xl bg-[#FEFAF9] px-4 py-3 text-[12px] leading-relaxed text-[#2C2C2C]/70">
-        <li>1. Escanea el QR o paga al número indicado.</li>
+        <li>1. Escanea el QR.</li>
         <li>2. Transfiere exactamente {totalLabel}.</li>
         <li>3. Guarda la captura del pago.</li>
         <li>4. Confirma tu pedido por WhatsApp y adjunta la captura.</li>

@@ -73,21 +73,21 @@ export function ProductPurchasePanel({
 
       <button
         type="button"
-        disabled={!inStock}
         onClick={() => {
           addToCart(item, quantity);
           setCartOpen(true);
         }}
-        className={cn(
-          "inline-flex h-11 w-full items-center justify-center gap-2 rounded-md text-[11px] font-semibold tracking-[0.14em] uppercase transition-colors lg:h-9",
-          inStock
-            ? "bg-[#D68C96] text-white hover:bg-[#C97A85]"
-            : "cursor-not-allowed bg-[#D68C96]/45 text-white",
-        )}
+        className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-md bg-[#D68C96] text-[11px] font-semibold tracking-[0.14em] text-white uppercase transition-colors hover:bg-[#C97A85] lg:h-9"
       >
         <ShoppingBag className="size-3.5" strokeWidth={1.75} />
-        {inStock ? "Añadir al carrito" : "Agotado"}
+        Añadir al carrito
       </button>
+
+      {!inStock && (
+        <p className="text-xs text-[#2C2C2C]/65">
+          Puedes realizar tu pedido aunque no haya stock registrado. Consulta la disponibilidad por WhatsApp.
+        </p>
+      )}
 
       <a
         href={stockWhatsAppHref}

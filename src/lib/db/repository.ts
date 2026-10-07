@@ -12,8 +12,8 @@ import type {
  * y regístrala en `src/lib/db/index.ts`.
  */
 export interface ProductRepository {
-  list(): Promise<Product[]>;
-  getById(id: string): Promise<Product | null>;
+  list(options?: { includeHidden?: boolean }): Promise<Product[]>;
+  getById(id: string, options?: { includeHidden?: boolean }): Promise<Product | null>;
   create(input: CreateProductInput): Promise<Product>;
   update(id: string, input: UpdateProductInput): Promise<Product>;
   delete(id: string): Promise<void>;

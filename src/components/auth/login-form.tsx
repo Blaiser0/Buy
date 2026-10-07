@@ -2,7 +2,6 @@
 
 import { useActionState } from "react";
 import { useFormStatus } from "react-dom";
-import Link from "next/link";
 import { loginAction, type AuthState } from "@/actions/auth";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -22,12 +21,11 @@ function SubmitButton() {
   );
 }
 
-export function LoginForm({ nextPath }: { nextPath?: string }) {
+export function LoginForm() {
   const [state, formAction] = useActionState(loginAction, {} as AuthState);
 
   return (
     <form action={formAction} className="space-y-4">
-      <input type="hidden" name="next" value={nextPath || "/admin/products"} />
       {state.error && (
         <Alert variant="destructive">
           <AlertDescription>{state.error}</AlertDescription>
@@ -35,19 +33,13 @@ export function LoginForm({ nextPath }: { nextPath?: string }) {
       )}
       <div className="space-y-2">
         <Label htmlFor="email">Email</Label>
-        <Input id="email" name="email" type="email" required />
+        <Input id="email" name="email" type="email" autoComplete="username" maxLength={254} required />
       </div>
       <div className="space-y-2">
         <Label htmlFor="password">Contraseña</Label>
-        <Input id="password" name="password" type="password" required />
+        <Input id="password" name="password" type="password" autoComplete="current-password" maxLength={128} required />
       </div>
       <SubmitButton />
-      <p className="text-center text-sm text-[#2C2C2C]/70">
-        ¿No tienes cuenta?{" "}
-        <Link href="/register" className="text-[#E50914] hover:underline">
-          Regístrate
-        </Link>
-      </p>
     </form>
   );
 }

@@ -12,11 +12,12 @@ function mapProduct(row: Record<string, unknown>): Product {
     image_url: (row.image_url as string | null) ?? null,
     category: (row.category as ProductCategory) ?? "Hidratantes",
     created_at: String(row.created_at),
+    is_visible: row.is_visible !== false,
   };
 }
 
 export const supabaseProductRepository: ProductRepository = {
-  async list() {
+  async list(options) {
     const supabase = await createClient();
     const destination = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/rest/v1/products`;
     let result;
@@ -51,10 +52,12 @@ export const supabaseProductRepository: ProductRepository = {
       throw new Error(error.message);
     }
 
-    return (data ?? []).map(mapProduct);
+    // Public pages exclude hidden items even while an administrator is signed in.
+    // Database RLS additionally prevents visitors from reading them directly.
+    return (data ?? []).map(mapProduct).filter(p => options?.includeHidden || p.is_visible);
   },
 
-  async getById(id) {
+  async getById(id, options) {
     const supabase = await createClient();
     const { data, error } = await supabase
       .from("products")
@@ -63,7 +66,9 @@ export const supabaseProductRepository: ProductRepository = {
       .maybeSingle();
 
     if (error) throw new Error(error.message);
-    return data ? mapProduct(data) : null;
+    if (!data) return null;
+    const product = mapProduct(data);
+    return options?.includeHidden || product.is_visible ? product : null;
   },
 
   async create(input: CreateProductInput) {
@@ -102,6 +107,7 @@ export const supabaseProductRepository: ProductRepository = {
           ? { image_url: input.image_url }
           : {}),
         ...(input.category !== undefined ? { category: input.category } : {}),
+        ...(input.is_visible !== undefined ? { is_visible: input.is_visible } : {}),
       })
       .eq("id", id)
       .select("*")

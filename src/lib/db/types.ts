@@ -11,6 +11,7 @@ export type Product = {
   image_url: string | null;
   category: ProductCategory;
   created_at: string;
+  is_visible: boolean;
 };
 
 export type Profile = {
@@ -28,7 +29,7 @@ export type CreateProductInput = {
   category: ProductCategory;
 };
 
-export type UpdateProductInput = Partial<CreateProductInput>;
+export type UpdateProductInput = Partial<CreateProductInput> & { is_visible?: boolean };
 
 export type UploadResult = {
   path: string;

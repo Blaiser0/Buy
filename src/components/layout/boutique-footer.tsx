@@ -67,7 +67,7 @@ export function BoutiqueFooter() {
     >
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:grid-cols-2 sm:px-6 md:py-14 lg:grid-cols-[1.2fr_repeat(3,1fr)_1.1fr] lg:gap-8">
         <div className="space-y-4 sm:col-span-2 lg:col-span-1">
-          <Link href="/" className="inline-block">
+          <Link href="/login" className="inline-block">
             <span
               className={cn(
                 boutiqueSerif.className,

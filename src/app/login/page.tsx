@@ -1,12 +1,7 @@
 import { LoginForm } from "@/components/auth/login-form";
 import { BrandLogo } from "@/components/layout/brand-logo";
 
-type LoginPageProps = {
-  searchParams: Promise<{ next?: string }>;
-};
-
-export default async function LoginPage({ searchParams }: LoginPageProps) {
-  const params = await searchParams;
+export default function LoginPage() {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-white px-4">
@@ -20,7 +15,7 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
             Accede al panel de administración
           </p>
         </div>
-        <LoginForm nextPath={params.next} />
+        <LoginForm />
       </div>
     </div>
   );

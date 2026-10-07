@@ -2,6 +2,7 @@
 
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import { loginSchema } from "@/schemas/login";
 
 export type AuthState = {
   error?: string;
@@ -12,22 +13,27 @@ export async function loginAction(
   _prev: AuthState,
   formData: FormData,
 ): Promise<AuthState> {
-  const email = String(formData.get("email") ?? "").trim();
-  const password = String(formData.get("password") ?? "");
-  const next = String(formData.get("next") ?? "/admin/products");
+  const parsed = loginSchema.safeParse({
+    email: formData.get("email"),
+    password: formData.get("password"),
+  });
+  if (!parsed.success) return { error: "Introduce un correo válido y tu contraseña (máximo 128 caracteres)." };
 
-  if (!email || !password) {
-    return { error: "Email y contraseña son obligatorios." };
+  try {
+    const supabase = await createClient();
+    const { data, error } = await supabase.auth.signInWithPassword(parsed.data);
+    if (error || !data.user) return { error: "Correo o contraseña incorrectos." };
+    const { data: profile, error: profileError } = await supabase
+      .from("profiles").select("is_admin").eq("id", data.user.id).maybeSingle();
+    if (profileError || !profile?.is_admin) {
+      await supabase.auth.signOut();
+      return { error: "Esta cuenta no tiene acceso al panel de administración." };
+    }
+  } catch {
+    return { error: "No se pudo iniciar sesión. Inténtalo nuevamente." };
   }
-
-  const supabase = await createClient();
-  const { error } = await supabase.auth.signInWithPassword({ email, password });
-
-  if (error) {
-    return { error: error.message };
-  }
-
-  redirect(next.startsWith("/") ? next : "/admin/products");
+  // Fixed destination: never redirect to an untrusted URL from form input.
+  redirect("/admin/products");
 }
 
 export async function registerAction(

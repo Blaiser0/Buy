@@ -5,6 +5,25 @@ import { redirect } from "next/navigation";
 import { assertAdminOrThrow } from "@/lib/auth/require-admin";
 import { getDb } from "@/lib/db";
 import { productFormSchema, productImageSchema } from "@/schemas/product";
+import { z } from "zod";
+
+function revalidateProductViews() {
+  revalidatePath("/", "layout");
+  revalidatePath("/sitemap.xml");
+}
+
+export async function setProductVisibilityAction(id: string, isVisible: boolean): Promise<ProductActionState> {
+  const parsed = z.object({ id: z.string().uuid(), isVisible: z.boolean() }).safeParse({ id, isVisible });
+  if (!parsed.success) return { error: "Solicitud no válida." };
+  try {
+    await assertAdminOrThrow();
+    await getDb().products.update(parsed.data.id, { is_visible: parsed.data.isVisible });
+  } catch {
+    return { error: "No se pudo cambiar la visibilidad. Verifica tus permisos y la migración de Supabase." };
+  }
+  revalidateProductViews();
+  return { success: isVisible ? "Producto visible." : "Producto oculto." };
+}
 
 export type ProductActionState = {
   error?: string;
@@ -85,6 +104,7 @@ export async function createProductAction(
   revalidatePath("/");
   revalidatePath("/productos");
   revalidatePath("/admin/products");
+  revalidateProductViews();
   redirect("/admin/products");
 }
 
@@ -119,7 +139,7 @@ export async function updateProductAction(
   const db = getDb();
 
   try {
-    const current = await db.products.getById(id);
+    const current = await db.products.getById(id, { includeHidden: true });
     if (!current) {
       return { error: "Producto no encontrado." };
     }
@@ -155,6 +175,7 @@ export async function updateProductAction(
   revalidatePath("/productos");
   revalidatePath(`/productos/${id}`);
   revalidatePath("/admin/products");
+  revalidateProductViews();
   redirect("/admin/products");
 }
 
@@ -170,7 +191,7 @@ export async function deleteProductAction(id: string): Promise<ProductActionStat
   const db = getDb();
 
   try {
-    const current = await db.products.getById(id);
+    const current = await db.products.getById(id, { includeHidden: true });
     if (!current) {
       return { error: "Producto no encontrado." };
     }
@@ -192,5 +213,6 @@ export async function deleteProductAction(id: string): Promise<ProductActionStat
   revalidatePath("/");
   revalidatePath("/productos");
   revalidatePath("/admin/products");
+  revalidateProductViews();
   return { success: "Producto eliminado." };
 }

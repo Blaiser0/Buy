@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Plus } from "lucide-react";
 import { DeleteProductButton } from "@/components/admin/delete-product-button";
+import { ProductVisibilityButton } from "@/components/admin/product-visibility-button";
+import { requireAdmin } from "@/lib/auth/require-admin";
 import { CategoryBadge } from "@/components/products/category-badge";
 import { StockBadge } from "@/components/products/stock-badge";
 import { buttonVariants } from "@/components/ui/button";
@@ -21,8 +23,9 @@ function formatPrice(price: number) {
 }
 
 export default async function AdminProductsPage() {
+  await requireAdmin();
   const db = getDb();
-  const products = await db.products.list();
+  const products = await db.products.list({ includeHidden: true });
 
   return (
     <div className="space-y-6">
@@ -30,7 +33,7 @@ export default async function AdminProductsPage() {
         <div>
           <h1 className="text-2xl font-semibold text-[#2C2C2C]">Productos</h1>
           <p className="text-sm text-[#2C2C2C]/70">
-            Crea, edita o elimina productos de la tienda.
+            Crea, edita, oculta o elimina productos de la tienda.
           </p>
         </div>
         <Link
@@ -66,13 +69,15 @@ export default async function AdminProductsPage() {
                     </h2>
                     <CategoryBadge category={product.category} />
                     <StockBadge stockQuantity={product.stock_quantity} />
+                    <span className="text-xs font-medium">{product.is_visible ? "Visible" : "Oculto al público"}</span>
                   </div>
                   <p className="text-sm text-[#2C2C2C]/70">
                     {formatPrice(product.price)} · Stock:{" "}
                     {product.stock_quantity}
                   </p>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex flex-wrap items-center gap-2">
+                  <ProductVisibilityButton productId={product.id} isVisible={product.is_visible} />
                   <Link
                     href={`/admin/products/${product.id}/edit`}
                     className={cn(buttonVariants({ variant: "outline", size: "sm" }))}

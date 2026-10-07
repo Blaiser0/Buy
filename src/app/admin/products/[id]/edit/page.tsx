@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { ProductForm } from "@/components/admin/product-form";
 import { updateProductAction } from "@/actions/products";
 import { getDb } from "@/lib/db";
+import { requireAdmin } from "@/lib/auth/require-admin";
 
 export const dynamic = "force-dynamic";
 
@@ -12,9 +13,10 @@ type EditProductPageProps = {
 export default async function EditProductPage({
   params,
 }: EditProductPageProps) {
+  await requireAdmin();
   const { id } = await params;
   const db = getDb();
-  const product = await db.products.getById(id);
+  const product = await db.products.getById(id, { includeHidden: true });
 
   if (!product) notFound();
 

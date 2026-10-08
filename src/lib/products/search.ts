@@ -1,6 +1,6 @@
 import type { Product } from "@/lib/db/types";
 import {
-  detectBrandFromProductName,
+  getProductBrand,
   type BrandInfo,
 } from "@/lib/products/brands";
 import { PRODUCT_CATEGORIES } from "@/lib/products/categories";
@@ -97,7 +97,7 @@ export function filterProductsByBrand(products: Product[], brandSlug: string) {
   if (!slug) return products;
 
   return products.filter((product) => {
-    const brand = detectBrandFromProductName(product.name);
+    const brand = getProductBrand(product);
     return brand?.slug === slug;
   });
 }
@@ -178,7 +178,7 @@ export function hasActiveCatalogFilters(filters: CatalogFilters) {
 export function getAvailableBrands(products: Product[]): BrandInfo[] {
   const map = new Map<string, BrandInfo>();
   for (const product of products) {
-    const brand = detectBrandFromProductName(product.name);
+    const brand = getProductBrand(product);
     if (brand && !map.has(brand.id)) {
       map.set(brand.id, brand);
     }

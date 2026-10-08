@@ -4,8 +4,11 @@ import { createClient } from '@supabase/supabase-js';
 import assert from 'node:assert/strict';
 
 async function main() {
-  const email = 'sugterra84@gmail.com';
-  assert.ok(process.argv.includes('--apply'), 'Se requiere --apply');
+  const emailIndex = process.argv.indexOf('--email');
+  const email = (emailIndex >= 0 ? process.argv[emailIndex + 1] : 'sugterra84@gmail.com')?.trim().toLowerCase();
+  assert.ok(email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email), 'Indica un correo válido con --email');
+  const checkOnly = process.argv.includes('--check');
+  assert.ok(checkOnly || process.argv.includes('--apply'), 'Se requiere --check o --apply');
   nextEnv.loadEnvConfig(process.cwd(), false, { info() {}, error() {} });
   assert.ok(process.env.SUPABASE_SECRET_KEY && process.env.NEXT_PUBLIC_SUPABASE_URL, 'Falta configuración privada');
   const db = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL, process.env.SUPABASE_SECRET_KEY, { auth: { persistSession: false, autoRefreshToken: false } });
@@ -17,6 +20,13 @@ async function main() {
     assert.ok(!error, 'No se pudo comprobar la cuenta');
     account = data.users.find(u => u.email?.toLowerCase() === email);
     if (account || data.users.length < 1000) break;
+  }
+  if (checkOnly) {
+    if (!account) { console.log('La cuenta no existe. No se realizaron cambios.'); return; }
+    const { data, error } = await db.from('profiles').select('is_admin').eq('id', account.id).maybeSingle();
+    assert.ok(!error, 'No se pudo verificar el perfil existente');
+    console.log(data?.is_admin ? 'La cuenta ya existe y es administradora. No se realizaron cambios.' : 'La cuenta ya existe y no es administradora. No se realizaron cambios.');
+    return;
   }
   // Never reset an existing account password or silently grant it new privileges.
   if (account) {

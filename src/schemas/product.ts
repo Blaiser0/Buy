@@ -2,6 +2,7 @@ import { z } from "zod";
 import { PRODUCT_CATEGORIES } from "@/lib/products/categories";
 
 export const productFormSchema = z.object({
+  brand_id: z.union([z.string().uuid("Selecciona una marca válida"), z.literal("")]).transform(value => value || null),
   name: z
     .string()
     .trim()

@@ -131,6 +131,8 @@ export default async function ProductDetailPage({
                 {product.name}
               </h1>
 
+              <p className="mt-2 text-sm text-[#98535C]">Marca: {product.brand?.name ?? "Sin asignar"}</p>
+
               <p className="mt-1 line-clamp-2 text-[13px] text-[#8A7A76] lg:text-[12px]">
                 {subtitle}
               </p>

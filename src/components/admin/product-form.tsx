@@ -4,7 +4,7 @@ import { useActionState } from "react";
 import { useFormStatus } from "react-dom";
 import Image from "next/image";
 import Link from "next/link";
-import type { Product } from "@/lib/db/types";
+import type { Brand, Product } from "@/lib/db/types";
 import type { ProductActionState } from "@/actions/products";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -15,6 +15,7 @@ import { PRODUCT_CATEGORIES } from "@/lib/products/categories";
 import { cn } from "@/lib/utils";
 
 type ProductFormProps = {
+  brands: Brand[];
   product?: Product;
   action: (
     prev: ProductActionState,
@@ -35,7 +36,7 @@ function SubmitButton({ label }: { label: string }) {
   );
 }
 
-export function ProductForm({ product, action }: ProductFormProps) {
+export function ProductForm({ product, action, brands }: ProductFormProps) {
   const [state, formAction] = useActionState(action, {});
 
   return (
@@ -59,6 +60,16 @@ export function ProductForm({ product, action }: ProductFormProps) {
         {state.fieldErrors?.name?.[0] && (
           <p className="text-sm text-destructive">{state.fieldErrors.name[0]}</p>
         )}
+      </div>
+
+      <div className="space-y-2">
+        <Label htmlFor="brand_id">Marca</Label>
+        <select id="brand_id" name="brand_id" defaultValue={product?.brand_id ?? ""} className="h-10 w-full rounded-lg border border-input bg-transparent px-3 text-sm">
+          <option value="">Sin marca asignada</option>
+          {brands.map(brand => <option key={brand.id} value={brand.id}>{brand.name}{brand.is_visible ? "" : " (oculta)"}</option>)}
+        </select>
+        {state.fieldErrors?.brand_id?.[0] && <p className="text-sm text-destructive">{state.fieldErrors.brand_id[0]}</p>}
+        <Link href="/admin/brands" className="text-sm underline">Administrar marcas</Link>
       </div>
 
       <div className="space-y-2">

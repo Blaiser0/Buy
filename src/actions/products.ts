@@ -38,6 +38,7 @@ function parseForm(formData: FormData) {
     price: formData.get("price"),
     stock_quantity: formData.get("stock_quantity"),
     category: formData.get("category"),
+    brand_id: formData.get("brand_id") ?? "",
   });
 
   const image = formData.get("image");
@@ -91,6 +92,7 @@ export async function createProductAction(
       stock_quantity: parsed.data.stock_quantity,
       image_url: imageUrl,
       category: parsed.data.category,
+      brand_id: parsed.data.brand_id,
     });
   } catch (error) {
     return {
@@ -161,6 +163,7 @@ export async function updateProductAction(
       stock_quantity: parsed.data.stock_quantity,
       image_url: imageUrl,
       category: parsed.data.category,
+      brand_id: parsed.data.brand_id,
     });
   } catch (error) {
     return {

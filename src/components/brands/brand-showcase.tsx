@@ -35,7 +35,7 @@ function BrandLogoImage({
   const height =
     size === "lg" ? "h-14" : size === "sm" ? "h-9" : "h-12";
 
-  if (failed) {
+  if (failed || !logoPath) {
     return (
       <span
         className={cn(
@@ -82,7 +82,7 @@ function BrandCard({
     .map((product) => product.image_url)
     .filter((url): url is string => Boolean(url));
   const gallery = [brand.productImagePath, ...catalogImages].filter(
-    (url, index, list) => list.indexOf(url) === index,
+    (url, index, list) => Boolean(url) && list.indexOf(url) === index,
   );
   const [galleryIndex, setGalleryIndex] = useState(0);
   const [failedIndexes, setFailedIndexes] = useState<number[]>([]);

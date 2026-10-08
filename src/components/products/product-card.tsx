@@ -38,6 +38,7 @@ export function ProductCard({ product }: ProductCardProps) {
         <h3 className="line-clamp-2 text-sm font-medium text-[#2C2C2C] sm:text-base">
           {product.name}
         </h3>
+        <p className="text-xs text-[#98535C]">Marca: {product.brand?.name ?? "Sin asignar"}</p>
         <p className="text-sm font-semibold text-[#D68C96] sm:text-base">
           {formatPenPrice(product.price)}
         </p>

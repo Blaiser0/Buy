@@ -1,7 +1,9 @@
 import { ProductForm } from "@/components/admin/product-form";
 import { createProductAction } from "@/actions/products";
+import { listBrands } from "@/lib/db/brands";
 
-export default function NewProductPage() {
+export default async function NewProductPage() {
+  const brands = await listBrands();
   return (
     <div className="space-y-6">
       <div>
@@ -12,7 +14,7 @@ export default function NewProductPage() {
           Completa los campos y sube una imagen opcional.
         </p>
       </div>
-      <ProductForm action={createProductAction} />
+      <ProductForm action={createProductAction} brands={brands} />
     </div>
   );
 }

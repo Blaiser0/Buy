@@ -3,6 +3,7 @@ import { ProductForm } from "@/components/admin/product-form";
 import { updateProductAction } from "@/actions/products";
 import { getDb } from "@/lib/db";
 import { requireAdmin } from "@/lib/auth/require-admin";
+import { listBrands } from "@/lib/db/brands";
 
 export const dynamic = "force-dynamic";
 
@@ -21,6 +22,7 @@ export default async function EditProductPage({
   if (!product) notFound();
 
   const action = updateProductAction.bind(null, id);
+  const brands = await listBrands();
 
   return (
     <div className="space-y-6">
@@ -30,7 +32,7 @@ export default async function EditProductPage({
         </h1>
         <p className="text-sm text-[#2C2C2C]/70">{product.name}</p>
       </div>
-      <ProductForm product={product} action={action} />
+      <ProductForm product={product} action={action} brands={brands} />
     </div>
   );
 }

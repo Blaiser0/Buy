@@ -96,6 +96,9 @@ export function AdminProductsManager({ products }: { products: Product[] }) {
                     <span className="text-xs font-medium">{product.is_visible ? "Visible" : "Oculto al público"}</span>
                   </div>
                   <p className="text-sm text-[#2C2C2C]/70">
+                    Marca: {product.brand?.name ?? "Sin asignar"}{product.brand?.is_visible === false ? " (marca oculta)" : ""}
+                  </p>
+                  <p className="text-sm text-[#2C2C2C]/70">
                     {formatPrice(product.price)} · Stock:{" "}
                     {product.stock_quantity}
                   </p>

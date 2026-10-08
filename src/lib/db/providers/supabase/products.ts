@@ -4,6 +4,8 @@ import { createClient } from "@/lib/supabase/server";
 
 function mapProduct(row: Record<string, unknown>): Product {
   return {
+    brand_id: (row.brand_id as string | null) ?? null,
+    brand: (row.brand as Product["brand"]) ?? null,
     id: String(row.id),
     name: String(row.name),
     description: (row.description as string | null) ?? null,
@@ -25,7 +27,7 @@ export const supabaseProductRepository: ProductRepository = {
     try {
       result = await supabase
         .from("products")
-        .select("*")
+        .select("*, brand:brands(id,name,slug,is_visible,logo_url)")
         .order("created_at", { ascending: false });
     } catch (error) {
       const requestError = error as Error & { cause?: unknown; status?: number };
@@ -54,21 +56,21 @@ export const supabaseProductRepository: ProductRepository = {
 
     // Public pages exclude hidden items even while an administrator is signed in.
     // Database RLS additionally prevents visitors from reading them directly.
-    return (data ?? []).map(mapProduct).filter(p => options?.includeHidden || p.is_visible);
+    return (data ?? []).map(mapProduct).filter(p => options?.includeHidden || (p.is_visible && (!p.brand_id || p.brand?.is_visible === true)));
   },
 
   async getById(id, options) {
     const supabase = await createClient();
     const { data, error } = await supabase
       .from("products")
-      .select("*")
+      .select("*, brand:brands(id,name,slug,is_visible,logo_url)")
       .eq("id", id)
       .maybeSingle();
 
     if (error) throw new Error(error.message);
     if (!data) return null;
     const product = mapProduct(data);
-    return options?.includeHidden || product.is_visible ? product : null;
+    return options?.includeHidden || (product.is_visible && (!product.brand_id || product.brand?.is_visible === true)) ? product : null;
   },
 
   async create(input: CreateProductInput) {
@@ -82,6 +84,7 @@ export const supabaseProductRepository: ProductRepository = {
         stock_quantity: input.stock_quantity,
         image_url: input.image_url ?? null,
         category: input.category,
+        brand_id: input.brand_id ?? null,
       })
       .select("*")
       .single();
@@ -107,6 +110,7 @@ export const supabaseProductRepository: ProductRepository = {
           ? { image_url: input.image_url }
           : {}),
         ...(input.category !== undefined ? { category: input.category } : {}),
+        ...(input.brand_id !== undefined ? { brand_id: input.brand_id } : {}),
         ...(input.is_visible !== undefined ? { is_visible: input.is_visible } : {}),
       })
       .eq("id", id)

@@ -20,7 +20,9 @@ export default async function AdminLayout({
             <BrandLogo href="/admin/products" imageClassName="h-8 md:h-9" />
             <p className="text-xs text-[#2C2C2C]/70">{user.email}</p>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
+            <Link href="/admin/products" className="text-sm underline">Productos</Link>
+            <Link href="/admin/brands" className="text-sm underline">Marcas</Link>
             <Link
               href="/"
               className={cn(buttonVariants({ variant: "outline", size: "sm" }))}

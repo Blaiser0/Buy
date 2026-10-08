@@ -54,7 +54,7 @@ export async function saveBrandAction(_previous: BrandActionState, formData: For
         if (uploaded.error) return { error: uploaded.error };
         ({ error } = await client.from("brands").update({ name: name.data, ...(uploaded.logoUrl ? { logo_url: uploaded.logoUrl } : {}) }).eq("id", id.data).select("id").single());
       } else {
-        ({ error } = await client.from("brands").update({ is_visible: operation.data === "show" }).eq("id", id.data));
+        ({ error } = await client.from("brands").update({ is_visible: operation.data === "show" }).eq("id", id.data).select("id,is_visible").single());
       }
     }
     if (error) await discardNewUpload();
@@ -63,8 +63,9 @@ export async function saveBrandAction(_previous: BrandActionState, formData: For
     if (error) return { error: "No se pudo guardar la marca. Revisa tus permisos y la migración de Supabase." };
     uploadedPath = undefined; // The saved row now owns the image; never clean it up after a cache error.
     revalidatePath("/", "layout");
+    revalidatePath("/catalogo");
     revalidatePath("/sitemap.xml");
-    return { success: "Cambio guardado." };
+    return { success: operation.data === "hide" ? "Marca y sus productos ocultos al público." : operation.data === "show" ? "Marca visible. Se respeta la visibilidad individual de sus productos." : "Cambio guardado." };
   } catch {
     await discardNewUpload();
     return { error: "No se pudo guardar la marca o subir el logo. Verifica tu sesión de administrador e inténtalo de nuevo." };

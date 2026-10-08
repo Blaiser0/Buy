@@ -50,6 +50,14 @@ assert.equal(uploaded, undefined);
 assert.ok((await action({}, form('update', png))).success);
 assert.ok(saved.logo_url);
 uploaded = undefined;
+for (const operation of ['hide', 'show']) {
+  const data = new FormData();
+  data.set('id', '12345678-1234-4234-8234-123456789012');
+  data.set('operation', operation);
+  assert.ok((await action({}, data)).success);
+  assert.equal(saved.is_visible, operation === 'show');
+  assert.equal(uploaded, undefined);
+}
 assert.ok((await action({}, form('create', new File(['svg'], 'logo.svg', { type: 'image/svg+xml' })))).error);
 assert.ok((await action({}, form('create', new File([new Uint8Array(512 * 1024 + 1)], 'large.png', { type: 'image/png' })))).error);
 assert.equal(uploaded, undefined);

@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState, useEffect, useState } from "react";
+import { startTransition, useActionState, useEffect, useState } from "react";
 import Image from "next/image";
 import type { Brand } from "@/lib/db/types";
 import { saveBrandAction } from "@/actions/brands";
@@ -17,8 +17,16 @@ function BrandForm({ brand, count = 0 }: { brand?: Brand; count?: number }) {
     return result;
   }, {});
   const logoPath = preview || (brand ? getBrandLogoPath(brand) : "");
+  function runBrandOperation(operation: "hide" | "show" | "delete") {
+    if (!brand) return;
+    const data = new FormData();
+    data.set("id", brand.id);
+    data.set("operation", operation);
+    startTransition(() => action(data));
+  }
   return (
     <form action={action} className="space-y-3 rounded-xl border p-4">
+      <input type="hidden" name="operation" value={brand ? "update" : "create"} />
       {brand && <input type="hidden" name="id" value={brand.id} />}
       <label className="block space-y-2">
         <span className="text-sm font-medium">{brand ? "Nombre de la marca" : "Nueva marca"}</span>
@@ -38,10 +46,10 @@ function BrandForm({ brand, count = 0 }: { brand?: Brand; count?: number }) {
       </label>
       {brand && <p className="text-sm text-muted-foreground">{count} productos · {brand.is_visible ? "Visible" : "Oculta (sus productos también están ocultos)"}</p>}
       <div className="flex flex-wrap gap-2">
-        <Button name="operation" value={brand ? "update" : "create"} disabled={pending}>{brand ? "Guardar cambios" : "Crear marca"}</Button>
+        <Button type="submit" disabled={pending}>{pending ? "Guardando..." : brand ? "Guardar cambios" : "Crear marca"}</Button>
         {brand && <>
-          <Button name="operation" value={brand.is_visible ? "hide" : "show"} variant="outline" disabled={pending} formNoValidate>{brand.is_visible ? "Ocultar" : "Mostrar"}</Button>
-          <Button name="operation" value="delete" variant="destructive" disabled={pending || count > 0} formNoValidate onClick={event => { if (!window.confirm(`¿Eliminar la marca ${brand.name}?`)) event.preventDefault(); }}>Eliminar</Button>
+          <Button type="button" data-operation={brand.is_visible ? "hide" : "show"} variant="outline" disabled={pending} onClick={() => runBrandOperation(brand.is_visible ? "hide" : "show")}>{brand.is_visible ? "Ocultar" : "Mostrar"}</Button>
+          <Button type="button" data-operation="delete" variant="destructive" disabled={pending || count > 0} onClick={() => { if (window.confirm(`¿Eliminar la marca ${brand.name}?`)) runBrandOperation("delete"); }}>Eliminar</Button>
         </>}
       </div>
       {brand && count > 0 && <p className="text-xs text-muted-foreground">Para eliminar esta marca, primero reasigna sus productos a otra marca.</p>}

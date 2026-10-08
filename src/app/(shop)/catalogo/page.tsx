@@ -1,5 +1,6 @@
 import { CatalogBrowser } from "@/components/products/catalog-browser";
 import { getDb } from "@/lib/db";
+import { listPublicBrands } from "@/lib/db/brands";
 import { boutiqueSans } from "@/lib/boutique-theme";
 import { pageMetadata } from "@/lib/seo";
 import { withCatalogImage } from "@/lib/products/catalog-images";
@@ -13,10 +14,10 @@ export const metadata = pageMetadata(
 );
 
 export default async function CatalogPage() {
-  const products = await getDb().products.list();
+  const [products, brands] = await Promise.all([getDb().products.list(), listPublicBrands()]);
   return (
     <div className={boutiqueSans.className}>
-      <CatalogBrowser products={products.map(withCatalogImage)} />
+      <CatalogBrowser products={products.map(withCatalogImage)} brands={brands} />
     </div>
   );
 }
